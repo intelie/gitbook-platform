@@ -127,7 +127,7 @@ Plugins assembled as groovy scripts are labeled GROOVY plugins.
 
 A JDBC driver can be uploaded as a plugin and will be immediately available for use in any other plugin that depend on that connection.
 
-Live currently supports that drivers:
+Live currently supports that drivers: 
 
 * Mysql
 * Oracle
