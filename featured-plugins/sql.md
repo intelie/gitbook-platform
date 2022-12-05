@@ -6,13 +6,13 @@ description: Enables the data crawling from ordinary SQL databases as events
 
 The SQL plugin is available for download on [Intelie Live Marketplace](https://marketplace.intelie.com/artifact/plugin-sql) and is composed by two main components which implements **Query Provider** and **Storage Provider** features. Those features can be enabled by selecting the roles when creating a new instance in Integrations menu at administration page.
 
-![Roles provided by Live SQL Plugin](<../.gitbook/assets/image (63).png>)
+![Roles provided by Live SQL Plugin](<../.gitbook/assets/image (79).png>)
 
 ## Storage Provider
 
 Once the Storage role is selected, a new section named **SQL Events configuration** will be available at configuration screen.
 
-![SQL events configuration form](<../.gitbook/assets/image (52).png>)
+![SQL events configuration form](<../.gitbook/assets/image (111).png>)
 
 The basic idea of this section is to define some event types that when queried using Pipes (in history mode using a time span) the data will be fetched from database using a configured SQL Template.
 
@@ -60,7 +60,7 @@ If your database does not support conversion from this timestamp format, alterna
 
 ### Available fields
 
-![Table mapping pipes properties to SQL expressions](<../.gitbook/assets/image (42).png>)
+![Table mapping pipes properties to SQL expressions](<../.gitbook/assets/image (115).png>)
 
 The table mapping a pipes property to a respective database expression. A table expression can be:
 
@@ -90,4 +90,4 @@ Starting at SQL Plugin 3.1.0, JSON type columns are supported.
 
 Live API enables the creation of customized query providers. Live SQL Plugin delivers a new option at Live Console to execute SQL queries over the SQL integrations currently configured.
 
-![Query providers are available at console screen](<../.gitbook/assets/image (17).png>)
+![Query providers are available at console screen](<../.gitbook/assets/image (90).png>)

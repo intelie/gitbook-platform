@@ -109,7 +109,7 @@ class SimpleChart implements ChartInterface<ChartState, ChartMessage, Configs> {
 
 After this, let the IDE or Code editor help you:
 
-![Automatically implement ChartInterface](<../../../.gitbook/assets/image (140).png>)
+![Automatically implement ChartInterface](<../../../.gitbook/assets/image (24).png>)
 
 You should get something like this:
 
@@ -630,7 +630,7 @@ The initialize and destroy methods are optional. Initialize is called at instant
 
 The screenshot below shown an example of a chart instance of Tutorial Pipes Widget using the Pipes Expression `=> random() every 5 sec` that produces only real-time events that spawn every 5 seconds.
 
-![Example of the tutorial widget being used at creation of a new Pipes Chart at Dashboard Edit Mode](<../../../.gitbook/assets/image (18).png>)
+![Example of the tutorial widget being used at creation of a new Pipes Chart at Dashboard Edit Mode](<../../../.gitbook/assets/image (138).png>)
 
 ### Widget Life Cycle
 

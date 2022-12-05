@@ -8,6 +8,18 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
+## [3.27.0](3.27.0.md) (November 11, 2022)
+
+### New Features
+
+* Allow setting the number of ticks on y axis even if the axes extremes are not defined
+* Move jersey-multipart from live-core to live-api
+* UI visibility Configurations
+
+### Fixes and improvements
+
+* Fix browser not unsubscribing to cometd channels on unload
+
 ## 3.26.3 (November 04, 2022)
 
 ### Fixes and improvements

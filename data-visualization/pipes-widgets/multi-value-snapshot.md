@@ -25,16 +25,16 @@ union
 
 ## Bar
 
-![Example of a bar chart](<../../.gitbook/assets/image (163).png>)
+![Example of a bar chart](<../../.gitbook/assets/image (54).png>)
 
 ## Column
 
-![Example of a column chart](<../../.gitbook/assets/image (27).png>)
+![Example of a column chart](<../../.gitbook/assets/image (106).png>)
 
 ## Pie
 
-![Example of a pie chart](<../../.gitbook/assets/image (16).png>)
+![Example of a pie chart](<../../.gitbook/assets/image (84).png>)
 
 ## Funnel
 
-![Example of a funnel chart](<../../.gitbook/assets/image (65).png>)
+![Example of a funnel chart](<../../.gitbook/assets/image (92).png>)

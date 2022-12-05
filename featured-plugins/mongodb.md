@@ -28,7 +28,7 @@ You can identify the queries being fired at MongoDB installations easily from th
 
 Live API enables the creation of customized query providers. Live MongoDB Plugin delivers a new option at Live Console to execute MongoDB database commands over the MongoDB integrations currently configured.
 
-![Dropdown at Live Console list all MongoDB integrations available to execute commands](<../.gitbook/assets/image (26).png>)
+![Dropdown at Live Console list all MongoDB integrations available to execute commands](<../.gitbook/assets/image (140).png>)
 
 In most of installations, database commands can be executed but the MongoDB database administrator can limit the permissions for the database configured for the Live instance.&#x20;
 
@@ -41,4 +41,4 @@ For example, type the following, uncheck the **Follow query period definition** 
 { buildInfo: 1 }
 ```
 
-![Example of execution of the buildInfo database command using MongoDB Query Provider](<../.gitbook/assets/image (138).png>)
+![Example of execution of the buildInfo database command using MongoDB Query Provider](<../.gitbook/assets/image (18).png>)

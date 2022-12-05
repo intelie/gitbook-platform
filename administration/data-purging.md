@@ -2,7 +2,7 @@
 
 Live allows the administrators to configure **Storage Purge Rules** in order to delete data using time-based rules that doesn't need to be kept longer in the environment.
 
-![Storage > Purge Rules enables the data purging for any event type in a time-based manner](<../.gitbook/assets/image (56).png>)
+![Storage > Purge Rules enables the data purging for any event type in a time-based manner](<../.gitbook/assets/image (148).png>)
 
 The administrator can **Simulate** the purge operation before to **Run** the purge in the environment.&#x20;
 
@@ -14,7 +14,7 @@ Most of event types starting with  `__` are system-wide and used internally or b
 
 The **Storage > Stats** menu in administration page delivers a way to understand the size and how many events are persisted in the storage providers. That page delivers a toggle button to display the typical system events as following.
 
-![Toggle to display system event types in Storage > Stats page](<../.gitbook/assets/image (153).png>)
+![Toggle to display system event types in Storage > Stats page](<../.gitbook/assets/image (2).png>)
 
 It's very important the administrator be aware which event types can be deleted and that decision will depend on each customer installation.
 
@@ -27,4 +27,4 @@ In general, in most of installations the administrators can purge the following 
 
 Below the example of how to configure expressions for collections that can be purged for period older than 3 months:
 
-![Purge rules for internal collections](../.gitbook/assets/image.png)
+![Purge rules for internal collections](<../.gitbook/assets/image (167).png>)

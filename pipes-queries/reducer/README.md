@@ -34,6 +34,6 @@ Intelie Live provides two default functions to compress the data: [uniform compr
 
 The uniform compression is the default algorithm for the `@compress` pipe in Intelie Live. The algorithm behind the pipe can be changed in the system web administration, as the figure below shows.
 
-![The compression algorithm can be changed on the web interface](<../../.gitbook/assets/image (144).png>)
+![The compression algorithm can be changed on the web interface](<../../.gitbook/assets/image (29).png>)
 
 The objective of a point compression algorithm is to reduce the number of points from a series, while keeping the most relevant points. The traditional compress algorithm is Perceptually Important Points (PIP), which keeps points with the greatest distance to a line between two other points. The PIP algorithm favors "noisy" parts of a series, keeping more points there in detriment to "quiet" parts. When the number of points exceeds the screen resolution, a "noisy" part can have more points than can be displayed, while a "quiet" part can have too few points to keep a good approximation of its shape.

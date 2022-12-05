@@ -14,8 +14,8 @@ The query below would populate those widgets.
 
 ## Value
 
-![Example of a value widget](<../../.gitbook/assets/image (122).png>)
+![Example of a value widget](<../../.gitbook/assets/image (71).png>)
 
 ## Gauge
 
-![Example of a gauge widget](<../../.gitbook/assets/image (113).png>)
+![Example of a gauge widget](<../../.gitbook/assets/image (10).png>)

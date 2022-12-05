@@ -189,4 +189,4 @@ This query generates the chart in the image below.
 => @meta true as enableDataGapsReport, 61000 as dataGapsReportThreshold
 ```
 
-![Data gaps demonstration](<../.gitbook/assets/image (2).png>)
+![Data gaps demonstration](<../.gitbook/assets/image (169).png>)

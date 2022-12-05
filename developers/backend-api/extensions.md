@@ -4,7 +4,7 @@ Live Platform is extensible through different ways, one of most used forms we ca
 
 The installed extensions are managed through one of Integrations, Platform Customizations or Interface Customizations in Live administration menu.
 
-![Different kinds of Extensions supported](<../../.gitbook/assets/image (146).png>)
+![Different kinds of Extensions supported](<../../.gitbook/assets/image (41).png>)
 
 The code below adds a very simple extension to Live Engine as part of a plugin starter code.
 
@@ -141,19 +141,19 @@ Live supports multiple instances of a same extension. It's useful to read from m
 
 After compile and package your very first tutorial plugin, you may upload it using Plugins menu in Live administration menu.
 
-![Example of plugin-tutorial recently uploaded to Live platform](<../../.gitbook/assets/image (150).png>)
+![Example of plugin-tutorial recently uploaded to Live platform](<../../.gitbook/assets/image (17).png>)
 
 The tutorial plugin just adds an extension type, so you can check the message saying "_added extension type 'plugin-tutorial' as PLATFORM_" in the plugin list screen.&#x20;
 
 Now, let's go find it under the Platform Customization area in Live administration.
 
-![Extension instance management interface](<../../.gitbook/assets/image (76).png>)
+![Extension instance management interface](<../../.gitbook/assets/image (83).png>)
 
 ### Add instance
 
 Extension instance configuration provides a basic form to fulfill the qualifier and a JSON that will be serialized as string and given as argument to concrete version of`ExtensionType.parseConfig` method.
 
-![New instance configuration form of the tutorial extension](<../../.gitbook/assets/image (5).png>)
+![New instance configuration form of the tutorial extension](<../../.gitbook/assets/image (168).png>)
 
 ### Validation and Save
 
@@ -165,11 +165,11 @@ Live will automatically dispatch the method call to the concrete version of `Ext
 
 Once validated, the Live will represent the validation results as `VALID` or `INVALID`.
 
-![Example of a VALID instance configuration](<../../.gitbook/assets/image (172).png>)
+![Example of a VALID instance configuration](<../../.gitbook/assets/image (9).png>)
 
 For example, our `SomeConfig.validate` method required the ships to be a not null attribute. In case of missing the fulfill of `ships` JSON field it remains null and validation will fail.
 
-![Example of an INVALID instance configuration (missing ships field)](<../../.gitbook/assets/image (83).png>)
+![Example of an INVALID instance configuration (missing ships field)](<../../.gitbook/assets/image (91).png>)
 
 **Save** action will trigger a POST to another Live internal endpoint `/rest/extension` in order to save the new instance itself. The mechanics of validation and configuration parsing is the same but now Live creates a new element in Live Engine and calls `ExtensionType.register` to proceed the developer code on the fresh new instance created.
 
@@ -179,7 +179,7 @@ At this time, the extension instance has an unique ID in Live subsystems and fur
 
 Extension instances can be stopped and removed from Live through its own listing on Live area. The same where you trigger the creation of the instance.
 
-![Actions to stop and remove the instance of an extension](<../../.gitbook/assets/image (37).png>)
+![Actions to stop and remove the instance of an extension](<../../.gitbook/assets/image (108).png>)
 
 ## Appendix: ElementHandle, ElementState and ElementStatus
 

@@ -6,7 +6,7 @@ description: Enables the data ingestion through a TCP input port
 
 The TCP input plugin is available for download on [Intelie Live Marketplace](https://marketplace.intelie.com/artifact/plugin-tcpinput).
 
-![Example of basic TCP Input configuration](<../.gitbook/assets/image (28).png>)
+![Example of basic TCP Input configuration](<../.gitbook/assets/image (82).png>)
 
 A brief explanation of each parameter:
 
@@ -18,7 +18,7 @@ A brief explanation of each parameter:
 * Allow type to be defined in the event: when checked, use the field defined as the "type field in JSON" to define the event type.
 * Skip real-time: do not send events received in this connection to real-time queries.
 
-![Allowed/Denied addresses list](<../.gitbook/assets/image (67).png>)
+![Allowed/Denied addresses list](<../.gitbook/assets/image (104).png>)
 
 Each of the "allowed addresses" and "denied addresses" fields are a space-separated list of CIDR ranges, for instance, "192.0.2.0/24 198.51.100.0/24 2001:db8::/32". The "deny addresses by default" checkbox controls the order in which the IP address of the connecting peer is checked against these two lists.
 

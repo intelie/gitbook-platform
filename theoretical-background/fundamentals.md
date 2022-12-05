@@ -26,7 +26,7 @@ Event Processing Agents (EPAs) - _The concept of EPA is not related to, and shal
 
 An Event Processing Network (EPN) is a network of interconnected EPAs that implement the global processing logic for a situation detection through event processing \[7]. In an EPN, the EPAs are conceptually connected to each other (i.e. output events from one EPA are forwarded and further processed by other EPAs) (see Figure 3), without regard to the particular kind of underlying communication mechanism (e.g. push- or pull-based) used by the data dissemination service.
 
-![](<../.gitbook/assets/1 (1).png>)
+![](../.gitbook/assets/1.png)
 
 #### **Distributed Complex Event Processing (DCEP)**
 
@@ -36,13 +36,13 @@ In a centralized CEP system, as shown in Figure 3, processing of event streams i
 
 The placement decision for the EPAs of a particular application can balance different criteria, such as the geographical location of event sources and sinks, network throughput and reliability, functionality, data segmentation, etc \[3]. Different academic and commercial distributed event-processing systems are available. The majority of them use a clustered deployment, while a few implement a networked solution.
 
-![](../.gitbook/assets/2.png)
+![](<../.gitbook/assets/2 (1).png>)
 
 #### **Communication Paradigm**
 
 A CEP system has its services’ instances running in a set of processing nodes. We refer to the services providing processing mechanisms, such as the CEP engines and the deployment and execution of EPAs (a single processing node can have many EPAs locally deployed), as the processing layer. This layer has to be bound with services implementing the transport of events from data producers, between EPAs, and to event consumers. We refer to those communication services as the communication layer. Figure 5 shows nodes of a network running instances of a DCEP system, with the processing layer with some deployed EPAs and communication layer used by to propagate events.
 
-![](../.gitbook/assets/3.png)
+![](<../.gitbook/assets/3 (1).png>)
 
 Several transport solutions can be used for data dissemination in CEP systems, i.e. in the communication layer. The vast majority of existing CEP systems use a push-based (i.e. asynchronous) communication paradigm for event transmission, with a message-centric communication paradigm (see Section 2.3). A few systems provide additional or optional pull-based communication primitives \[3]. The fact that CEP systems evolved from publish/subscribe, and CEP’s inherent asynchronous characteristics, give a clear indication that push-based data dissemination is the most suitable approach to be used in CEP. The publish/subscribe model \[6] is a well-established, robust and performance-enhancing, means of asynchronous communication model.
 
@@ -50,7 +50,7 @@ Several transport solutions can be used for data dissemination in CEP systems, i
 
 As an example, we present an application that monitors facilities in a large plant, which are instrumented with many types of sensors. Those sensors monitor the environment, periodically sending events to a CEP system. In this scenario, we consider events sent by smoke detection and temperature sensors, which can allow the detection of accidental fire in the plant. Figure 9 depicts the fire detection CEP system.
 
-![](<../.gitbook/assets/4 (1).png>)
+![](../.gitbook/assets/4.png)
 
 Temperature sensors produce simple events, named TemperatureSensor, containing the sensor and room identifications and the current measured temperature in each room. The High Temperature EPA consumes TemperatureSensor events, and when a temperature measurement passes a determined threshold, it generates a derived event, named HighTemperature, which also contains the sensor and room identifications, and the measured temperature. In the same way, smoke sensors produce simple events, named SmokeSensor, containing the sensor and room identifications and an indication of whether smoke has been detected in that room. The Smoke Detected EPA consumes SmokeSensor events and when a measurement contains an indication that smoke has been detected, it generates a derived event, named SmokeDetected, which contains the identifications of the sensor and the room. The Fire Detected EPA consumes both SmokeDetected and HighTemperature events, and when both events have been received from sensors on the same room, it generates a derived event, named FireDetected, which contains data aggregated from both HighTemperature and SmokeDetected events.
 
@@ -62,11 +62,11 @@ Figure 9 shows the definition of the event types of the facilities monitoring ap
 
 Depending on the CEP implementation/system used, those structures could be represented using many different programming languages or configuration mechanisms, such as XML elements, Java classes or Hashmaps (such as with Esper \[25], which supports all of these formats). The event types would then be registered into the CEP engine(s), so CEP rules could reference them.
 
-![](<../.gitbook/assets/5 (1).png>)
+![](../.gitbook/assets/5.png)
 
 After the event types have been defined, CEP rules referencing those types can be registered into the CEP engine(s). The code snippets presented in Figure 10, written using the Event Processing Language (EPL), exemplify the CEP rules of the EPAs presented in the fire detection scenario. The rules reference the above event types, assuming they have already been registered into the same CEP engine(s).
 
-![](<../.gitbook/assets/6 (1).png>)
+![](../.gitbook/assets/6.png)
 
 Understanding all aspects of the EPL language is not in the scope of this article, so in the following we a brief summary of the above rules: The Smoke Detected EPA rule generates a complex event, named SmokeDetected, every time a SmokeSensor event with the smokeDetected property set to true is selected from the SmokeDetected stream in a specified time window. The High Temperature EPA rule generates a complex event, named HighTemperature, every time a TemperatureSensor event with the temperature value greater than a specified value is selected from the TemperatureSensor stream in a specified time window. The Fire Detected EPA rule generates a complex event, named FireDetected, every time both SmokeDetected and HighTemperature events, with the same roomId, are selected from their streams.
 

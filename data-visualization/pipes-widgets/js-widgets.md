@@ -6,7 +6,7 @@ description: >-
 
 # JSX Widgets
 
-![](<../../.gitbook/assets/image (71).png>)
+![](<../../.gitbook/assets/image (122).png>)
 
 The **JSX Markup** is a javascript module definition. This module can evaluate or export  the desired value.\
 \
@@ -41,6 +41,6 @@ export default function MyWidget (props) {
 
 There is a recommended structure provided by the editor, it has event handling and rendering optimizations.
 
-![](<../../.gitbook/assets/image (78).png>)
+![](<../../.gitbook/assets/image (120).png>)
 
 See [https://platform.intelie.com/developers/exposed-javascript-modules](https://platform.intelie.com/developers/exposed-javascript-modules) to check which libraries are available to use on JSX Widget code.

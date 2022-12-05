@@ -10,7 +10,7 @@ description: >-
 
 It is advised to create a **shared** folder within your project, like so:
 
-![Suggested directory structure](<../../../.gitbook/assets/image (50).png>)
+![Suggested directory structure](<../../../.gitbook/assets/image (88).png>)
 
 ### Exposing the entire "shared" directory
 
@@ -48,7 +48,7 @@ That's it! Your modules are ready to be required by another plugin's web applica
 
 ### Example result
 
-![](<../../../.gitbook/assets/image (41).png>)
+![](<../../../.gitbook/assets/image (87).png>)
 
 Before importing from `plugin-example` there are some configurations needed to be set up.
 

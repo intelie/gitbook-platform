@@ -33,4 +33,4 @@ The REST endpoint will be prefixed with the name chosen for your plugin, in this
 
 Live shows some details at plugin listings that enables the verification of which JAX-RS services were registered at plugin startup as shown below.
 
-![Messages of recently uploaded plugin indicating JAX-RS service at some fresh new endpoint](<../../.gitbook/assets/image (48).png>)
+![Messages of recently uploaded plugin indicating JAX-RS service at some fresh new endpoint](<../../.gitbook/assets/image (131).png>)

@@ -42,7 +42,7 @@ This functionality is provided by the **live-exploratory-viz** plugin. It is ava
     `=> @set 6 as __markerRadius` \
     `=> value, __color, __markerSymbol, __markerRadius by category`
 
-![](<../../.gitbook/assets/image (85).png>)
+![](<../../.gitbook/assets/image (103).png>)
 
 * Possible values of `__markerSymbol` are `'circle'`, `'square'`,`'diamond'`, `'triangle'` and `'triangle-down'.`
 *   For correct group creation, these variables must always be grouped in the query pipes by the by clause, like:

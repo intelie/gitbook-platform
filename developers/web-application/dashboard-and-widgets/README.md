@@ -8,7 +8,7 @@ description: >-
 
 Live widely supports the concept of Dashboard and Widgets. A Dashboard organizes a set of charts instances which implementations are named a Live Widget.
 
-![Example of built-in dashboard for System Monitoring in Live Platform](<../../../.gitbook/assets/image (14).png>)
+![Example of built-in dashboard for System Monitoring in Live Platform](<../../../.gitbook/assets/image (164).png>)
 
 Live Widgets could be assume one of these kinds and could be mixed at the same Dashboard:
 
@@ -16,7 +16,7 @@ Live Widgets could be assume one of these kinds and could be mixed at the same D
 2. HTML/SVG Widget
 3. Channels Widgets (available only in LiveRig)
 
-![New charts available in Live Platform (with LiveRig plugins installed)](../../../.gitbook/assets/new-charts-explained.png)
+![New charts available in Live Platform (with LiveRig plugins installed)](<../../../.gitbook/assets/new-charts-explained (1).png>)
 
 Live has many APIs to help developers to build their own Dashboards and Widgets. Many of them use D3JS and many other great tools to create stunning applications for Drilling and Industrial Solutions.
 
@@ -24,7 +24,7 @@ Live has many APIs to help developers to build their own Dashboards and Widgets.
 
 The very first and most common kind of Live Widgets are the Pipes Charts. The [Data Visualization](../../../data-visualization/pipes-widgets/) section shows some examples of built-in Pipes Widgets implementations in Live. They are available to use at side toolbar of the widget editor.
 
-![Built-in pipes charts provided in Live Platform](<../../../.gitbook/assets/image (55).png>)
+![Built-in pipes charts provided in Live Platform](<../../../.gitbook/assets/image (158).png>)
 
 ### HTML/SVG Widgets
 

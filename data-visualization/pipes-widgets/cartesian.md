@@ -4,7 +4,7 @@ The cartesian chart supports plotting 2D data. It is more generic than the tempo
 
 In cartesian charts, it is mandatory to define which is the variable to be plotted on the X axis. All other variables will be plotted on the Y axis.
 
-![Defining the variable on the X axis](<../../.gitbook/assets/image (101).png>)
+![Defining the variable on the X axis](<../../.gitbook/assets/image (33).png>)
 
 The Pipes query below would populate the chart on this example.
 

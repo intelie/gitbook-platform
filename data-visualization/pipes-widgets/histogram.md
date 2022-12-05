@@ -80,7 +80,7 @@ There is also a histogram chart type available on "query based charts", more spe
     `=> normrandom(1, 0.1) as x every min` \
     `=> binsCalculator(x) over last 24 hours`
 
-![binsCalculator return](<../../.gitbook/assets/image (121).png>)
+![binsCalculator return](<../../.gitbook/assets/image (23).png>)
 
 *   As output, binsCalculator will return three calculated values. The first value is the result of the Freedman-Diaconis’ formula, the second value is the result of the Sturges’ formula, and the third is the result of the Scott’ formula.
 
@@ -89,24 +89,24 @@ There is also a histogram chart type available on "query based charts", more spe
   `=> normrandom(1, 0.1) as x every min` \
   `=> histogram(x, 0.5, 1.5, 18) over last 24 hours`
 
-![Histogram with 18 bins](<../../.gitbook/assets/image (168).png>)
+![Histogram with 18 bins](<../../.gitbook/assets/image (74).png>)
 
 `=> normrandom(1, 0.1) as x every min` \
 `=> histogram(x, 0.5, 1.5, 10) over last 24 hours`
 
-![Histogram with 10 bins](<../../.gitbook/assets/image (31).png>)
+![Histogram with 10 bins](<../../.gitbook/assets/image (123).png>)
 
 `=> normrandom(1, 0.1) as x every min` \
 `=> histogram(x, 0.5, 1.5, 14) over last 24 hours`
 
-![Histogram with 14 bins](<../../.gitbook/assets/image (133).png>)
+![Histogram with 14 bins](<../../.gitbook/assets/image (7).png>)
 
 * As mentioned before, the histogram chart type can handle a query that outputs a seq of bin object:\
   `=> normrandom(1, 0.1) as x every min` \
   `=> histogram(x, 0.5, 1.5, 3) over last 24 hours` \
   `=> _->bins`
 
-![Histogram is generated normally only with the bins object](<../../.gitbook/assets/image (114).png>)
+![Histogram is generated normally only with the bins object](<../../.gitbook/assets/image (44).png>)
 
 *   Or just the array with min and count of the bins:
 
@@ -114,4 +114,4 @@ There is also a histogram chart type available on "query based charts", more spe
     `=> histogram(x, 0.5, 1.5, 3) over last 24 hours`\
     `=> _->bins |> newmap('min', _->min, 'count', _->count)`
 
-![Histogram is generated normally just using the array with min and count](<../../.gitbook/assets/image (58).png>)
+![Histogram is generated normally just using the array with min and count](<../../.gitbook/assets/image (157).png>)

@@ -4,7 +4,7 @@
 
 The access level in Intelie Live can be restricted by features (e.g. Access to Console), by entity types (e.g. reading or writing dashboards, rules, and so on), and by content (entity instances).
 
-![Permission model in Intelie Live](<../.gitbook/assets/image (123).png>)
+![Permission model in Intelie Live](<../.gitbook/assets/image (75).png>)
 
 Permissions restrict access to functionalities. They are defined at development time by the plugins or by Intelie Live itself.
 
@@ -12,7 +12,7 @@ Roles can be created on the web administration interface and contain sets of per
 
 Perspectives are groups that allow access to entities, respecting the access level defined by the permissions.
 
-![Creating a new role in Administration](<../.gitbook/assets/image (20).png>)
+![Creating a new role in Administration](<../.gitbook/assets/image (136).png>)
 
 ## User Basic Permissions
 
@@ -22,7 +22,7 @@ Some of the permissions are provided by default by the Intelie Live platform. Pl
 A user with `Manage system` permission will have the permission to view and edit any entity or feature. A user with `Console` permissin will be able to see all the data in the system.
 {% endhint %}
 
-![Depending on user permissions, more features can appear in this menu](<../.gitbook/assets/image (68).png>)
+![Depending on user permissions, more features can appear in this menu](<../.gitbook/assets/image (117).png>)
 
 | Permission                                                                                                                                                                                              |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

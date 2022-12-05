@@ -10,7 +10,7 @@ The groovy plugin is available for download on [Intelie Live Marketplace](https:
 
 It provides the capability to register and run Groovy snippets, using the same API that is available to Java.
 
-![Snippets Groovy is available under Platform Customization menu in Administration page](<../.gitbook/assets/image (47).png>)
+![Snippets Groovy is available under Platform Customization menu in Administration page](<../.gitbook/assets/image (118).png>)
 
 A Groovy snippet is limited to be a standalone piece of code, which means it is unable to declare and use other plugin dependencies. If you need to write a more advanced Groovy code, you must upload that code as a [Groovy script in Plugins administration page](../developers/plugins.md#groovy-scripts).
 
