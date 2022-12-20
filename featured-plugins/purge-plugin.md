@@ -98,11 +98,13 @@ The same collection with 11.000.000 events was used to run a real purge, deletin
 
 ## Features comparison
 
--	The classic Live purge subsystem:
-    - **does not** allow the user to schedule executions (it is only possible using a groovy script) 
-    - **does not** delivery a built-in maximum duration (again, only possible using a groovy script)
-    - **uses** a generic pipes filter instead of event type (more powerful in terms of configurability but poor in performance)
-    - **allows** the configuration of exception filters to prevent some events from being deleted
+| Feature                    | Classic Live purge | New purge plugin |
+|----------------------------|:-:|:--:|
+| Schedule purge execution   | - | ✅ |
+| Specify a maximum duration | - | ✅ |
+| Reduce the memory footprint and cpu usage on Live | - | ✅ |
+| Specify any pipes filter on rule expression | ✅ | - |
+| Specify event type (or datasource) exceptions from purging | ✅ | - |
 
 ## Planned features for upcoming version
 
