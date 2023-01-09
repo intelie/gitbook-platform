@@ -94,6 +94,7 @@
 ## Developers
 
 * [Plugins](developers/plugins.md)
+* [Packages](developers/packages.md)
 * [Backend API](developers/backend-api/README.md)
   * [Lookup Tables](developers/backend-api/lookup-tables.md)
   * [Extensions](developers/backend-api/extensions.md)
