@@ -1,6 +1,6 @@
 # Packages
 
-A package is a plugin that defines a list of features (such as dashboards, datasources etc.) that can be installed by an Live admin user. It also defines a list of required identified channels and plugins. Its file structure is shown below.:
+A package is a plugin that defines a list of features (such as dashboards, datasources etc.) that can be installed by an Live admin user. It also defines a list of required identified channels and plugins. These definitions should be stored inside a manifest file, that can be either yaml or json. An example for a package source structure is shown below:
 
 * live-plugins/plugin-my-package
   * pom.xml
@@ -8,6 +8,8 @@ A package is a plugin that defines a list of features (such as dashboards, datas
         * manifest.yaml
 
 All packages require the [plugin-package-manager](https://marketplace.intelie.com/artifact/plugin-package-manager). Without it, Live will not recognize a package plugin as a package and will not allow the admin user to install the features.
+
+At the moment that a package is installed, the features are not installed automatically. Some of them may require manual configuration. For example, before installing a dashboard, we need to define its perspective.
 
 ## The package manager plugin
 The package manager plugin requires Live 3.29.0 or newer, and adds a new section to the admin screen. In this section, all installed packages are listed:
@@ -18,7 +20,7 @@ Accessing a package, we can visualize its details, as well as activate and deact
 
 ![image](https://user-images.githubusercontent.com/17753656/211353467-c98a89a5-2578-48ea-a016-23f7c5fc3e57.png)
 
-Every feature installed by a package can't be edited.
+Package manager plugin is not responsible for restricting access to installed objects, at the moment, installed entities will be responsible for permission semantics. At the moment, Live core entities, as well as JS, CSS and Groovy snippets, cannot be edited when created by a plugin
 
 Packaging also allows the package creator to define a feature README (using markdown) and its version. It's also possible to register the changelog, but it isn't displayed at the user interface yet.
 
@@ -38,6 +40,8 @@ CSS snippets *
 IMPORTANT: If a package contains a JS or a CSS snippets it must require the [web snippets plugin](https://marketplace.intelie.com/artifact/plugin-websnippets). If it contains a Groovy Snippet, it should require the [plugin-groovy](https://marketplace.intelie.com/artifact/plugin-groovy/). See more about dependecies at required plugins section.
 {% endhint %}  
 
+Package manager exposes the `EntitiyRegistryService` service, that allows other plugins to register new entities types `registerEntityType(@NotNull Live live, @NotNull EntityMapper mapper)` .
+
 ## Dependecies
 
 ### Required plugins
@@ -45,7 +49,7 @@ All packages require plugin package manager. Without it, Live will not recognize
 
 As already mentioned, if a package contains a JS or a CSS snippet, it should require the [plugin-websnippets](https://marketplace.intelie.com/artifact/plugin-websnippets). If it contains a Groovy snippet, it should require the [plugin-groovy](https://marketplace.intelie.com/artifact/plugin-groovy/).
 
-These dependencies should be described at the manifest.yaml file. The following example shows a package that depends on plugin-package-manager, plugin-websnippets and plugin-feed.
+These dependencies should be described at the manifest file. The following example shows a package that depends on plugin-package-manager, plugin-websnippets and plugin-feed.
 
 ```
 name: ${project.artifactId}
@@ -59,7 +63,7 @@ requirePlugins:
 ```
 
 ### Identified channels
-Packages may require certain channel identifications to be configured in Live. This dependencies should also be described at the manifest.yaml, using the requiredEntities. For example:
+Packages may require certain channel identifications to be configured in Live. This dependencies should also be described at the manifest, using the requiredEntities. For example:
 
 ```
 name: ${project.artifactId}
@@ -86,7 +90,7 @@ actions:
 
 ## Adding features
 
-All features can be defined by the manifest.yaml file. A example is shown bellow:
+All features can be defined by the manifest file. A example is shown bellow:
 
 {% hint style="info" %}
 IMPORTANT: The version 4 UUID must be generate a must not be reused. 
