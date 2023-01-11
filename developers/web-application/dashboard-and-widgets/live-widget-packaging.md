@@ -1,6 +1,6 @@
 # Live Widget Packaging
 
-### JAR Packages
+### JAR
 
 Since Live Widget is mainly a frontend application the creation of a full Java plugin is not necessary but could be convenient when developing Widget Query Handlers and additional features as Web Services as well. As discussed in [WebSetup](../../backend-api/web-setup.md) section of [Backend API](../../backend-api/), the Java Main class needs only the following:
 
@@ -16,7 +16,7 @@ public class Main implements LivePlugin {
 }
 ```
 
-### ZIP Packages with manifest.json
+### ZIP with manifest.json
 
 The developer could create a ZIP containing a `manifest.json` and ships its`target/bundle.js` (typically compiled to ES6 using [BabelJS](https://babeljs.io) or other transpiler) on the zip file as described in [Plugins](../../plugins.md).
 
