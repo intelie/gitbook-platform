@@ -20,7 +20,7 @@ Accessing a package, we can visualize its details, as well as activate and deact
 
 ![image](https://user-images.githubusercontent.com/17753656/211353467-c98a89a5-2578-48ea-a016-23f7c5fc3e57.png)
 
-Package manager plugin is not responsible for restricting access to installed objects, at the moment, installed entities will be responsible for permission semantics. At the moment, Live core entities, as well as JS, CSS and Groovy snippets, cannot be edited when created by a plugin
+Package manager plugin is not responsible for restricting access to installed objects, at the moment, installed entities will be responsible for permission semantics. At the moment, Live core features, as well as JS, CSS and Groovy snippets, cannot be edited when created by a plugin.
 
 Packaging also allows the package creator to define a feature README (using markdown) and its version. It's also possible to register the changelog, but it isn't displayed at the user interface yet.
 
@@ -40,7 +40,8 @@ CSS snippets *
 IMPORTANT: If a package contains a JS or a CSS snippets it must require the [web snippets plugin](https://marketplace.intelie.com/artifact/plugin-websnippets). If it contains a Groovy Snippet, it should require the [plugin-groovy](https://marketplace.intelie.com/artifact/plugin-groovy/). See more about dependecies at required plugins section.
 {% endhint %}  
 
-Package manager exposes the `EntitiyRegistryService` service, that allows other plugins to register new entities types `registerEntityType(@NotNull Live live, @NotNull EntityMapper mapper)` .
+## Extending plugin-package-manager to add more features
+It's also possible to add more features using the exposed `EntitiyRegistryService`. It allows other plugins to add new entities types using `registerEntityType(@NotNull Live live, @NotNull EntityMapper mapper)`.
 
 ## Dependecies
 
