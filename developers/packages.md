@@ -41,7 +41,7 @@ IMPORTANT: If a package contains a JS or a CSS snippets it must require the [web
 {% endhint %}  
 
 ## Extending plugin-package-manager to add more features
-It's also possible to add more features using the exposed `EntitiyRegistryService`. It allows other plugins to add new entities types using `registerEntityType(@NotNull Live live, @NotNull EntityMapper mapper)`.
+Package manager plugin exposes the `EntitiyRegistryService` service, that allows other plugins to register new entities types and, therefore, more features.
 
 ## Dependecies
 
