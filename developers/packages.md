@@ -14,11 +14,11 @@ At the moment that a package is installed, the features are not installed automa
 ## The package manager plugin
 The package manager plugin requires Live 3.29.0 or newer, and adds a new section to the admin screen. In this section, all installed packages are listed:
 
-![image](https://user-images.githubusercontent.com/17753656/211353399-95f939bf-9751-4fb7-924a-ac9ef03fd6b9.png)
+![Package screen](<../.gitbook/assets/image (175).png>)
 
 Accessing a package, we can visualize its details, as well as activate and deactivate its features. There is also the possibility to inactivate the entire package, providing a way to hide all installed features at once, without losing its configuration.
 
-![image](https://user-images.githubusercontent.com/17753656/211353467-c98a89a5-2578-48ea-a016-23f7c5fc3e57.png)
+![Hello World package](<../.gitbook/assets/image (176).png>)
 
 Package manager plugin is not responsible for restricting access to installed objects, at the moment, installed entities will be responsible for permission semantics. At the moment, Live core features, as well as JS, CSS and Groovy snippets, cannot be edited when created by a plugin.
 
