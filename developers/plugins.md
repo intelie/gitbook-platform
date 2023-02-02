@@ -6,7 +6,7 @@ A plugin can be either:
 
 * a JAR
 * a ZIP
-* a ZIP with a `manifest.json`
+* a ZIP with a `manifest.json` or `manifest.yaml`
 * a Groovy script
 * a JDBC driver
 
@@ -28,7 +28,7 @@ In that case, a ZIP may contain a folder called `webcontent`. The files in this 
 
 Plugins assembled as zip plugins are also labeled CONTENT\_NO\_MANIFEST plugins.
 
-### Zip plugins with a manifest.json
+### Zip plugins with a manifest.json or manifest.yaml
 
 Additionally to ordinary zip plugins a plugin can contain both `webcontent`folder as `manifest.json` to indicate to Live a set of manifest actions to perform. Plugins assembled as zip plugins including a manifes.json are also labeled CONTENT plugins.
 
@@ -91,7 +91,7 @@ live.web().addService('query-providers', new SomeService(live))
 
 The comment `//@liveplugin` must be present at any line of the script in order to be understood as a plugin. Other special comments are supported as following:
 
-* Plugin name and version, e.g.:`//@liveplugin MyVeryFirstService@1.0.0`
+* Plugin name and version, e.g.: `//@liveplugin MyVeryFirstService@1.0.0` or  e.g.:`//@liveplugin MyVeryFirstService@[1.0, 2.0)`
 * Plugin dependencies, e.g.: `//@requirePlugins plugin-groovy, plugin-ldap;optional`
 * Live platform version expected, e.g.: `//expectedLiveVersion 2.25`
 
