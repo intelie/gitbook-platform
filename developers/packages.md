@@ -27,14 +27,14 @@ Packaging also allows the package creator to define a feature README (using mark
 ## Supported features
 The package manager allows to create packages containing the following features:
 
-Dashboards
-Datasources
-Groovy Snippets *
-Lookup Tables
-Pipes Modules
-Rules
-JS snippets *
-CSS snippets *
+- Dashboards
+- Datasources
+- Groovy Snippets *
+- Lookup Tables
+- Pipes Modules
+- Rules
+- JS snippets *
+- CSS snippets *
 
 {% hint style="info" %}
 IMPORTANT: If a package contains a JS or a CSS snippets it must require the [web snippets plugin](https://marketplace.intelie.com/artifact/plugin-websnippets). If it contains a Groovy Snippet, it should require the [plugin-groovy](https://marketplace.intelie.com/artifact/plugin-groovy/). See more about dependecies at required plugins section.
