@@ -28,6 +28,7 @@ Packaging also allows the package creator to define a feature README (using mark
 The package manager allows to create packages containing the following features:
 
 - Dashboards
+- Datasources
 - Lookup Tables
 - Pipes Modules
 - Rules
