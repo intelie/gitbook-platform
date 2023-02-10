@@ -1,6 +1,6 @@
 # Queries
 
-Intelie Live performs queries, possibly using different providers, to analyze data. The default query provider is [Intelie Pipes](https://pipes.intelie.com), although queries can be executed in other systems and sub-systems.
+INTELIE Live performs queries, possibly using different providers, to analyze data. The default query provider is [INTELIE Pipes](https://pipes.intelie.com), although queries can be executed in other systems and sub-systems.
 
 Queries are performed in two phases: First, they are run in all storage providers available, respecting the time period defined in `span` parameter. When the historical query ends, then a real time query starts to wait for new data.
 

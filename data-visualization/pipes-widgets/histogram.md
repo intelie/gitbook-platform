@@ -89,7 +89,7 @@ There is also a histogram chart type available on "query based charts", more spe
   `=> normrandom(1, 0.1) as x every min` \
   `=> histogram(x, 0.5, 1.5, 18) over last 24 hours`
 
-![Histogram with 18 bins](<../../.gitbook/assets/image (74).png>)
+![Histogram with 18 bins](<../../.gitbook/assets/image (30).png>)
 
 `=> normrandom(1, 0.1) as x every min` \
 `=> histogram(x, 0.5, 1.5, 10) over last 24 hours`
