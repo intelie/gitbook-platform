@@ -138,6 +138,7 @@
 ## Features
 
 * [Access Permission](features/access-permision.md)
-* [WebApp Metrics](features/webapp-metrics.md)
+* [Datasources](features/datasources.md)
 * [Export Dashboard](features/export-dashboard.md)
 * [Partial Indexes](features/partial-indexes.md)
+* [WebApp Metrics](features/webapp-metrics.md)
