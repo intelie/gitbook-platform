@@ -8,6 +8,95 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
+## 3.28.2 (January 27, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.27.3
+
+## 3.27.3 (January 27, 2023)
+
+### Fixes and improvements
+
+* Fixes a bug that prevents the groovy snippet active radio button from working
+* Fix fit integration icon regardless its size
+* Fix user without console access still see the Console icon
+
+## 3.26.7 (January 27, 2023)
+
+### Fixes and improvements
+
+* Fixed dashboard store internal state \_params.mode is inconsistent with url
+* Fixed 403 response when CSRF not found is not handled by web app
+
+## 3.28.1 (December 27, 2022)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.27.2
+
+## 3.27.2 (December 27, 2022)
+
+### Fixes and improvements
+
+* Cumulated chances from patch 3.26.6
+
+## 3.26.6 (December 27, 2022)
+
+### New Features
+
+* Allow admin users to log out through the failsafe screen
+* Fix a bug that prevents login though the failsafe screen if the username or the password contains special chars
+* Prevent failsafe login from displaying authentication alert
+
+### Fixes and improvements
+
+* Fix parts of a chart's tooltip text are unreadable
+* Support darkmode for pipes console
+
+## [3.28.0](broken-reference) (December 02, 2022)
+
+### New Features
+
+* Update Live SVG logo image
+* Create new registry to show release tag in plugins list
+
+### Fixes and improvements
+
+* Remove Company Logo fallback image and background
+* Fix plugins upload shouldn't reload entire application
+
+## 3.27.1 (December 02, 2022)
+
+### Fixes and improvements
+
+* Enable easier testing of Live versions before their releases
+* Cumulated changes from patch 3.26.4
+
+## 3.26.4 (December 02, 2022)
+
+### Fixes and improvements
+
+* Fix widget remains with local/user config when in edit mode
+* Cumulated changes from patch 3.25.4
+
+## 3.25.4 (December 02, 2022)
+
+### Fixes and improvements
+
+* Fix rule's severity override is not reflected in emails/notifications
+* Fix exception occurs in reset password when user's name is blank
+* Fix widget query not restarted when switching view/edit mode
+* Fix sync the `NumberFormat` prop value within `FormGroup`
+* Fix does not apply internationalization on the span label when clicking on any of the arrows
+* Fix crosshair misalignment between widgets due to changes in the configuration of the internal space
+* Fix the pipes widget column chart is showing a point on mouse over
+* Fix parts of a chart's tooltip text are unreadable
+* Fix dashboard store internal state \_params.mode is inconsistent with url
+* Fix error when updating datasources and rules through pipes console
+* Fix unable to use the plugins search bar or changelog while uploading plugins
+* Fix tabs should not scroll with content inside modal
+
 ## [3.27.0](3.27.0.md) (November 11, 2022)
 
 ### New Features

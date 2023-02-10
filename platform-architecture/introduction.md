@@ -2,24 +2,24 @@
 
 ## Service providers
 
-The Intelie Live platform classifies its extenstions in the following six different **roles**. Generally, there are many simultaneous instances of those extensions running.
+The INTELIE Live platform classifies its extenstions in the following six different **roles**. Generally, there are many simultaneous instances of those extensions running.
 
 ### Query providers
 
-Query providers serve as data processors for both real-time and historical data. A query provider can be either a remote provider or a local provider. When a remote provider is used, it usually generates new data for Intelie LIVE (e.g. using a database integration as a query provider allows to query this database directly from the web interface). Local providers assume data is received and process it.
+Query providers serve as data processors for both real-time and historical data. A query provider can be either a remote provider or a local provider. When a remote provider is used, it usually generates new data for INTELIE Live (e.g. using a database integration as a query provider allows to query this database directly from the web interface). Local providers assume data is received and process it.
 
 Common examples for remote providers are Google Analytics and Twitter, and for local providers Pipes and Esper.
 
 ### Storage providers
 
-Storage providers add to the platform the ability to connect to remote systems to persist data. This data can be used by Intelie Live itself or by other systems. Intelie Live can use one or many integrations as databases at a time. Those systems must be NoSQL or schema-less databases. Common integrations are MongoDB, MariaDB and PostgreSQL.
+Storage providers add to the platform the ability to connect to remote systems to persist data. This data can be used by INTELIE Live itself or by other systems. INTELIE Live can use one or many integrations as databases at a time. Those systems must be NoSQL or schema-less databases. Common integrations are MongoDB, MariaDB and PostgreSQL.
 
 {% hint style="info" %}
 It is important to note that Live does not require an enabled storage integration to work in real time.
 {% endhint %}
 
 {% hint style="info" %}
-Besides the storage system, Intelie LIVE implements a persistent queue and a cache on the local disk.
+Besides the storage system, INTELIE Live implements a persistent queue and a cache on the local disk.
 {% endhint %}
 
 ### Data input providers

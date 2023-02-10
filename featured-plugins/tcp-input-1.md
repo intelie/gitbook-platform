@@ -4,7 +4,7 @@ description: Enables the data ingestion through a TCP input port
 
 # TCP Input
 
-The TCP input plugin is available for download on [Intelie Live Marketplace](https://marketplace.intelie.com/artifact/plugin-tcpinput).
+The TCP input plugin is available for download on [INTELIE Live Marketplace](https://marketplace.intelie.com/artifact/plugin-tcpinput).
 
 ![Example of basic TCP Input configuration](<../.gitbook/assets/image (82).png>)
 

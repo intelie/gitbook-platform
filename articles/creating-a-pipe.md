@@ -1,6 +1,6 @@
 # Creating a pipe
 
-This article shows how to implement the `Swinging Door` dynamic compression algorithm as a `pipe` on top of Pipes, using Intelie Live API.
+This article shows how to implement the `Swinging Door` dynamic compression algorithm as a `pipe` on top of Pipes, using INTELIE Live API.
 
 ```java
 @Export("@compress.swingingDoor")

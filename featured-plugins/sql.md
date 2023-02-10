@@ -4,7 +4,7 @@ description: Enables the data crawling from ordinary SQL databases as events
 
 # SQL
 
-The SQL plugin is available for download on [Intelie Live Marketplace](https://marketplace.intelie.com/artifact/plugin-sql) and is composed by two main components which implements **Query Provider** and **Storage Provider** features. Those features can be enabled by selecting the roles when creating a new instance in Integrations menu at administration page.
+The SQL plugin is available for download on [INTELIE Live Marketplace](https://marketplace.intelie.com/artifact/plugin-sql) and is composed by two main components which implements **Query Provider** and **Storage Provider** features. Those features can be enabled by selecting the roles when creating a new instance in Integrations menu at administration page.
 
 ![Roles provided by Live SQL Plugin](<../.gitbook/assets/image (79).png>)
 

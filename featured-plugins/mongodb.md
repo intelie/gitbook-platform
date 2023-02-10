@@ -6,7 +6,7 @@ description: Enables the data crawling from MongoDB document stores as events
 
 ## Storage Provider
 
-Live delivers the capability of storing events as documents in MongoDB servers. The MongoDB Storage Provider is the most deployed plugin in our customer environments.
+INTELIE Live delivers the capability of storing events as documents in MongoDB servers. The MongoDB Storage Provider is the most deployed plugin in our customer environments.
 
 The event type for Live will become the collection name for the documents. The timestamp field will be used as the default ordering criteria.&#x20;
 

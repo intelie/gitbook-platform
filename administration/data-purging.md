@@ -27,4 +27,4 @@ In general, in most of installations the administrators can purge the following 
 
 Below the example of how to configure expressions for collections that can be purged for period older than 3 months:
 
-![Purge rules for internal collections](<../.gitbook/assets/image (167).png>)
+![Purge rules for internal collections](<../.gitbook/assets/image (50).png>)

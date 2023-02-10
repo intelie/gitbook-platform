@@ -1,6 +1,6 @@
 # Creating an aggregation
 
-This article shows an example of creating a function to calculate the harmonic mean of a sequence in Intelie Pipes.
+This article shows an example of creating a function to calculate the harmonic mean of a sequence in INTELIE Pipes.
 
 ## The aggregation
 

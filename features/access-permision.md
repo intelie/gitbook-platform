@@ -12,7 +12,7 @@ Roles can be created on the web administration interface and contain sets of per
 
 Perspectives are groups that allow access to entities, respecting the access level defined by the permissions.
 
-![Creating a new role in Administration](<../.gitbook/assets/image (136).png>)
+![Creating a new role in Administration](<../.gitbook/assets/image (77).png>)
 
 ## User Basic Permissions
 

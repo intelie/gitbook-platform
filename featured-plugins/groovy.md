@@ -6,7 +6,7 @@ description: >-
 
 # Groovy support
 
-The groovy plugin is available for download on [Intelie Live Marketplace](https://marketplace.intelie.com/artifact/plugin-groovy).
+The groovy plugin is available for download on [INTELIE Live Marketplace](https://marketplace.intelie.com/artifact/plugin-groovy).
 
 It provides the capability to register and run Groovy snippets, using the same API that is available to Java.
 
