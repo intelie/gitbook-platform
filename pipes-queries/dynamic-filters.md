@@ -1,8 +1,8 @@
 # Dynamic filters
 
-Intelie Live supports that the Pipes filters react to dynamic parameters of a query. This is useful to support interfaces that allow the user to change the filters without the need of changing the query expression.
+INTELIE Live supports that the Pipes filters react to dynamic parameters of a query. This is useful to support interfaces that allow the user to change the filters without the need of changing the query expression.
 
-The dynamic values are passed in the `lookupValues` argument of the Query object. This argument is a  `map<string, list<string>>`, where the key is the name of a Lookup Table and the value is a list of the desired keys in that Lookup Table. Intelie Live will apply to the query the values corresponding to each of those keys.
+The dynamic values are passed in the `lookupValues` argument of the Query object. This argument is a  `map<string, list<string>>`, where the key is the name of a Lookup Table and the value is a list of the desired keys in that Lookup Table. INTELIE Live will apply to the query the values corresponding to each of those keys.
 
 ### Lookup Tables
 
