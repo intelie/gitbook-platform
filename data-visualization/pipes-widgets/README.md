@@ -1,6 +1,6 @@
 # Pipes widgets
 
-Intelie Live provides a set of standard widgets out-of-the-box. Those widgets require Intelie Pipes for the data handling.
+INTELIE Live provides a set of standard widgets out-of-the-box. Those widgets require Intelie Pipes for the data handling.
 
 All of the widgets provide support for many layout configuration via web interface.
 
