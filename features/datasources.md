@@ -5,11 +5,13 @@ A datasource enables the end-user to create a query using any [query provider](.
 
 The most traditional approach for datasources is to use the [INTELIE Pipes Language](../pipes-queries/introduction.md) for such data processing. However, you can use other query providers such (e.g [Pipes](../pipes-queries/introduction.md), [MongoDB](../featured-plugins/mongodb.md), [SQL](../featured-plugins/sql.md) or create your own query provider to gather data from external sources.
 
-MENU DATASOURCE IMAGE GOES HERE
+![Datasource entry on configuration menu](../.gitbook/assets/configuration-datasources.png)
+
+![Datasource listing](../.gitbook/assets/datasource-list.png)
 
 Once a new datasource is created the user can choose a new event type to represent the output of such processing.
 
-DATASOURCE CREATION IMAGE GOES HERE
+![Editing a datasource](../.gitbook/assets/datasource-editing.png)
 
 A datasource may be attached to some perspective to ensure only users allowed can edit and collaborate on that data processing methodology. 
 See more about [Acess Permission](features/access-permision.md).
