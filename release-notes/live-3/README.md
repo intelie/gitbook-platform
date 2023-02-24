@@ -8,6 +8,26 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
+## 3.28.3 (February 24, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.27.4
+
+## 3.27.4 (February 24, 2023)
+
+### Fixes and improvements
+
+* Plugin dependencies field is valid even when an older than minimum required dependency is installed
+* Cumulated changes from patch 3.26.8
+
+## 3.26.8 (February 24, 2023)
+
+### Fixes and improvements
+
+* The message buffer is merging with the previous on the view mode
+* Add missing titles for "CACHE" and "PERSISTENT QUEUE" cards at admin > System and Display settings
+
 ## 3.28.2 (January 27, 2023)
 
 ### Fixes and improvements
@@ -54,7 +74,7 @@ Beginning in this version Live will start to use the [Semantic Versioning 2.0.0]
 * Fix parts of a chart's tooltip text are unreadable
 * Support darkmode for pipes console
 
-## [3.28.0](broken-reference) (December 02, 2022)
+## [3.28.0](3.28.0.md) (December 02, 2022)
 
 ### New Features
 
