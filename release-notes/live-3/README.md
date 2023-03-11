@@ -8,6 +8,35 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
+## 3.29.3 (March 10, 2023)
+
+### Fixes and improvements
+
+* Fixed an error while deleting dashboards and perspectives
+* Cumulated changes from patch 3.28.4
+
+## 3.28.4 (March 10, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.27.5
+
+## 3.27.5 (March 10, 2023)
+
+### Fixes and improvements
+
+* Add values to the axes of the "more info" chart on the alerts screen
+
+## 3.29.2 (February 24, 2023)
+
+### Fixes and improvements
+
+* Author\_user\_id is null when creating entities through the UI
+* Review error handling in web services
+* Error saving widgets without dashboard
+* Users shouldn't be able to access dashboard edit mode or its visibility modal
+* Cumulated changes from patch 3.28.3
+
 ## 3.28.3 (February 24, 2023)
 
 ### Fixes and improvements
@@ -34,6 +63,13 @@ Beginning in this version Live will start to use the [Semantic Versioning 2.0.0]
 
 * Cumulated changes from patch 3.27.3
 
+## 3.29.1 (January 27, 2023)
+
+### Fixes and improvements
+
+* Volume chart in monitoring page does not show label for current day
+* Out of memory error in enviroments with many users
+
 ## 3.27.3 (January 27, 2023)
 
 ### Fixes and improvements
@@ -48,6 +84,28 @@ Beginning in this version Live will start to use the [Semantic Versioning 2.0.0]
 
 * Fixed dashboard store internal state \_params.mode is inconsistent with url
 * Fixed 403 response when CSRF not found is not handled by web app
+
+## [3.29.0](3.29.0.md) (December 29, 2022)
+
+### New Features
+
+* Make Resource Classes Use New Plugin Managed Entities Service
+* User should be prompted before closing tab / browser during plugin upload
+* Allow storage implementations to send warning events to the client
+* Create new registry to show release tag in plugins list
+* Support uploading a zip of plugins
+* Allow install a zip of plugins&#x20;
+
+### Fixes and improvements
+
+* Plugins upload shouldn't reload entire application
+
+## 3.27.1 (December 02, 2022)
+
+### Fixes and improvements
+
+* Enable easier testing of Live versions before their releases
+* Cumulated changes from patch 3.26.4
 
 ## 3.28.1 (December 27, 2022)
 
