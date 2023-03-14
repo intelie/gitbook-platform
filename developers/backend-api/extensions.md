@@ -309,4 +309,36 @@ throws Exception {
 }
 // ...
 ```
+
+## Appendix: Finding all extensions created
+
+In case you want to find all extensions created by the users of your plugin or any other, you may find in `getContext()` in live API. Remember: this data is also available in `https://foo.intelie.com/rest/extension`
+
+```java
+//...
+public final class AllLiveExtensions {
+    private final EntityList extensions;
+    @NotNull
+    private final Live live;
+
+    public final EntityList getExtensions() {
+        return this.extensions;
+    }
+
+    @NotNull
+    public final Live getLive() {
+        return this.live;
+    }
+
+    public AllLiveExtensions(@NotNull Live live) {
+        this.live = live;
+        this.extensions = live.data().getContext().find((Specification)(new AllExtensions()));
+        
+    }
+}
+//...
+```
+
+ Since `context` belongs to another section we are not getting into its details.
+
 {% endcode %}
