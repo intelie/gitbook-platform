@@ -316,26 +316,8 @@ In case you want to find all extensions created by the users of your plugin or a
 
 ```java
 //...
-public final class AllLiveExtensions {
-    private final EntityList extensions;
-    @NotNull
-    private final Live live;
-
-    public final EntityList getExtensions() {
-        return this.extensions;
-    }
-
-    @NotNull
-    public final Live getLive() {
-        return this.live;
-    }
-
-    public AllLiveExtensions(@NotNull Live live) {
-        this.live = live;
-        this.extensions = live.data().getContext().find((Specification)(new AllExtensions()));
-        
-    }
-}
+EntityContext entityContext = live.data().getContext(); // Live API EntityContext wraps the access to Live model persistence
+entityContext.find(new AllExtensions()); // list all extensions configured (active or inactive) in the Live runtime
 //...
 ```
 
