@@ -317,8 +317,13 @@ In case you need to list all extensions created, you may use the `live.data().ge
 
 ```java
 //...
-EntityContext entityContext = live.data().getContext(); // Live API EntityContext wraps the access to Live model persistence
-entityContext.find(new AllExtensions()); // list all extensions configured (active or inactive) in the Live runtime
+import net.intelie.live.EntityContext;
+import net.intelie.live.queries.AllExtensions;
+//...
+// Live API EntityContext wraps the access to Live model persistence
+EntityContext entityContext = live.data().getContext();
+// list all extensions configured (active or inactive) in the Live runtime
+entityContext.find(new AllExtensions());
 //...
 ```
 
