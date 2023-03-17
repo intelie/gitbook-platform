@@ -107,36 +107,18 @@ The same collection with 11.000.000 events was used to run a real purge, deletin
 
 | Feature                                                    | Classic Live purge | New purge plugin |
 | ---------------------------------------------------------- | :----------------: | :--------------: |
-| Schedule purge execution                                   |          -         |         ✅        |
-| Specify a maximum duration                                 |          -         |         ✅        |
-| Reduce the memory footprint and cpu usage on Live          |          -         |         ✅        |
-| Specify any pipes filter on rule expression                |          ✅         |         -        |
-| Specify event type (or datasource) exceptions from purging |          ✅         |         -        |
+| Schedule purge execution                                   |          -         |         ✅ (1.0+)      |
+| Reduce the memory footprint and cpu usage on Live          |          -         |         ✅ (1.0+)      |
+| Specify a maximum duration                                 |          -         |         ✅ (1.1+)      |
+| Specify wildcards on the event type name                   |          ✅        |         ✅ (1.2+)      |
+| Specify any pipes filter on rule expression                |          ✅        |         -        |
+| Specify event type (or datasource) exceptions from purging |          ✅        |         ✅ (1.2+)      |
+| Cancel the purge/simulation execution                      |          ✅        |         ✅ (1.2+)      |
+| Free space estimation                                      |          ✅        |         ✅ (1.3+)      |
 
-### Planned features for upcoming version
-
-#### Support to wildcards (1.2.0)
-
-At the moment (version 1.1.0), the event type of a purge rule only accepts a string representing a real event type. We are working on the wildcard support, making it possible to delete more than one event type on one rule.
-
-#### Keep rules (1.2.0)
-
-The classic purge system at Live core has the exception concept, to prevent event types from being deleted. We will implement keep rules to substitute this feature, making it more intuitive. This feature will be useful when used together with wildcard on delete rules.
-
-#### Space freed estimation (1.2.0)
-
-The classic purge system has information about how much space is being freed when running a purge task. We plan to add this feature to our plugin.
-
-#### Cancel button on Purge History (1.2.0)
-
-Currently it’s only possible to stop a purge task on the Purge page, but once a user leaves, it’s not possible to stop it. A cancel button will be added on the Purge History page to let the user stop running purge tasks.
-
-#### Script to migrate rules (1.2.0)
-
-A script to migrate rules from the classic purge system to our plugin is being developed.
 
 ## Limitations
 
 * It is not possible to estimate how much time a purge execution will take to finish based on its rules.
 * The `__plugin_purge` events are emitted after each rule is executed, so the user will not notice any changes on the interface until a rule is finished. If a rule takes too long, the progress will also take this time to be updated.
-* The purge task can’t be canceled if a rule is already being executed, it needs to wait until the current rule execution is finished and then the process is canceled. If a rule takes too long, the cancel will not be noticed immediately.
+* The purge task can’t be canceled if a rule is already started its execution. The user is forced to wait until the current rule execution is finished and then the overall process will be canceled. If a rule takes too long, the cancel will not be noticed immediately.
