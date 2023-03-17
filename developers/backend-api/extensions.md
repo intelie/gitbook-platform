@@ -323,4 +323,6 @@ entityContext.find(new AllExtensions()); // list all extensions configured (acti
 
 The `EntityContext` API and Live Data API will be discussed in details in another section.
 
+{% hint style="info" %} Frontend plugins have no such API to list extensions (or generic entities). Each resource in Live REST API is protected according. For example, the `/rest/extension` endpoint list all extensions but it is restricted to Live administrative users only.  {% endhint %}
+
 {% endcode %}
