@@ -309,4 +309,20 @@ throws Exception {
 }
 // ...
 ```
+
+## Appendix: Finding all extensions created
+
+In case you need to list all extensions created, you may use the `live.data().getContext()` API and the `AllExtensions` Live facility as the criteria to query the underlay SQL database. The Live package `net.intelie.live.queries` delivers other similar facilities for all Live basic entities (e.g dashboards, datasources, plugins, perspectives, etc).
+
+```java
+//...
+EntityContext entityContext = live.data().getContext(); // Live API EntityContext wraps the access to Live model persistence
+entityContext.find(new AllExtensions()); // list all extensions configured (active or inactive) in the Live runtime
+//...
+```
+
+The `EntityContext` API and Live Data API will be discussed in details in another section.
+
+{% hint style="info" %} Frontend plugins have no such API to list extensions (or generic entities). Each resource in Live REST API is protected according. For example, the `/rest/extension` endpoint list all extensions but it is restricted to Live administrative users only.  {% endhint %}
+
 {% endcode %}
