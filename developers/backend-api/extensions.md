@@ -292,7 +292,7 @@ For instance, if something goes wrong at registration phase (or even in status m
 
 ## Appendix: Saving ships as Settings
 
-Let's make a simple modification to our tutorial Extension that enables the persistence of `ships` data using [Settings](web-setup.md) for didactic purposes of topics covered in [Web Services](web-services.md) section.
+Let's make a simple modification to our tutorial Extension that enables the persistence of `ships` data using [Settings](settings.md) for didactic purposes of topics covered in [Web Services](web-services.md) section.
 
 {% code title="SomeType.java" %}
 ```java
