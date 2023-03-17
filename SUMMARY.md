@@ -51,17 +51,6 @@
 * [Queries](platform-architecture/queries.md)
 * [Glossary](platform-architecture/glossary.md)
 
-## Featured plugins
-
-* [Annotations](featured-plugins/annotations.md)
-* [Groovy support](featured-plugins/groovy.md)
-* [Messenger](featured-plugins/messenger.md)
-* [Microsoft Teams](featured-plugins/microsoft-teams.md)
-* [MongoDB](featured-plugins/mongodb.md)
-* [Purge plugin](featured-plugins/purge-plugin.md)
-* [SQL](featured-plugins/sql.md)
-* [TCP Input](featured-plugins/tcp-input-1.md)
-
 ## Data visualization
 
 * [Pipes widgets](data-visualization/pipes-widgets/README.md)
@@ -92,6 +81,25 @@
 * [Storage Hints](pipes-queries/storage-hints.md)
 * [Execution Context](pipes-queries/execution-context.md)
 * [Event flow modifiers](pipes-queries/event-flow-modifiers.md)
+
+## Features
+
+* [Access Permission](features/access-permision.md)
+* [Datasources](features/datasources.md)
+* [Export Dashboard](features/export-dashboard.md)
+* [Partial Indexes](features/partial-indexes.md)
+* [WebApp Metrics](features/webapp-metrics.md)
+
+## Featured plugins
+
+* [Annotations](featured-plugins/annotations.md)
+* [Groovy support](featured-plugins/groovy.md)
+* [Messenger](featured-plugins/messenger.md)
+* [Microsoft Teams](featured-plugins/microsoft-teams.md)
+* [MongoDB](featured-plugins/mongodb.md)
+* [Purge plugin](featured-plugins/purge-plugin.md)
+* [SQL](featured-plugins/sql.md)
+* [TCP Input](featured-plugins/tcp-input-1.md)
 
 ## Developers
 
@@ -136,11 +144,3 @@
 * [Queries Monitoring](administration/queries-monitoring.md)
 * [Logs Monitoring](administration/logs-monitoring.md)
 * [Data Purging](administration/data-purging.md)
-
-## Features
-
-* [Access Permission](features/access-permision.md)
-* [Datasources](features/datasources.md)
-* [Export Dashboard](features/export-dashboard.md)
-* [Partial Indexes](features/partial-indexes.md)
-* [WebApp Metrics](features/webapp-metrics.md)
