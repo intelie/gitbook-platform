@@ -312,7 +312,7 @@ throws Exception {
 
 ## Appendix: Finding all extensions created
 
-In case you want to find all extensions created by the users of your plugin or any other, you may find in `getContext()` in live API. Remember: this data is also available in `https://foo.intelie.com/rest/extension`
+In case you need to list all extensions created, you may use the `live.data().getContext()` API and the `AllExtensions` Live facility as the criteria to query the underlay SQL database. The Live package `net.intelie.live.queries` delivers other similar facilities for all Live basic entities (e.g dashboards, datasources, plugins, perspectives, etc).
 
 ```java
 //...
@@ -321,6 +321,6 @@ entityContext.find(new AllExtensions()); // list all extensions configured (acti
 //...
 ```
 
- Since `context` belongs to another section we are not getting into its details.
+The `EntityContext` API and Live Data API will be discussed in details in another section.
 
 {% endcode %}
