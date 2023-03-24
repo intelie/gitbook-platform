@@ -38,7 +38,7 @@ A time field is typically mapped to be the hypertable's time column.
 ### Chunks
 
 Behind the scenes, the database performs the work of setting up and maintaining the hypertable's partitions.
-Those partitions are called "chunks", which is the smallest portion of data that can be compressed and decompressed.
+Those partitions are called "chunks", which is the **smallest portion of data that can be compressed and decompressed**.
 The chunks can be considered many child tables, which compose the hypertable.
 
 ![Hypertable chunks](<../.gitbook/assets/image (178).png>)
@@ -47,7 +47,7 @@ The chunks can be considered many child tables, which compose the hypertable.
 
 Compression reduces the amount of space taken up by your data. For some queries, it also speeds up query time, because fewer bytes need to be read from disk.
 TimescaleDB uses native compression for hypertable data. That means it doesn't need a specific file system or extra software. Compression works out-of-the-box.
-Compressed data is stored in a hybrid row-columnar format. This format works best for older data, which is queried but rarely changed.
+**Compressed data is stored in a hybrid row-columnar format**. This format works best for older data, which is queried but rarely changed.
 Newer, often-changed data should be stored in uncompressed row format.
 
 - Uncompressed Chunk:
@@ -61,32 +61,32 @@ Newer, often-changed data should be stored in uncompressed row format.
 ### Segmentation
 
 When we compress data, we might choose a column on which the data will be segmented.
-We can think of segment by column as the way data is grouped when compressed in TimescaleDB.
+We can think of segmentation column as **the way data is grouped when compressed** in TimescaleDB.
 
 In other words, each row in a compressed table must contain data about a single item.
 The column that a table is segmented by contains only a single entry, while all other columns can have multiple arrayed entries.
-For example, if a hypertable is segmented by decide ID, this is how the data will be arranged after compressed:
+For example, if a hypertable is segmented by device ID, this is how the data will be arranged after compressed:
 
 ![Segmented hypertable](<../.gitbook/assets/image (181).png>)
 
 Unlike above, each compressed row has information about a single device ID.
 This can be particularly efficient on queries that use the segmentation column in the WHERE clause, because the decompression can happen after filtering.
 
-It's important to note that segmentation columns are not compressed.
+It's important to note that **segmentation columns are not compressed**.
 Instead, for each value of the segmentation column, a separate compressed row is created.
 
 ## Hypertable's Management
 
 With TimescaleDB plugin, the event types can be managed in a specific tab.
 This is pretty much like the event type management in other Live plugins.
-The difference is that each event type is mapped to a hypertable, and come additional features are included:
+The difference is that each event type is mapped to a hypertable, and come with some additional features are included, like compression management.
 
 ![Hypertable Management](<../.gitbook/assets/image (182).png>)
 
 ## Index Creation
 
 TimescaleDB plugin also supports index and multi index creation.
-They will be used to speed up queries:
+They will be used to speed up queries.
 
 ![Index Creation](<../.gitbook/assets/image (183).png>)
 
