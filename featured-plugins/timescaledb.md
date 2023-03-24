@@ -133,3 +133,47 @@ It's possible to view the created chunks by using the `View Chunks` button, maki
 to monitor which chunks are currently compressed or not:
 
 ![Listing chunks](<../.gitbook/assets/image (187).png>)
+
+## What we have achieved and what we can expect
+
+### TimescaleDB against PostgreSQL
+
+In our experiments we have successfully **reduced the storage size by up to 93%** when compared to the equivalent dataset on PostgreSQL plugin.
+
+While in plain PostgreSQL the data occupied 36.67 GB, using TimescaleDB the spaced consumed decreased to 2.88 GB (with the hypertable fully compressed).
+
+### TimescaleDB against MongoDB
+
+Our experiments also showed that the storage size was **reduced by up to 59%** when compared to the same dataset on MongoDB plugin.
+
+While in plain MongoDB the data occupied 226 GB, using TimescaleDB the spaced consumed decreased to 92.49 GB (with the hypertable fully compressed).
+
+In addition, for some queries, we were able to obtain a **performance gain of up to 38%**.
+
+### Important Considerations
+
+While the storage cost will much likely reduce by using TimescaleDB plugin, the query performance will depend on a few other factors.
+
+
+The size of the chunk interval, segmentation columns, created indexes, data ordering,
+data characteristics, aggregations, as well as data distribution are parameters to be considered
+that should interfere with the good or poor performance of a query.
+
+In our experiments, TimescaleDB has shown to extract a lot of performance in queries with heavy aggregations over time series.
+
+### Future plans and releases
+
+#### Support to decompression using the UI (1.6.0)
+
+At the moment (version 1.5.0), it's not possible to decompress a hypertable using the UI.
+We are working on it to add a decompression button to the hypertable management tab.
+
+#### Async job management (2.0.0)
+
+Currently, except from the compression policy, the manual compression and segmentation actions
+are performed synchronously.
+If a hypertable is large enough, the compression process could take a lot of time to finish,
+and there isn't a way for the user to keep track of the compression/segmentation/decompression progress.
+
+In this sense, we are developing a functionality that will allow the registration of asynchronous jobs
+to manage these tasks, making them clearer for the user.
