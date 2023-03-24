@@ -177,3 +177,17 @@ and there isn't a way for the user to keep track of the compression/segmentation
 
 In this sense, we are developing a functionality that will allow the registration of asynchronous jobs
 to manage these tasks, making them clearer for the user.
+
+## Requirements
+
+Currently, the TimescaleDB plugin requires a TimescaleDB 2.5+ extension to work properly.
+
+## Recommended Reading
+
+We recommend the reading of the following articles in order to better understand TimescaleDB:
+
+- [Time series Data](https://www.timescale.com/blog/time-series-data/)
+- [Installation how-to](https://docs.timescale.com/install/latest/)
+- [Getting started](https://docs.timescale.com/getting-started/latest/)
+- [Overview](https://docs.timescale.com/timescaledb/latest/)
+- [API reference](https://docs.timescale.com/api/latest/]) (for administrators)
