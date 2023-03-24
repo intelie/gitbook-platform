@@ -22,7 +22,7 @@ To send live notifications to a Microsoft Teams channel, we need first to create
 
 * On the new popup, select “configure” to set up a new webhook.
 
-![Configure a new incoming webhook](<../.gitbook/assets/image (4).png>)
+![Configure a new incoming webhook](<../.gitbook/assets/image (170).png>)
 
 * Insert a name to identify the new webhook. You can also change it’s image (the image that shows when a message is sent to the channel). Then, click on “create”.
 
@@ -88,7 +88,7 @@ The Microsoft Teams plugin is available for download on [INTELIE Live Marketplac
 
 It is possible to share notes to Microsoft Teams. For each annotation type, the environment requires an extra plugin, besides the Microsoft Teams plugin, that will define the format following the Microsoft Teams API.
 
-![Sharing note to Microsoft Teams](<../.gitbook/assets/image (99).png>)
+![Sharing note to Microsoft Teams](<../.gitbook/assets/image (159).png>)
 
 Please notice that that will generate a card in Microsoft Teams which is actually a snapshot of the note. Should the note be edited in Intelie Live, the modifications will have no effect on Microsoft Teams and the card will be outdated.
 

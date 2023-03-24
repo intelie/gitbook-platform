@@ -8,6 +8,49 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
+## 3.30.1 (March 24, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.29.4
+
+## 3.29.4 (March 24, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.28.5
+
+## 3.28.5 (March 24, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.27.6
+
+## 3.27.6 (March 24, 2023)
+
+### Fixes and improvements
+
+* Create the toString method for CriteriaSpecificationBase.LikeExpression
+* Fixes an error when updating datasources and rules through pipes console
+* Fixed chart points disappear after some minutes
+* Fixed rules page continues to fetch deleted rule right after rule removal callback returns to rule list
+* Fixes a bug when creating a rule via Live console without executing the PIPES code
+* Fixed dashboard menu is getting clipped on small screens
+* Fixed user becomes expired when changed to active/inactive
+
+## [3.30.0](3.30.0.md) (March 10, 2022)
+
+### Fixes and improvements
+
+* Prepare behavior allowing the change of header orientation
+* Alert stream UI is displaying the rule severity instead of the alert severity
+* Allow to use HTML formating and "field syntax" at the Rules "Additional information"
+* Paginate list of alerts in server in monitoring page
+* Indicate new alerts at the monitoring pages
+* Improve usability of the integrations screen when there are too many instances
+* Rules page components triggering one request per rule
+* Fix a bug that prevents alerts from not showing in notifications
+
 ## 3.29.3 (March 10, 2023)
 
 ### Fixes and improvements

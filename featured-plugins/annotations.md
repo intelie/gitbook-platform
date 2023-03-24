@@ -6,4 +6,4 @@ Plugin Annotations (available for download on [INTELIE Live Marketplace](https:/
 
 The plugin also provides a default UI (a timeline that displays notes) implementation, containing the dashboard timeline and an example of a micro-form. Besides, it allows creating more types (pressure tests, activity log, auto analysis, among others) of annotations through the plugin.
 
-![Example of an annotation being created in the dashboard timeline using the default micro-form](<../.gitbook/assets/image (60).png>)
+![Example of an annotation being created in the dashboard timeline using the default micro-form](<../.gitbook/assets/image (139).png>)
