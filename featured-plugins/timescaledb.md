@@ -74,3 +74,11 @@ This can be particularly efficient on queries that use the segmentation column i
 
 It's important to note that segmentation columns are not compressed.
 Instead, for each value of the segmentation column, a separate compressed row is created.
+
+## Hypertable's Management
+
+With TimescaleDB plugin, the event types can be managed in a specific tab.
+This is pretty much like the event type management in other Live plugins.
+The difference is that each event type is mapped to a hypertable, and come additional features are included:
+
+![Hypertable Management](<../.gitbook/assets/image (182).png>)
