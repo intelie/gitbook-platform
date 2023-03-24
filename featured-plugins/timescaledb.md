@@ -89,3 +89,34 @@ TimescaleDB plugin also supports index and multi index creation.
 They will be used to speed up queries:
 
 ![Index Creation](<../.gitbook/assets/image (183).png>)
+
+## Compression
+
+### Defining a segmentation column (Optional)
+
+To compress a hypertable, we first must configure its segmentation column.
+This is not mandatory, as a hypertable can be compressed without having a segmentation column defined.
+This will cause the compressed data not to be grouped.
+
+One important thing to be aware is that **the segmentation column can be configured only before the data is compressed**. Never after.
+In order to define a segmentation column for a compressed hypertable, it'll have to be decompressed first.
+
+![Defining segmentation column](<../.gitbook/assets/image (184).png>)
+
+It's also possible to define a set of segmentation columns for the same hypertable, by separating the with commas like `(device_id, time)`.
+
+### Compressing a hypertable
+
+After the segmentation column has been defined, the hypertable can be compressed by clicking on the `Compress` button:
+
+![Compressing the hypertable](<../.gitbook/assets/image (185).png>)
+
+### Defining a compression policy
+
+With TimescaleDB plugin, it's also possible to define a compression policy.
+This works like a recurrent background process that compresses a specific hypertable after its chunks reaches a given age.
+
+This is useful to avoid recurrent manual compressions on the hypertable, and also to
+decrease the space consumed by older data, which are not queried often.
+
+![Compression policy](<../.gitbook/assets/image (186).png>)
