@@ -82,3 +82,10 @@ This is pretty much like the event type management in other Live plugins.
 The difference is that each event type is mapped to a hypertable, and come additional features are included:
 
 ![Hypertable Management](<../.gitbook/assets/image (182).png>)
+
+## Index Creation
+
+TimescaleDB plugin also supports index and multi index creation.
+They will be used to speed up queries:
+
+![Index Creation](<../.gitbook/assets/image (183).png>)
