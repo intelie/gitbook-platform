@@ -120,3 +120,16 @@ This is useful to avoid recurrent manual compressions on the hypertable, and als
 decrease the space consumed by older data, which are not queried often.
 
 ![Compression policy](<../.gitbook/assets/image (186).png>)
+
+## Listing hypertable chunks
+
+After a hypertable is created, it's automatically partitioned into chunks (periods of time).
+The chunk interval is actually pre-defined to contain **7 days of data**.
+
+Supposing we have one month of historical data in a hypertable, the first chunk will contain data from days 1ª to 7º,
+the second chunk from days 8º to 14º, and so on. More chunks are automatically created when needed.
+
+It's possible to view the created chunks by using the `View Chunks` button, making it also possible
+to monitor which chunks are currently compressed or not:
+
+![Listing chunks](<../.gitbook/assets/image (187).png>)
