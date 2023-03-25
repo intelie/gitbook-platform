@@ -184,9 +184,9 @@ to manage these tasks, making them clearer for the user.
 
 Currently, the TimescaleDB plugin requires a TimescaleDB 2.5+ extension to work properly.
 
-## Recommended Reading
+## References
 
-We recommend the reading of the following articles in order to better understand TimescaleDB:
+Recommended reads from official TimescaleDB documentation:
 
 - [Time series Data](https://www.timescale.com/blog/time-series-data/)
 - [Installation how-to](https://docs.timescale.com/install/latest/)
