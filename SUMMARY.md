@@ -61,6 +61,7 @@
 * [Purge plugin](featured-plugins/purge-plugin.md)
 * [SQL](featured-plugins/sql.md)
 * [TCP Input](featured-plugins/tcp-input-1.md)
+* [TimescaleDB](featured-plugins/timescaledb.md)
 
 ## Data visualization
 
