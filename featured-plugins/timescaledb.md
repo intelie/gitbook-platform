@@ -101,11 +101,10 @@ The segments are optional since a hypertable can be compressed without it.
 In this case, all columns will be grouped.
 
 Note **the segment columns can be configured only before the data is compressed**. Never after.
-In order to define a segmentation column for a compressed hypertable, it'll have to be decompressed first.
 
 ![Defining segment columns](<../.gitbook/assets/image (184).png>)
 
-It's also possible to define a set of segment columns for the same hypertable, by separating the with commas like `(device_id, time)`.
+It's also possible to define a set of segment columns for the same hypertable, by separating them with commas like `(device_id, time)`.
 
 ### Compressing a hypertable
 
