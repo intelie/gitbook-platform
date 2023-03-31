@@ -8,6 +8,26 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
+## 3.30.2 (March 31, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.29.5
+
+## 3.29.5 (March 31, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.28.6
+
+## 3.28.6 (March 31, 2023)
+
+### Fixes and improvements
+
+* Fixed review and ensure pages start at position 1 on list component usages
+* Fixed dashboard loads are causing lots of widget remounts and re-creations
+* Fixed error while creating lookup tables
+
 ## 3.30.1 (March 24, 2023)
 
 ### Fixes and improvements
