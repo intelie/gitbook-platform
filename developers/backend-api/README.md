@@ -78,6 +78,8 @@ Intelie Live controls a dependency graph that makes dependent plugins restart wh
 
 A dependency can also be declared as optional. The plugin will start normally even if an optional dependency artifact is missing at runtime. In that case, the plugin should handle manually an eventual `NoClassDefFoundError` that can be risen if a class of a missing optional dependency is accessed.
 
+Since version 3.31.0, Live adopts the Maven Version Range specification for the dependency format. See more about it [here](https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html).
+
 ### Defining the dependency
 
 This requires that both the compile time and the runtime dependencies are described.
@@ -125,6 +127,13 @@ Runtime dependencies are defined on a Manifest's `requirePlugins` entry, as show
 ```
 
 In our example, as the `plugin-healthcheck` is provided together with Intelie Live platform, its version will be the same as Live's version, defined in our variable `live-api-version`. It's also marked as optional. That means that our plugin should start normally even if `plugin-healthcheck` artifact is missing at runtime.
+
+Range version requirements in Manifest files should be double quoted:  
+
+```markup
+<requirePlugins>plugin-healthcheck, plugin-annotations@"(,1.0],[1.2,)"</requirePlugins>
+```              
+
 
 ### Exporting components
 
