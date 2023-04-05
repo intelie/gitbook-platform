@@ -126,6 +126,7 @@
   * [React Contexts](developers/web-application/react-contexts/README.md)
     * [Dashboard](developers/web-application/react-contexts/dashboard.md)
     * [Dashboard widget](developers/web-application/react-contexts/dashboard-widget.md)
+  * [Home Page Customization](developers/web-application/home-page.md)
 * [Python application](developers/python-application.md)
 * [Subscribing to Live Events](developers/subscribing-to-live-events.md)
 
