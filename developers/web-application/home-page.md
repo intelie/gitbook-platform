@@ -20,7 +20,7 @@ Administrators can create one or more rules to define the home page for the envi
 
 ![Home Page configuration rule target options](<../../.gitbook/assets/home-page-customization-2.png>)
 
-{% hint style="info" %}To learn more about teams, perspectives and permissions, check the [permissions](../features/access-permission.md) page.{% endhint %}
+{% hint style="info" %}To learn more about teams, perspectives and permissions, check the [permissions](../../features/access-permision.md) page.{% endhint %}
 
 The home page options can be pages such as the default home page or the "Monitoring" page or specific pages in a category (such as a specific dashboard). The options are registered by Live itself or other plugins; for more details see the [Registering Home Page options](#registering-home-page-options) section below.
 
@@ -81,9 +81,8 @@ The parameters are explained in more detail in the table below:
 | `label`        | a textual label representing this home page option, shown when selecting the option                                                                                                                                                  |
 | `existsOnMenu` | a flag indicating whether the home page option is a page that already exists and can be accessed on Live's menu                                                                                                                      |
 | `permissions`  | an optional list of permission names; to be able to access this home page option, the user must have at least one of them; the names should be in uppercase as registered by Live or plugins (e.g.: `DASHBOARDS`, `VIEW_MONITORING`) |
-| `url`          | if the page already exists on Live's menu, the URL to it |
-| `Page`         | if the page does not exist on Live's menu, the page's React component |
-|
+| `url`          | if the page already exists on Live's menu, the URL to it                                                                                                                                                                             |
+| `Page`         | if the page does not exist on Live's menu, the page's React component                                                                                                                                                                |
 
 The `entityData` parameter must be provided when registering an entity as the home page option (e.g.: dashboards). Its parameters are explained below:
 
@@ -95,7 +94,7 @@ The `entityData` parameter must be provided when registering an entity as the ho
 | `idToUrl`                | a function that receives an id and returns the URL of the page of the entity instance with that id                                                                                                                                                                                                                                                                                                                                                           |
 | `hasPermission`          | a function that receives the object with an entity instance's data, along with a list with the names of the logged user's permissions and another with the ids of the perspectives they can access, and returns a boolean value indicating whether they have permission to access that entity instance's page; the `successFetching` and `error` arguments are also provided to signal if there was an error when trying to fetch the entity instance's data |
 
-### Examples: 
+### Examples
 
 The first example below shows how to register an existing page as a home page option:
 
@@ -115,7 +114,7 @@ LiveApi.HomePages.register({
 The next example shows how to register a new page as a home page option:
 
 {% tabs %}
-{% tab title="" %}
+{% tab title="app.js" %}
 ```javascript
 import { LiveApi } from 'live/lib/api'
 
@@ -139,7 +138,9 @@ const NewHomePage = () => {
         <h1>New Home Page</h1>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Etiam eget ligula eu lectus lobortis condimentum.
+            Aliquam nonummy auctor massa.
         </p>
     </main>
 }
@@ -161,7 +162,12 @@ LiveApi.HomePages.register({
     entityData: {
         endpoint: '/rest/lookup',
         idToEndpoint: id => `/rest/lookup/${id}`,
-        resultsToLabelAndValue: data => data?.data?.map(lookup => ({ label: lookup.name, value: lookup.id })) || [],
+        resultsToLabelAndValue: data => (
+            data?.data?.map(lookup => ({
+                label: lookup.name,
+                value: lookup.id
+            }))
+        ) || [],
         idToUrl: id => `/#/config/lookup-table/${id}`,
         hasPermission: () => true
     }
