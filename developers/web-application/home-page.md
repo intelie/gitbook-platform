@@ -20,7 +20,9 @@ Administrators can create one or more rules to define the home page for the envi
 
 ![Home Page configuration rule target options](<../../.gitbook/assets/home-page-customization-2.png>)
 
-{% hint style="info" %}To learn more about teams, perspectives and permissions, check the [permissions](../../features/access-permision.md) page.{% endhint %}
+{% hint style="info" %}
+To learn more about teams, perspectives and permissions, check the [permissions](../../features/access-permision.md) page.
+{% endhint %}
 
 The home page options can be pages such as the default home page or the "Monitoring" page or specific pages in a category (such as a specific dashboard). The options are registered by Live itself or other plugins; for more details see the [Registering Home Page options](#registering-home-page-options) section below.
 
