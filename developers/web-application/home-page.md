@@ -44,17 +44,39 @@ Also, if for some reason the custom home page fails to load for the user, they w
 
 ## Registering Home Page options
 
-Home Page options can be registered by other plugins using the `LiveApi.HomePages` registry in the frontend. Each option has the following type:
+Home Page options can be registered by other plugins using the `LiveApi.HomePages` registry in the frontend. A home page option can basically be one of three kinds:
+
+- a redirect to a page that already exists on Live's menu, in which case the URL to that page must be provided when registering the home page option
+- a page that renders a custom component, which must be provided when registering the home page option
+- a redirect to a page of an instance of an entity (such as a specific dashboard or lookup table), in which case some endpoints and mapping functions related to the entity must be provided when registering the home page option
+
+The `HomePage` type of a home page option is thus an union of the three types representing these kinds, defined below:
 
 ```typescript
-interface HomePage {
+// base interface with some common properties
+interface HomePageBase {
     key: string
     label: string
     existsOnMenu: boolean
     permissions?: string[]
-    url?: string
-    Page?: React.ComponentType
-    entityData?: {
+}
+
+// renders custom component provided in the Page property
+interface CustomComponentPage extends HomePageBase {
+    existsOnMenu: false
+    Page: React.ComponentType
+}
+
+// redirects to page that already exists on Live's menu
+interface ExistingPage extends HomePageBase {
+    existsOnMenu: true
+    url: string
+}
+
+// redirects to existing page of specific instance of an entity
+interface EntityPage extends HomePageBase {
+    existsOnMenu: true
+    entityData: {
         endpoint: string
         idToEndpoint: (id: string) => string
         resultsToLabelAndValue: (
@@ -68,11 +90,14 @@ interface HomePage {
             entity: unknown,
             successFetching: boolean,
             userPermissions: string[],
-            userPerspectiveIds: string[],
+            userPerspectiveIds: string[] | 'all',
             error?: unknown
         ) => boolean
     }
 }
+
+// final union type
+type HomePage = CustomComponentPage | ExistingPage | EntityPage
 ```
 
 The parameters are explained in more detail in the table below:
@@ -94,7 +119,7 @@ The `entityData` parameter must be provided when registering an entity as the ho
 | `idToEndpoint`           | a function that receives an id and returns the endpoint that should be called to get the entity instance with that id                                                                                                                                                                                                                                                                                                                                        |
 | `resultsToLabelAndValue` | a function that receives the results from calling the `endpoint` and formats them to a list of objects with a `label` (usually the name of the entity instance or some equivalent property) and `value` (the id of the instance or some equivalent property)                                                                                                                                                                                                 |
 | `idToUrl`                | a function that receives an id and returns the URL of the page of the entity instance with that id                                                                                                                                                                                                                                                                                                                                                           |
-| `hasPermission`          | a function that receives the object with an entity instance's data, along with a list with the names of the logged user's permissions and another with the ids of the perspectives they can access, and returns a boolean value indicating whether they have permission to access that entity instance's page; the `successFetching` and `error` arguments are also provided to signal if there was an error when trying to fetch the entity instance's data |
+| `hasPermission`          | a function that receives the object with an entity instance's data, along with a list with the names of the logged user's permissions and another with the ids of the perspectives they can access (or the string `all` when the user can access all of them), and returns a boolean value indicating whether they have permission to access that entity instance's page; the `successFetching` and `error` arguments are also provided to signal if there was an error when trying to fetch the entity instance's data |
 
 ### Examples
 
@@ -109,7 +134,7 @@ LiveApi.HomePages.register({
     label: 'Monitoring',
     existsOnMenu: true,
     url: '/#/monitoring',
-    permissions: ['VIEW_MONITORING']
+    permissions: ['VIEW_MONITORING', 'MANAGE_MONITORING']
 })
 ```
 
