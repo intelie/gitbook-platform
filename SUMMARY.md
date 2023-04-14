@@ -77,6 +77,7 @@
   * [Lollipop](data-visualization/pipes-widgets/lollipop.md)
   * [Histogram](data-visualization/pipes-widgets/histogram.md)
   * [State Timeline](data-visualization/pipes-widgets/state-timeline.md)
+  * [Boxplot](data-visualization/pipes-widgets/boxplot.md)
 * [Pipes modifiers on Pipes charts](data-visualization/pipes-modifiers-on-standard-charts.md)
 
 ## Alerts and notifications

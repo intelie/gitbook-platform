@@ -310,7 +310,7 @@ const SimpleChart = (props: LiveReactChartProps<ChartState, ChartMessage, Config
 {% hint style="warning" %}
 **React widget heads up**
 
-If your component is a [**Memo**](https://reactjs.org/docs/react-api.html#reactmemo) **** remember to return a new state at the reducer when you want it to be updated, a shallow copy is enough.
+If your component is a [**Memo**](https://reactjs.org/docs/react-api.html#reactmemo) remember to return a new state at the reducer when you want it to be updated, a shallow copy is enough.
 {% endhint %}
 
 {% hint style="info" %}
@@ -581,7 +581,7 @@ The portal property is also considered to be a **React Component.** It differs f
 
 ### The \`onReady\` function
 
-The `onReady` function received on the Widget's constructor and assigned to `this.options.onReady` is a function that as soon as it is called it flags the widget as _ready to receive data_. **** That said, **calling `this.options.onReady` is mandatory.**
+The `onReady` function received on the Widget's constructor and assigned to `this.options.onReady` is a function that as soon as it is called it flags the widget as _ready to receive data_. That said, **calling `this.options.onReady` is mandatory.**
 
 ### **Widget.flow**
 

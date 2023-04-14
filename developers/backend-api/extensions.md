@@ -111,10 +111,10 @@ Extensions can be hosted in Live under the main areas `INTEGRATION`, `PLATFORM`o
 
 ### Roles
 
-Extensions can be organized using a set of roles to ease find them on the Live marketplace. The following roles are supported:&#x20;
+Extensions can be organized using a set of roles to ease find them on the Live marketplace. The following roles are supported:
 
-* `INPUT`: indicates that extension could receive data or event and makes them available in Live.&#x20;
-  * Built-in: ActiveMQ, Phone Sensors, Replay, REST and TCP.&#x20;
+* `INPUT`: indicates that extension could receive data or event and makes them available in Live.
+  * Built-in: ActiveMQ, Phone Sensors, Replay, REST and TCP.
 * `NOTIFICATION`: indicates that extension could notify live activities to external applications.
   * Built-in: ActiveMQ and SMTP.
 * `QUERY`: typically used by query providers to operate alongside pipes.
@@ -122,8 +122,8 @@ Extensions can be organized using a set of roles to ease find them on the Live m
 * `STORAGE`: when the extension saves live events in some data stores.
   * Built-in: MongoDB, PostgreSQL and SQL.
 * `UI`: customizes how Live UI looks.
-  * Built-in: Dashboard Templates, CSS Files, CSS Snippets, JS Files and JS Snippets.&#x20;
-* `AUTH`: adds some other authentication method to Live.&#x20;
+  * Built-in: Dashboard Templates, CSS Files, CSS Snippets, JS Files and JS Snippets.
+* `AUTH`: adds some other authentication method to Live.
   * Built-in: LDAP, OAuth 2.0 and SAML 2.0.
 * `OUTPUT`: configures an output for a event query.
 
@@ -141,9 +141,9 @@ Live supports multiple instances of a same extension. It's useful to read from m
 
 After compile and package your very first tutorial plugin, you may upload it using Plugins menu in Live administration menu.
 
-![Example of plugin-tutorial recently uploaded to Live platform](<../../.gitbook/assets/image (149).png>)
+![Example of plugin-tutorial recently uploaded to Live platform](<../../.gitbook/assets/image (163).png>)
 
-The tutorial plugin just adds an extension type, so you can check the message saying "_added extension type 'plugin-tutorial' as PLATFORM_" in the plugin list screen.&#x20;
+The tutorial plugin just adds an extension type, so you can check the message saying "_added extension type 'plugin-tutorial' as PLATFORM_" in the plugin list screen.
 
 Now, let's go find it under the Platform Customization area in Live administration.
 
@@ -157,9 +157,9 @@ Extension instance configuration provides a basic form to fulfill the qualifier 
 
 ### Validation and Save
 
-The Live default form provides two form buttons **Test** and **Save**.&#x20;
+The Live default form provides two form buttons **Test** and **Save**.
 
-**Test** action will trigger a POST to Live internal endpoint `/rest/extension/test` using data provided on the form provided and also the plugin metadata (e.g. typename).&#x20;
+**Test** action will trigger a POST to Live internal endpoint `/rest/extension/test` using data provided on the form provided and also the plugin metadata (e.g. typename).
 
 Live will automatically dispatch the method call to the concrete version of `ExtensionConfig.validate` in order to validate the configuration provided for that instance described by that qualifier. So, developer may check if the config attributes meet its requirements returning a `ValidationBuilder` object.
 
@@ -183,7 +183,7 @@ Extension instances can be stopped and removed from Live through its own listing
 
 ## Appendix: ElementHandle, ElementState and ElementStatus
 
-In detail, `ExtensionType.register` method must return a `ElementHandle` object.&#x20;
+In detail, `ExtensionType.register` method must return a `ElementHandle` object.
 
 `ElementHandle` is a abstract class that enables the extension to inform its `status` and Live calls `refresh` periodically (extension should update its status at that calls) and delegates the termination of an instance through `close` method. The code below shows a short version and a complete version (with helper inner classes) of this class.
 
@@ -286,7 +286,7 @@ The status of an extension (actually of any Live element) is represented by `Ele
 
 These states provide some additional information at top of a basic `ElementStatus` enumeration. In turn, `ElementStatus` could assume one of `VALID`, `VALID_BUT`, `INVALID` or `INACTIVE` statuses. Just `VALID` means `true` and the others mean `false`.
 
-The most used states are `OK` (`VALID` status) and `INACTIVE` and `STARTING` (`INVALID`statuses).&#x20;
+The most used states are `OK` (`VALID` status) and `INACTIVE` and `STARTING` (`INVALID`statuses).
 
 For instance, if something goes wrong at registration phase (or even in status method) you could return something like `new ElementState(ElementStatus.INVALID, "with some message")`.
 
@@ -329,5 +329,6 @@ entityContext.find(new AllExtensions());
 
 The `EntityContext` API and Live Data API will be discussed in details in another section.
 
-{% hint style="info" %} Frontend plugins have no such API to list extensions (or generic entities). Each resource in Live REST API is protected according. For example, the `/rest/extension` endpoint list all extensions but it is restricted to Live administrative users only.  {% endhint %}
-
+{% hint style="info" %}
+Frontend plugins have no such API to list extensions (or generic entities). Each resource in Live REST API is protected according. For example, the \`/rest/extension\` endpoint list all extensions but it is restricted to Live administrative users only.
+{% endhint %}

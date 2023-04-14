@@ -84,7 +84,7 @@ There is also a histogram chart type available on "query based charts", more spe
 
 *   As output, binsCalculator will return three calculated values. The first value is the result of the Freedman-Diaconis’ formula, the second value is the result of the Sturges’ formula, and the third is the result of the Scott’ formula.
 
-    __
+
 * After the result of the suggestion of the number of bins, we can now move to the main aggregation, which generates the pipes widget, called "histogram".  The input must be a numerical sequence, a minimum value, a maximum value and a bins quantity.\
   `=> normrandom(1, 0.1) as x every min` \
   `=> histogram(x, 0.5, 1.5, 18) over last 24 hours`
