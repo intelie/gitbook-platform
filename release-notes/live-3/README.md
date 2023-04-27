@@ -8,6 +8,29 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
+## 3.31.1 (April 4, 2023)
+
+### Fixes and improvements
+
+* Fixed bug getting Settings configuration
+
+## [3.31.0](3.31.0.md) (March 31, 2022)
+
+### Fixes and improvements
+
+* Enable Versioning for Live Entities
+* Renames "dashboard model" to "dashboard template
+* Support requiring plugins with specific version ranges
+* Fix cometD timeout issue
+* Improve plugin screen design and the dependencies description
+
+## 3.29.3 (March 10, 2023)
+
+### Fixes and improvements
+
+* Fixed an error while deleting dashboards and perspectives
+* Cumulated changes from patch 3.28.4
+
 ## 3.30.2 (March 31, 2023)
 
 ### Fixes and improvements
