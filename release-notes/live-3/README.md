@@ -8,7 +8,7 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
-## 3.29.3 (May 12, 2023)
+## 3.31.2 (May 12, 2023)
 
 ### Fixes and improvements
 
