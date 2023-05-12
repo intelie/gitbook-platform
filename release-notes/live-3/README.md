@@ -8,6 +8,37 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
+## 3.29.3 (May 12, 2023)
+
+### Fixes and improvements
+
+* Fixed marker tool is conflicting with time series markers
+* Cumulated changes from patch 3.30.3
+
+## 3.30.3 (May 12, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.29.6
+
+## 3.29.6 (May 12, 2023)
+
+### Fixes and improvements
+
+* Upgrade jquery-ui to version 1.13.2 or later
+* Fix listen to beforeunload for cometd disconnect
+* Add frontend tests for lookuptables
+* Upgrade moment to version 2.29.4 or later
+* Upgrade minimist to version 1.2.6 or later
+* Rules page shows no information in case of connection problems
+* Toolip may spill out to the left of the chart when the mouse cursor is too close to the beginning of the X-axis
+* Using javascript built-in that not has polyfill by the front-end tooling
+* Tooltip controls isn't working on column charts in pipes widget
+* Tooltip text doesn't have translation in lookup table edit button
+* Fix missing semicolon on login CSS
+* Fixes issue at Dashboard Perfomance Report
+* Login page unreadable when dark mode is on
+
 ## 3.31.1 (April 4, 2023)
 
 ### Fixes and improvements
