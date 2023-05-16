@@ -128,12 +128,14 @@
   * [React Contexts](developers/web-application/react-contexts/README.md)
     * [Dashboard](developers/web-application/react-contexts/dashboard.md)
     * [Dashboard widget](developers/web-application/react-contexts/dashboard-widget.md)
+  * [Registering Home Page options](developers/web-application/home-page.md)
 * [Python application](developers/python-application.md)
 * [Subscribing to Live Events](developers/subscribing-to-live-events.md)
 
 ## Administration
 
 * [Configuration](administration/configuration/README.md)
+  * [Home Page Customization](administration/configuration/home-page.md)
   * [live.properties](administration/configuration/live.properties.md)
 * [Infrastructure Monitoring](administration/infrastructure-monitoring.md)
 * [Storage Monitoring](administration/storage-monitoring.md)
