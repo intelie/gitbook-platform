@@ -4,7 +4,7 @@
 Since Live 3.32.0
 {% endhint %}
 
-Live's home page can be redefined in the admin "System and Display Settings" screen, under the "UI Configurations" section. To see more details about the configuration, see [Home Page Customization]((../../administration/configuration/home-page.md))
+Live's home page can be redefined in the admin "System and Display Settings" screen, under the "UI Configurations" section. To see more details about the configuration, see [Home Page Customization](../../administration/configuration/home-page.md)
 
 Home Page options can be registered by other plugins using the `LiveApi.HomePages` registry in the frontend. A home page option can basically be one of three kinds:
 
