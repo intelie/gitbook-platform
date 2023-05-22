@@ -8,7 +8,7 @@ description: TimescaleDB expands PostgreSQL for time series and analytics.
 
 TimescaleDB plugin is built over PostgreSQL and handles relentless streams of time-series data with the performance, scalability, and usability that the application needs.
 
-This document provides an overview of the new timescaledb plugin and the features of the recently released 1.5.0 version.
+This document provides an overview of the new timescaledb plugin and the features of the recently released 2.0.0 version.
 In addition, it describes the features planned for the upcoming version.
 
 TimescaleDB plugin was designed with two main goals: Improve query performance and reduce storage costs, when compared to other INTELIE Storage Providers.
@@ -106,11 +106,15 @@ Note **the segment columns can be configured only before the data is compressed*
 
 It's also possible to define a set of segment columns for the same hypertable, by separating them with commas like `(device_id, time)`.
 
+The segmenting jobs started in this screen can be managed in the Jobs tab bellow.
+
 ### Compressing a hypertable
 
 After the segment columns have been defined, the hypertable can be compressed by clicking on the `Compress` button:
 
 ![Compressing the hypertable](<../.gitbook/assets/image (185).png>)
+
+The compression jobs started in this screen can be managed in the Jobs tab bellow.
 
 ### Defining a compression policy
 
@@ -121,6 +125,34 @@ This is useful to avoid recurrent manual compressions on the hypertable, and als
 decrease the space consumed by older data, which are not queried often.
 
 ![Compression policy](<../.gitbook/assets/image (186).png>)
+
+The policy compression jobs started in this screen can be managed in the Jobs tab bellow.
+
+## Jobs Management
+
+Starting on plugin version 2.0.0, each compression task (i.e, compression, decompression, segmenting and compression policy)
+is performed asynchronously. This avoids issues when manually starting concurrent jobs, and makes it possible to
+the administrator to keep up on each scheduled job.
+
+After starting any of the compression task bellow, a new line will be added to the Jobs tab:
+
+![Jobs Management](<../.gitbook/assets/image (188).png>)
+
+This tab delivers job related information, like the job type, associated hypertable, the job status, start and end date.
+It's also possible to filter the list of jobs based on any of those fields:
+
+![Jobs Filtering](<../.gitbook/assets/image (189).png>)
+
+After a job is started, it can assume one of the following status:
+
+- Scheduled - The job is registered in the execution queue, but hasn't started yet
+- Running - The job is currently running
+- Succeeded - Job execution completed successfully
+- Failed - Job execution completed with failures
+- Recurrent - This status is reserved for policies, which keep running indefinitely in the background
+- History - After a hypertable is removed, its related jobs assume the History status for query purposes
+
+**PS:** Currently, compression policy jobs will always have Recurrent status and never get updated.
 
 ## Listing hypertable chunks
 
