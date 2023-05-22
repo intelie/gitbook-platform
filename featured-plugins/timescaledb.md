@@ -4,20 +4,19 @@ description: TimescaleDB expands PostgreSQL for time series and analytics.
 
 # TimescaleDB
 
+Timescale is a PostgreSQL extension that handles relentless streams of time-series data with the performance, scalability, and usability that the application needs. See more at [https://www.timescale.com](https://www.timescale.com).
+
 ## TimescaleDB Plugin
 
-TimescaleDB plugin is built over PostgreSQL and handles relentless streams of time-series data with the performance, scalability, and usability that the application needs.
+TimescaleDB plugin delivers a [Storage Provider](../developers/backend-api/storage-providers.md) leverages the built-in capabilities of TimescaleDB for storing and querying INTELIE Live events. It is available for download on [INTELIE Live Marketplace](https://marketplace.intelie.com/artifact/plugin-timescaledb-simple).
 
-This document provides an overview of the new timescaledb plugin and the features of the recently released 2.0.0 version.
-In addition, it describes the features planned for the upcoming version.
 
-TimescaleDB plugin was designed with two main goals: Improve query performance and reduce storage costs, when compared to other INTELIE Storage Providers.
-This document will also cover some comparison among them.
+The TimescaleDB plugin is designed with two primary objectives: enhancing query performance and minimizing storage costs in comparison to other INTELIE Storage Providers.
 
 ## Data Layout
 
 This plugin stores Live events organized by event type in separated hypertables.
-Each hypertable can have a custom a timestamp column to be the one that will be used at chunk compression level, and the administrator can pre-configure those mappings.
+Each hypertable must have a time column to be the one that will be used at chunk compression level, and the administrator can pre-configure custom mappings to change the time column upfront its creation.
 
 ![TimescaleDB time column configuration](<../.gitbook/assets/image (177).png>)
 
@@ -167,7 +166,7 @@ to identify which chunks are currently compressed or not:
 
 ![Listing chunks](<../.gitbook/assets/image (187).png>)
 
-## What we have achieved and what we can expect
+## Storage Performance
 
 ### TimescaleDB vs Vanilla PostgreSQL
 
@@ -194,19 +193,6 @@ that should interfere with the good or poor performance of a query.
 
 In our experiments, TimescaleDB has shown to extract a lot of performance in queries with heavy aggregations over time series.
 
-### Future plans and releases
-
-#### Support to decompression using the UI (1.6.0 / 2.1.0)
-
-At the moment (version 1.5.0 / 2.0.0), it's not possible to decompress a hypertable using the UI.
-We are working on it to add a decompression button to the hypertable management tab.
-
-#### Job Cancellation
-
-Currently, it's not possible to cancel a job execution after it has started.
-
-We plan to develop a new feature to deliver this capability soon.
-
 ## Requirements
 
 Currently, the TimescaleDB plugin (2.0.0) requires a TimescaleDB 2.9+ extension to work properly.
@@ -223,6 +209,6 @@ Recommended reads from official TimescaleDB documentation:
 
 - [Time series Data](https://www.timescale.com/blog/time-series-data/)
 - [Installation how-to](https://docs.timescale.com/install/latest/)
-- [Getting started](https://docs.timescale.com/getting-started/latest/)
 - [Overview](https://docs.timescale.com/timescaledb/latest/)
+- [Getting started](https://docs.timescale.com/getting-started/latest/)
 - [API reference](https://docs.timescale.com/api/latest/) (for administrators)
