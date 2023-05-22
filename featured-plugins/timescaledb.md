@@ -8,11 +8,7 @@ description: TimescaleDB expands PostgreSQL for time series and analytics.
 
 TimescaleDB plugin is built over PostgreSQL and handles relentless streams of time-series data with the performance, scalability, and usability that the application needs.
 
-This document provides an overview of the new timescaledb plugin and the features of the recently released 2.0.0 version.
-In addition, it describes the features planned for the upcoming version.
-
-TimescaleDB plugin was designed with two main goals: Improve query performance and reduce storage costs, when compared to other INTELIE Storage Providers.
-This document will also cover some comparison among them.
+TimescaleDB plugin was designed with two main goals: improve query performance and reduce storage costs, when compared to other INTELIE Storage Providers.
 
 ## Data Layout
 
@@ -193,19 +189,6 @@ data characteristics, aggregations, as well as data distribution are parameters 
 that should interfere with the good or poor performance of a query.
 
 In our experiments, TimescaleDB has shown to extract a lot of performance in queries with heavy aggregations over time series.
-
-### Future plans and releases
-
-#### Support to decompression using the UI (1.6.0 / 2.1.0)
-
-At the moment (version 1.5.0 / 2.0.0), it's not possible to decompress a hypertable using the UI.
-We are working on it to add a decompression button to the hypertable management tab.
-
-#### Job Cancellation
-
-Currently, it's not possible to cancel a job execution after it has started.
-
-We plan to develop a new feature to deliver this capability soon.
 
 ## Requirements
 
