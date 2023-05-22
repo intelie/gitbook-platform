@@ -13,7 +13,7 @@ TimescaleDB plugin was designed with two main goals: improve query performance a
 ## Data Layout
 
 This plugin stores Live events organized by event type in separated hypertables.
-Each hypertable can have a custom a timestamp column to be the one that will be used at chunk compression level, and the administrator can pre-configure those mappings.
+Each hypertable must have a time column to be the one that will be used at chunk compression level, and the administrator can pre-configure custom mappings to change the time column upfront its creation.
 
 ![TimescaleDB time column configuration](<../.gitbook/assets/image (177).png>)
 
