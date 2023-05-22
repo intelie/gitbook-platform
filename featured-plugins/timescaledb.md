@@ -206,6 +206,6 @@ Recommended reads from official TimescaleDB documentation:
 
 - [Time series Data](https://www.timescale.com/blog/time-series-data/)
 - [Installation how-to](https://docs.timescale.com/install/latest/)
-- [Getting started](https://docs.timescale.com/getting-started/latest/)
 - [Overview](https://docs.timescale.com/timescaledb/latest/)
+- [Getting started](https://docs.timescale.com/getting-started/latest/)
 - [API reference](https://docs.timescale.com/api/latest/) (for administrators)
