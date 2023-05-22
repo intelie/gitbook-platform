@@ -209,7 +209,13 @@ We plan to develop a new feature to deliver this capability soon.
 
 ## Requirements
 
-Currently, the TimescaleDB plugin requires a TimescaleDB 2.5+ extension to work properly.
+Currently, the TimescaleDB plugin (2.0.0) requires a TimescaleDB 2.9+ extension to work properly.
+When trying to use the compression resources with TimescaleDB extension bellow 2.9, an
+**HTTP 500 error code should be expected** as follows:
+
+`{message: "This resource requires timescale extension 2.9 or later."}`
+
+For previous plugin versions, the minimum required extension version is 2.5+.
 
 ## References
 
