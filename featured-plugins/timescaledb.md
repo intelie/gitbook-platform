@@ -196,20 +196,16 @@ In our experiments, TimescaleDB has shown to extract a lot of performance in que
 
 ### Future plans and releases
 
-#### Support to decompression using the UI (1.6.0)
+#### Support to decompression using the UI (1.6.0 / 2.1.0)
 
-At the moment (version 1.5.0), it's not possible to decompress a hypertable using the UI.
+At the moment (version 1.5.0 / 2.0.0), it's not possible to decompress a hypertable using the UI.
 We are working on it to add a decompression button to the hypertable management tab.
 
-#### Async job management (2.0.0)
+#### Job Cancellation
 
-Currently, except from the compression policy, the manual compression and segmentation actions
-are performed synchronously.
-If a hypertable is large enough, the compression process could take a lot of time to finish,
-and there isn't a way for the user to keep track of the compression/segmentation/decompression progress.
+Currently, it's not possible to cancel a job execution after it has started.
 
-In this sense, we are developing a functionality that will allow the registration of asynchronous jobs
-to manage these tasks, making them clearer for the user.
+We plan to develop a new feature to deliver this capability soon.
 
 ## Requirements
 
