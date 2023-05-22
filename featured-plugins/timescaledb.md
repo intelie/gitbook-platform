@@ -8,7 +8,7 @@ description: TimescaleDB expands PostgreSQL for time series and analytics.
 
 TimescaleDB plugin is built over PostgreSQL and handles relentless streams of time-series data with the performance, scalability, and usability that the application needs.
 
-This document provides an overview of the new timescaledb plugin and the features of the recently released 1.5.0 version.
+This document provides an overview of the new timescaledb plugin and the features of the recently released 2.0.0 version.
 In addition, it describes the features planned for the upcoming version.
 
 TimescaleDB plugin was designed with two main goals: Improve query performance and reduce storage costs, when compared to other INTELIE Storage Providers.
@@ -106,11 +106,15 @@ Note **the segment columns can be configured only before the data is compressed*
 
 It's also possible to define a set of segment columns for the same hypertable, by separating them with commas like `(device_id, time)`.
 
+The segmenting jobs started in this screen can be managed in the Jobs tab bellow.
+
 ### Compressing a hypertable
 
 After the segment columns have been defined, the hypertable can be compressed by clicking on the `Compress` button:
 
 ![Compressing the hypertable](<../.gitbook/assets/image (185).png>)
+
+The compression jobs started in this screen can be managed in the Jobs tab bellow.
 
 ### Defining a compression policy
 
@@ -121,6 +125,34 @@ This is useful to avoid recurrent manual compressions on the hypertable, and als
 decrease the space consumed by older data, which are not queried often.
 
 ![Compression policy](<../.gitbook/assets/image (186).png>)
+
+The policy compression jobs started in this screen can be managed in the Jobs tab bellow.
+
+## Jobs Management
+
+Starting with plugin version 2.0.0, each compression task (i.e, compression, decompression, segmenting and compression policy)
+runs asynchronously. This avoids issues when trying to start concurrent jobs manually and allows
+the administrator to keep track of each scheduled job.
+
+After scheduling any of the above compression tasks, a new row will be added to the Jobs tab:
+
+![Jobs Management](<../.gitbook/assets/image (188).png>)
+
+This tab delivers job related information, like the job type, associated hypertable, the job status, start and end date.
+It's also possible to filter the list of jobs based on any of those fields:
+
+![Jobs Filtering](<../.gitbook/assets/image (189).png>)
+
+After a job is started, it can assume one of the following status:
+
+- Scheduled - The job is registered in the execution queue, but hasn't started yet
+- Running - The job is currently running
+- Succeeded - Job execution completed successfully
+- Failed - Job execution completed with failures
+- Recurrent - This status is reserved for policies, which keep running indefinitely in the background
+- History - After a hypertable is removed, its related jobs assume the History status for query purposes
+
+**PS:** Currently, compression policy jobs will always have Recurrent status and never get updated.
 
 ## Listing hypertable chunks
 
@@ -164,24 +196,26 @@ In our experiments, TimescaleDB has shown to extract a lot of performance in que
 
 ### Future plans and releases
 
-#### Support to decompression using the UI (1.6.0)
+#### Support to decompression using the UI (1.6.0 / 2.1.0)
 
-At the moment (version 1.5.0), it's not possible to decompress a hypertable using the UI.
+At the moment (version 1.5.0 / 2.0.0), it's not possible to decompress a hypertable using the UI.
 We are working on it to add a decompression button to the hypertable management tab.
 
-#### Async job management (2.0.0)
+#### Job Cancellation
 
-Currently, except from the compression policy, the manual compression and segmentation actions
-are performed synchronously.
-If a hypertable is large enough, the compression process could take a lot of time to finish,
-and there isn't a way for the user to keep track of the compression/segmentation/decompression progress.
+Currently, it's not possible to cancel a job execution after it has started.
 
-In this sense, we are developing a functionality that will allow the registration of asynchronous jobs
-to manage these tasks, making them clearer for the user.
+We plan to develop a new feature to deliver this capability soon.
 
 ## Requirements
 
-Currently, the TimescaleDB plugin requires a TimescaleDB 2.5+ extension to work properly.
+Currently, the TimescaleDB plugin (2.0.0) requires a TimescaleDB 2.9+ extension to work properly.
+When trying to use the compression resources with TimescaleDB extension bellow 2.9, an
+**HTTP 500 error code should be expected** as follows:
+
+`{message: "This resource requires timescale extension 2.9 or later."}`
+
+For previous plugin versions, the minimum required extension version is 2.5+.
 
 ## References
 
