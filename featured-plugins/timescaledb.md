@@ -163,7 +163,7 @@ to identify which chunks are currently compressed or not:
 
 ![Listing chunks](<../.gitbook/assets/image (187).png>)
 
-## What we have achieved and what we can expect
+## Storage Performance
 
 ### TimescaleDB vs Vanilla PostgreSQL
 
