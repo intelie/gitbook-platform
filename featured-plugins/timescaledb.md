@@ -130,11 +130,11 @@ The policy compression jobs started in this screen can be managed in the Jobs ta
 
 ## Jobs Management
 
-Starting on plugin version 2.0.0, each compression task (i.e, compression, decompression, segmenting and compression policy)
-is performed asynchronously. This avoids issues when manually starting concurrent jobs, and makes it possible to
-the administrator to keep up on each scheduled job.
+Starting with plugin version 2.0.0, each compression task (i.e, compression, decompression, segmenting and compression policy)
+runs asynchronously. This avoids issues when trying to start concurrent jobs manually and allows
+the administrator to keep track of each scheduled job.
 
-After starting any of the compression task bellow, a new line will be added to the Jobs tab:
+After scheduling any of the above compression tasks, a new row will be added to the Jobs tab:
 
 ![Jobs Management](<../.gitbook/assets/image (188).png>)
 
