@@ -141,7 +141,7 @@ Live supports multiple instances of a same extension. It's useful to read from m
 
 After compile and package your very first tutorial plugin, you may upload it using Plugins menu in Live administration menu.
 
-![Example of plugin-tutorial recently uploaded to Live platform](<../../.gitbook/assets/image (163).png>)
+![Example of plugin-tutorial recently uploaded to Live platform](<../../.gitbook/assets/image (149) (1).png>)
 
 The tutorial plugin just adds an extension type, so you can check the message saying "_added extension type 'plugin-tutorial' as PLATFORM_" in the plugin list screen.
 
