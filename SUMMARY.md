@@ -150,3 +150,4 @@
 * [Export Dashboard](features/export-dashboard.md)
 * [Partial Indexes](features/partial-indexes.md)
 * [WebApp Metrics](features/webapp-metrics.md)
+* [Entity Audit](features/entity-audit.md)
