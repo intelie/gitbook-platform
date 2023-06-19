@@ -4,7 +4,7 @@ An **Entity Audit** represents a write operation on a **Live** entity, that was 
 
 Live supports storing an `EntityAudit` in two forms: a _database record_ and/or an _event_ depending on the configuration set in the general system settings.
 
-![configuration image](<../.gitbook/assets/entity_audit_config.png>) 
+![configuration image](<../../.gitbook/assets/entity_audit_config.png>)
 
 {% hint style="info" %} This feature is disabled by default. {% endhint %}
 
