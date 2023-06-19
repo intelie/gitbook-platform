@@ -95,4 +95,6 @@ This endpoint lists all `EntityAudits` of a specific entity identified by *id*, 
 
 This endpoint retrieves the entity content from an `EntityAudit`. It is used to obtain the entity stored by an `EntityAudit`, e.g. `{base-Url}/rest/entity-audit/100` will return the entity content of the `EntityAudit` with *id* 100. This method in intended to be used after the client have already chosen the specific `EntityAudit` containing the desired entity content.
 
+If needed, the user can use the result of this method to roll back parts or all of the current version of an entity by calling the save method on the related resource class.
+
 {% hint style="warning" %} Getting an EntityAudit that represents a delete operation will return a BAD_REQUEST. As explained before, EntityAudits of delete operations do not hold an entity content {% endhint %}
