@@ -8,4 +8,4 @@ Since Live @ 3.33.0
 
 After enabled, **Live** will store the writing operations as records of the `EntityAudit` table in the database, and/or as events of **type** `__audit` and **src** `core`.
 
-See also [entity-audit.md](../developers/backend-api/entity-audit.md "mention") Backend API.
+See also [Backend API](../developers/backend-api/entity-audit.md).
