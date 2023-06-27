@@ -108,6 +108,7 @@
   * [Storage Providers](developers/backend-api/storage-providers.md)
   * [Web Services](developers/backend-api/web-services.md)
   * [Web Setup](developers/backend-api/web-setup.md)
+  * [Entity Audit](developers/backend-api/entity-audit.md)
 * [Web application](developers/web-application/README.md)
   * [Services](developers/web-application/services/README.md)
     * [Point service](developers/web-application/services/point-service.md)
