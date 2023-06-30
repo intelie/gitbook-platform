@@ -8,17 +8,6 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
-## 3.32.1 (June 09, 2023)
-
-### Fixes and improvements
-
-* Fixes an issue that prevents Live 3.32.0 frontend library from being used
-* Improved performance of "home customization" admin card
-* Fixed permission verification of the "home customization" feature
-* Ensure delete icon is always visible at the home configuration card
-* Fixed overflow of HomeCustomization card selects
-* Cumulated changes from patch 3.31.3
-
 ## 3.31.3 (June 09, 2023)
 
 ### Fixes and improvements
