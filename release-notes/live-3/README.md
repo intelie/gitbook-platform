@@ -8,9 +8,11 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
-## [3.33.0](3.33.0.md) (ToDo, 2023)
+## 3.31.4 (July 14, 2023)
 
-* ToDo
+### Fixes and improvements
+
+* Refactor prop types usages in favor of typescript
 
 ## 3.31.3 (June 09, 2023)
 
