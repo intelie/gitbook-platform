@@ -8,11 +8,65 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
 {% endhint %}
 
+## [3.34.0](3.34.0.md) (July 14, 2022)
+
+### Fixes and improvements
+
+* New zoom UX in temporal pipes
+* Don't allow downgrade some plugins
+
+## 3.33.1 (July 14, 2023)
+
+### Fixes and improvements
+
+* Cumulated changes from patch 3.32.3
+
+## 3.32.3 (July 14, 2023)
+
+### Fixes and improvements
+
+* Integrations page not rendering
+* Widget re-instantiated on every change of query string params
+* Cumulated changes from patch 3.31.4
+
 ## 3.31.4 (July 14, 2023)
 
 ### Fixes and improvements
 
 * Refactor prop types usages in favor of typescript
+
+## [3.33.0](3.33.0.md) (June 30, 2022)
+
+### Fixes and improvements
+
+* Entity Versioning API
+* Allow users to sync personal preference options across devices
+* Add option for web settings items to define the columns breakpoints for their settings section
+* Use intelie-ui tooltip in Live
+* Allow users to select their language
+* Deprecates Live purge built-in subsystem and new optional flag to hide legacy purge administration menu
+* Allow users to use system theme
+* Exception from http service is not being logged
+* Allow admin users to hide and rename the "home" menu using the home customization feature
+* Adds validation at the home customization card
+
+## 3.32.2 (June 30, 2023)
+
+### Fixes and improvements
+
+* Publish \_\_plugininstall events when user stops and starts plugins
+* Presence of plugin without version breaks initialization of other plugins
+
+## 3.32.1 (June 09, 2023)
+
+### Fixes and improvements
+
+* Fixes an issue that prevents Live 3.32.0 frontend library from being used
+* Improve performance of "home customization" admin card
+* Fix permission verification of the "home customization" feature
+* Ensure delete icon is always visible at the home configuration card
+* Fixes overflow of HomeCustomization card selects
+* Cumulated changes from patch 3.31.3
 
 ## 3.31.3 (June 09, 2023)
 
@@ -32,6 +86,18 @@ Beginning in this version Live will start to use the [Semantic Versioning 2.0.0]
 
 * Fixed a bug that causes the dashboard "apply" filter button to not be visible
 * Fixed dashboard deletion confirmation modal&#x20;
+
+## [3.32.0](broken-reference) (May 12, 2022)
+
+### Fixes and improvements
+
+* Fixed SilentListener log can generate an extensive message
+* Allow the table widget to accept \_\_formatted and \_\_color metadata
+* Service to improve zoom in/out capabilities
+* Dry Run simulation before updating plugins
+* Allow Home customization per environment
+* Improve UI of non-plugin itens at the plugins admin page
+* Registering two extension types with the same name should not be allowed
 
 ## 3.31.2 (May 12, 2023)
 
