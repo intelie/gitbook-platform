@@ -39,7 +39,7 @@ Beginning in this version Live will start to use the [Semantic Versioning 2.0.0]
 
 ### Fixes and improvements
 
-* Entity Versioning API
+* Entity Versioning API ([more](../../features/entity-audit.md))
 * Allow users to sync personal preference options across devices
 * Add option for web settings items to define the columns breakpoints for their settings section
 * Use intelie-ui tooltip in Live
