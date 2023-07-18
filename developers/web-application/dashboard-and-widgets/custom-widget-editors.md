@@ -10,7 +10,7 @@ When a new widget type is created using the [Widget API](live-widget-api.md), it
 
 Here we will guide on how to do some of the most common tasks in the creation of a new widget using examples. For a detailed documentation of the available API please look at the JSDocs in the source code available at `live/services/editor-menu`.
 
-![The "New chart" menu](<../../../.gitbook/assets/image (4) (1).png>)
+![The "New chart" menu](<../../../.gitbook/assets/image (4) (1) (1).png>)
 
 ## Creating a new widget editor
 

@@ -5,7 +5,15 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 {% endhint %}
 
 {% hint style="info" %}
-Beginning in this version Live will start to use the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
+Live uses the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
+{% endhint %}
+
+{% hint style="info" %}
+Currently in Beta:
+
+* 3.34.x
+* 3.33.x
+* 3.32.x
 {% endhint %}
 
 ## [3.34.0](3.34.0.md) (July 14, 2022)
@@ -13,7 +21,7 @@ Beginning in this version Live will start to use the [Semantic Versioning 2.0.0]
 ### Fixes and improvements
 
 * New zoom UX in temporal pipes
-* Don't allow downgrade some plugins
+* Don't allow downgrade some plugins ([more](./#dont-allow-downgrade-some-plugins))
 
 ## 3.33.1 (July 14, 2023)
 
@@ -37,18 +45,21 @@ Beginning in this version Live will start to use the [Semantic Versioning 2.0.0]
 
 ## [3.33.0](3.33.0.md) (June 30, 2022)
 
+### New Features
+
+* Allow users to use system theme ([more](./#allow-users-to-use-system-theme))
+* Allow users to select their language ([more](./#allow-users-to-select-their-language))
+* Allow users to sync personal preference options across devices ([more](./#allow-users-to-sync-personal-preference-options-across-devices))
+* Entity Versioning API ([more](../../features/entity-audit.md))
+
 ### Fixes and improvements
 
-* Entity Versioning API ([more](../../features/entity-audit.md))
-* Allow users to sync personal preference options across devices
 * Add option for web settings items to define the columns breakpoints for their settings section
-* Use intelie-ui tooltip in Live
-* Allow users to select their language
 * Deprecates Live purge built-in subsystem and new optional flag to hide legacy purge administration menu
-* Allow users to use system theme
 * Exception from http service is not being logged
-* Allow admin users to hide and rename the "home" menu using the home customization feature
-* Adds validation at the home customization card
+* Improve Live tooltip ([more](./#improve-live-tooltip))
+* Adds validation at the home customization card ([more](./#adds-validation-at-the-home-customization-card))
+* Allow admin users to hide and rename the "home" menu using the home customization feature ([more](./#allow-admin-users-to-hide-and-rename-the-home-menu-using-the-home-customization-feature))
 
 ## 3.32.2 (June 30, 2023)
 
@@ -94,9 +105,9 @@ Beginning in this version Live will start to use the [Semantic Versioning 2.0.0]
 * Fixed SilentListener log can generate an extensive message
 * Allow the table widget to accept \_\_formatted and \_\_color metadata
 * Service to improve zoom in/out capabilities
-* Dry Run simulation before updating plugins
-* Allow Home customization per environment
-* Improve UI of non-plugin itens at the plugins admin page
+* Dry Run simulation before updating plugins ([more](./#dry-run-simulation-before-updating-plugins))
+* Allow Home customization per environment ([more](../../administration/configuration/home-page.md))
+* Improve UI of non-plugin itens at the plugins admin page ([more](./#improve-ui-of-non-plugin-itens-at-the-plugins-admin-page))
 * Registering two extension types with the same name should not be allowed
 
 ## 3.31.2 (May 12, 2023)

@@ -109,7 +109,7 @@ class SimpleChart implements ChartInterface<ChartState, ChartMessage, Configs> {
 
 After this, let the IDE or Code editor help you:
 
-![Automatically implement ChartInterface](<../../../.gitbook/assets/image (24).png>)
+![Automatically implement ChartInterface](<../../../.gitbook/assets/image (24) (1).png>)
 
 You should get something like this:
 

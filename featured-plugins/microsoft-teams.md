@@ -26,7 +26,7 @@ To send live notifications to a Microsoft Teams channel, we need first to create
 
 * Insert a name to identify the new webhook. You can also change it’s image (the image that shows when a message is sent to the channel). Then, click on “create”.
 
-![Set up the webhook info](<../.gitbook/assets/image (13).png>)
+![Set up the webhook info](<../.gitbook/assets/image (13) (1).png>)
 
 * The link to the new webhook will now show and the setup is complete. Now, you need to create notifications in Live and link them to your webhook.
 

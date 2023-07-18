@@ -12,5 +12,5 @@ Ranking tables need the data to be grouped, that is, each value should be delive
 
 Feed tables plots all the events on the time span, one batch at a line.
 
-![Example of the feed table](<../../.gitbook/assets/image (14).png>)
+![Example of the feed table](<../../.gitbook/assets/image (14) (1).png>)
 
