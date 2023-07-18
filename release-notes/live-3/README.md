@@ -21,7 +21,7 @@ Currently in Beta:
 ### Fixes and improvements
 
 * New zoom UX in temporal pipes
-* Don't allow downgrade some plugins ([more](./#dont-allow-downgrade-some-plugins))
+* Don't allow downgrade some plugins
 
 ## 3.33.1 (July 14, 2023)
 
@@ -47,9 +47,9 @@ Currently in Beta:
 
 ### New Features
 
-* Allow users to use system theme ([more](./#allow-users-to-use-system-theme))
-* Allow users to select their language ([more](./#allow-users-to-select-their-language))
-* Allow users to sync personal preference options across devices ([more](./#allow-users-to-sync-personal-preference-options-across-devices))
+* Allow users to use system theme&#x20;
+* Allow users to select their language
+* Allow users to sync personal preference options across devices
 * Entity Versioning API ([more](../../features/entity-audit.md))
 
 ### Fixes and improvements
@@ -57,9 +57,9 @@ Currently in Beta:
 * Add option for web settings items to define the columns breakpoints for their settings section
 * Deprecates Live purge built-in subsystem and new optional flag to hide legacy purge administration menu
 * Exception from http service is not being logged
-* Improve Live tooltip ([more](./#improve-live-tooltip))
-* Adds validation at the home customization card ([more](./#adds-validation-at-the-home-customization-card))
-* Allow admin users to hide and rename the "home" menu using the home customization feature ([more](./#allow-admin-users-to-hide-and-rename-the-home-menu-using-the-home-customization-feature))
+* Improve Live tooltip
+* Adds validation at the home customization card
+* Allow admin users to hide and rename the "home" menu using the home customization feature
 
 ## 3.32.2 (June 30, 2023)
 
@@ -105,9 +105,9 @@ Currently in Beta:
 * Fixed SilentListener log can generate an extensive message
 * Allow the table widget to accept \_\_formatted and \_\_color metadata
 * Service to improve zoom in/out capabilities
-* Dry Run simulation before updating plugins ([more](./#dry-run-simulation-before-updating-plugins))
-* Allow Home customization per environment ([more](../../administration/configuration/home-page.md))
-* Improve UI of non-plugin itens at the plugins admin page ([more](./#improve-ui-of-non-plugin-itens-at-the-plugins-admin-page))
+* Dry Run simulation before updating plugins
+* Allow Home customization per environment
+* Improve the style of non-plugin items at the plugins admin page
 * Registering two extension types with the same name should not be allowed
 
 ## 3.31.2 (May 12, 2023)
