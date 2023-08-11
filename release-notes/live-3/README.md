@@ -16,7 +16,10 @@ Currently in Beta:
 * 3.32.x
 {% endhint %}
 
-## 3.33.2 (August 11, 2023)
+##  3.34.1 (August 11, 2023)
+
+* Cumulated changes from patch 3.33.2
+##  3.33.2 (August 11, 2023)
 
 * Cumulated changes from patch 3.32.4
 
