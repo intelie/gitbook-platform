@@ -16,6 +16,13 @@ Currently in Beta:
 * 3.32.x
 {% endhint %}
 
+## 3.31.5 (August 11, 2023) 
+
+### New Features 
+
+* Filter alerts graphic by rule
+* Automate Release Notes Generation 
+
 ##  [3.34.0](3.34.0.md) (July 14, 2022)
 
 ### Fixes and improvements
