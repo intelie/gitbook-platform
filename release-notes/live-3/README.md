@@ -37,6 +37,7 @@ Currently in Beta:
 
 ### Other Changes
 
+* Fixed SameSite:Strict in session cookie breaks SAML authentication with some providers
 * Cumulated changes from patch 3.32.5
 
 ## 3.32.5 (September 1, 2023)
