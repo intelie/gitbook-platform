@@ -16,6 +16,14 @@ Currently in Beta:
 * 3.32.x
 {% endhint %}
 
+## 3.32.5 (September 1, 2023)
+
+### Bugfixes
+
+* Fix publish-release-notes bugs in the search for released versions
+* Fixes a bug when filtering for "Only plugins" in the plugin page
+* Increase the style specificity of the "form-group" class
+
 ## 3.34.1 (August 11, 2023)
 
 * Cumulated changes from patch 3.33.2
