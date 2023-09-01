@@ -16,6 +16,19 @@ Currently in Beta:
 * 3.32.x
 {% endhint %}
 
+## [3.35.0](3.35.0.md) (September 1, 2023)
+
+### New features
+
+* Dashboard and Widget Multiple Span API
+* Allow select multiple span on dashboard span type editor
+* Expand utilization of the Performance Report
+* Navigation improvement in the Storage Statistics administrative page
+
+### Improvements
+
+* Performance improvement in the Storage Statistics administrative page by using React window virtualization
+
 ## 3.34.2 (September 1, 2023)
 
 ### Other Changes
