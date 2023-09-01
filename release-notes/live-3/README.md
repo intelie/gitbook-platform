@@ -5,15 +5,13 @@ We advise that, from July of 2021 on, `systemd` will be a mandatory dependency f
 {% endhint %}
 
 {% hint style="info" %}
-Live uses the [Semantic Versioning 2.0.0](https://semver.org/). &#x20;
+Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 {% endhint %}
 
 {% hint style="info" %}
 Currently in Beta:
 
-* 3.34.x
-* 3.33.x
-* 3.32.x
+* 3.35.x
 {% endhint %}
 
 ## [3.35.0](3.35.0.md) (September 1, 2023)
@@ -61,12 +59,12 @@ Currently in Beta:
 
 * Cumulated changes from patch 3.31.5
 
-## 3.31.5 (August 11, 2023) 
+## 3.31.5 (August 11, 2023)
 
-### New Features 
+### New Features
 
 * Filter alerts graphic by rule
-* Automate Release Notes Generation 
+* Automate Release Notes Generation
 
 ## [3.34.0](3.34.0.md) (July 14, 2022)
 
@@ -99,7 +97,7 @@ Currently in Beta:
 
 ### New Features
 
-* Allow users to use system theme&#x20;
+* Allow users to use system theme
 * Allow users to select their language
 * Allow users to sync personal preference options across devices
 * Entity Versioning API ([more](../../features/entity-audit.md))
@@ -148,9 +146,9 @@ Currently in Beta:
 ### Fixes and improvements
 
 * Fixed a bug that causes the dashboard "apply" filter button to not be visible
-* Fixed dashboard deletion confirmation modal&#x20;
+* Fixed dashboard deletion confirmation modal
 
-## [3.32.0](broken-reference) (May 12, 2022)
+## [3.32.0](broken-reference/) (May 12, 2022)
 
 ### Fixes and improvements
 
@@ -365,7 +363,7 @@ Currently in Beta:
 * Allow storage implementations to send warning events to the client
 * Create new registry to show release tag in plugins list
 * Support uploading a zip of plugins
-* Allow install a zip of plugins&#x20;
+* Allow install a zip of plugins
 
 ### Fixes and improvements
 
@@ -481,7 +479,7 @@ Currently in Beta:
 ### Fixes and improvements
 
 * Fix sometimes changing only one of the y axis extremes in temporal widgets is not reflected in the chart
-* Fix Live alert adding condition to accept strings from 1 to 9&#x20;
+* Fix Live alert adding condition to accept strings from 1 to 9
 * Fix widget does not wait for web worker to be initialized
 
 ## 3.26.2 (October 28, 2022)
@@ -551,10 +549,10 @@ Currently in Beta:
 
 * Updated Pipes to 0.25.5
   * Update introspective to 0.12
-  * Cron should not consider leading spaces&#x20;
+  * Cron should not consider leading spaces
   * Fix NPE at stateful pipe within transform operator
-  * Java 17 fixes&#x20;
-  * Update dependencies of pipes-tutorial&#x20;
+  * Java 17 fixes
+  * Update dependencies of pipes-tutorial
   * Start of nullability annotations
 * Improved code documentation (javadoc) on Live API
 * Added crop function on service span from Live
@@ -724,7 +722,7 @@ Currently in Beta:
 ### Fixes and improvements
 
 * Fixed a bug on date-pickers on fresh Live installs
-* Fixed charts tooltip not displaying right colors&#x20;
+* Fixed charts tooltip not displaying right colors
 * Fixed an error on widget "More Options" button
 * Fixed a bug on lookup tables being incorrectily non editable
 
@@ -732,7 +730,7 @@ Currently in Beta:
 
 ### Fixes and improvements
 
-* Fixed an internal problem on the build process.&#x20;
+* Fixed an internal problem on the build process.
 
 ## [3.21.0](3.21.0.md) (April 08, 2022)
 
@@ -741,7 +739,7 @@ This version is not available for installation due to an internal problem on the
 ### New features
 
 * Integrate @intelie/ui Switch component
-* Internal: published docker image now supports linux/amd64 and linux/arm64. The reference `tools/docker` script was updated to reflect new required flags when running the container.&#x20;
+* Internal: published docker image now supports linux/amd64 and linux/arm64. The reference `tools/docker` script was updated to reflect new required flags when running the container.
 
 ### Fixes and improvements
 
@@ -803,7 +801,7 @@ This version has been deprecated due to a technical problem on the release proce
 * Default pipes widget is not aware of interceptors when downloading
 * Fix bug displaying Available rooms into the messenger sidebar
 * Missing build number in live-ui manifest
-* Filter options selected filter jumps the first line when its name is too long&#x20;
+* Filter options selected filter jumps the first line when its name is too long
 
 ## 3.18.1 (March 25, 2022)
 
@@ -877,14 +875,12 @@ This version has been deprecated due to a technical problem on the release proce
 
 * \[beta] Per-device theme customization
 
-### Fixes and improvements&#x20;
+### Fixes and improvements
 
 * UI/UX improvements in the failsafe interface
 * Healthcheck | Add Config and Utils to public API
 * Improvements for SAML login
 * \[fixed] Download: Merge rows with the same timestamp not working in csv and excel
-
-
 
 ## 3.15.0 (December 30, 2021)
 
@@ -909,8 +905,8 @@ This version has been deprecated due to a technical problem on the release proce
 
 ### Fixes and improvement <a href="#user-content-fixes-and-improvements" id="user-content-fixes-and-improvements"></a>
 
-* Include plugin count at the plugin admin interface&#x20;
-* Include plugin upload progress at the plugin admin interface&#x20;
+* Include plugin count at the plugin admin interface
+* Include plugin upload progress at the plugin admin interface
 * \[fixed] First setup of multiple filters is tied together
 * \[fixed] Dropdown configurations menu expands out of screen area
 * \[fixed] Invalid extension name can lead to a "No such servlet" error
@@ -921,8 +917,8 @@ This version has been deprecated due to a technical problem on the release proce
 * \[API] Update gson to 2.8.8
 * \[API] Update kotlin to 1.5.31
 * \[API] Update JetBrains.Annotations to 22.0.0
-* \[API] Add ahooks 3.0.0 library&#x20;
-* \[API] Include web services final URLs to the Extension Config API&#x20;
+* \[API] Add ahooks 3.0.0 library
+* \[API] Include web services final URLs to the Extension Config API
 
 ## 3.13.2 (December 13, 2021)
 
@@ -948,24 +944,22 @@ This version has been deprecated due to a technical problem on the release proce
 * \[fixed] Datasource pipes query editor unreliably expands over the data output area
 * \[fixed] Label channels on dark mode were always white
 * \[fixed] Units are displayed in the wrong color in the pipes widget header
-* Performance improvement&#x20;
+* Performance improvement
 
 ## 3.12.1 (December 09, 2021)
 
 ### Fixes and improvement <a href="#user-content-fixes-and-improvements" id="user-content-fixes-and-improvements"></a>
 
-* \[fixed] Units were displayed in the wrong color in the pipes widget header&#x20;
-* \[fixed] Label channels on dark mode were always white&#x20;
+* \[fixed] Units were displayed in the wrong color in the pipes widget header
+* \[fixed] Label channels on dark mode were always white
 * \[fixed] Individual tooltip is not working
-*   \[fixed] Console interface is breaking with the periodic provider
-
-    &#x20;
+* \[fixed] Console interface is breaking with the periodic provider
 
 ## [3.12.0 (November 19, 2021)](3.12.0.md)
 
 ### Fixes and improvements <a href="#user-content-fixes-and-improvements" id="user-content-fixes-and-improvements"></a>
 
-* Rules interface now shows the  "provider" on every item
+* Rules interface now shows the "provider" on every item
 * \[fixed] Some of the sub-menu items are hiding on mouse over
 * \[fixed] Truncated filters should show a tooltip when hovering any part of it
 * \[fixed] Codemirror is not working on Firefox for Mac
@@ -1009,7 +1003,7 @@ This version has been deprecated due to a technical problem on the release proce
   * Fix UnionPipe and JoinPipe behavior with empty batches
   * Fixed Exprange for step equals to 1
   * Exprange should be finite
-* \[fixed] Failsafe screen should not show PANIC buttons to non-Admins&#x20;
+* \[fixed] Failsafe screen should not show PANIC buttons to non-Admins
 * \[API] Deprecate redo() and undo() from Live.Action
 * Add "final computed span" to \_\_queries event
 * Performance improvement to Lookup Table interface
@@ -1023,8 +1017,8 @@ This version has been deprecated due to a technical problem on the release proce
 
 ### Fixes and improvements
 
-* \[fixed] Plugin start duration - Format long time periods using different time units (ms, s, m, etc)&#x20;
-* \[fixed] `__audit` event has incomplete data&#x20;
+* \[fixed] Plugin start duration - Format long time periods using different time units (ms, s, m, etc)
+* \[fixed] `__audit` event has incomplete data
 * \[Ops] Allow starting a new log file without restarting Live
 * Optimize classloader use
 * Keyboard shortcuts should be adapted for MacOS
@@ -1044,7 +1038,7 @@ This version has been deprecated due to a technical problem on the release proce
   * \[fixed] Provider dropdown should handle a list with many items
   * \[fixed] Grouped tooltip disappears in some hover points
   * Improve `Admin>System and Display Settings>Security>Maximum concurrent sessions` description
-* \[fixed] Memory leaks&#x20;
+* \[fixed] Memory leaks
 * \[fixed] Files being exported blank when using the console's download feature (CSV/EXCEL Plus)
 * \[API] Live will log classloader mismatch
 
@@ -1058,7 +1052,7 @@ This version has been deprecated due to a technical problem on the release proce
 
 ### Fixes and improvements
 
-* \[fixed] Default CSV/EXCEL download should not merge timestamps&#x20;
+* \[fixed] Default CSV/EXCEL download should not merge timestamps
 * \[fixed] Read-only mode should disable any interaction with Toggle
 * Dashboard's performance report UI/UX improvements
 
@@ -1069,7 +1063,7 @@ This version has been deprecated due to a technical problem on the release proce
 * Cumulative fixes from [3.6.1](./#3-6-1-september-9-2021) stable version
 * Update pipes to 0.25.1
   * Added `isFinite`, `isInfinite` and `isNaN`
-* Fix translation (live-ui plugin)&#x20;
+* Fix translation (live-ui plugin)
 
 ## 3.6.1 (September 9, 2021)
 
@@ -1095,16 +1089,16 @@ This version has been deprecated due to a technical problem on the release proce
 
 * Performance optimization for short-lived queries
 * Add more information to metric events
-* UI/UX improvements&#x20;
+* UI/UX improvements
   * Setting to disable storage cache for explicit event types can now handle huge filters
   * Uniforms the icon to represent the ordering criteria of table widgets
   * Improvements in Storage stats administration page to support large collection names and better alignment in higher resolution screens
-  * Configuration menu now closes when an item is selected&#x20;
+  * Configuration menu now closes when an item is selected
   * Improve delete messages in confirmation modals
   * Improve `Admin>System and Display Settings>Log Events` description
   * \[fixed] Widget footer is blocking interactions
   * \[fixed] Actions on purge rules screen seems to be deactivated
-  * Multiple changes related to the theme, e.g. the console&#x20;
+  * Multiple changes related to the theme, e.g. the console
 
 ## [3.5.0](3.5.0.md) (August 13, 2021)
 
@@ -1119,12 +1113,12 @@ This version has been deprecated due to a technical problem on the release proce
   * \[fixed] If a user without permission clicks on a link on the Report, it shows an empty screen
   * \[fixed] If a user opens the Report while the dashboard is loading, it shows an error screen
   * Format long time periods using different time units (ms, s, m, etc)
-* \[fixed] Export dashboard option is displayed even without the [plugin widget-export ](https://marketplace.intelie.com/artifact/plugin-widgetexport)&#x20;
-  * [Plugin widget-export ](https://marketplace.intelie.com/artifact/plugin-widgetexport) 3.1.0 is required&#x20;
+* \[fixed] Export dashboard option is displayed even without the [plugin widget-export](https://marketplace.intelie.com/artifact/plugin-widgetexport)
+  * [Plugin widget-export ](https://marketplace.intelie.com/artifact/plugin-widgetexport)3.1.0 is required
 * \[fixed] Uniforms the icon to represent the ordering criteria of tables and lists
 * Add missing English translations in confirmation modal
 * Plugin admin page ([more](3.5.0.md#dashboard-performance-report))
-  * Verify broken dependencies inter-plugins and show a consolidated warning&#x20;
+  * Verify broken dependencies inter-plugins and show a consolidated warning
   * Validates installed plugins and recommends download from [marketplace](https://marketplace.intelie.com/) whenever important plugins are missing
 * Update the fallback page with links to download [live-ui](https://marketplace.intelie.com/artifact/live-ui/), when it's not available
 
@@ -1142,7 +1136,7 @@ This version has been deprecated due to a technical problem on the release proce
 * Update pipes doc link to the latest version
 * \[fixed] Dashboard addons should be rendered in registration order
 
-## 3.3.2 (July 30, 2021)&#x20;
+## 3.3.2 (July 30, 2021)
 
 ### **Fixes and improvements**
 
@@ -1167,7 +1161,7 @@ This version has been deprecated due to a technical problem on the release proce
 
 ### **Fixes and improvements**
 
-* Cumulative fixes from [3.0.5](./#3-0-5-july-20-2021)  stable version
+* Cumulative fixes from [3.0.5](./#3-0-5-july-20-2021) stable version
 * \[fixed] File descriptor leak at dashboard download
 
 ## 3.3.1 (July 20, 2021)
@@ -1213,7 +1207,7 @@ This version has been deprecated due to a technical problem on the release proce
 * \[fixed] Closing the warning message on the dashboard progress bar hides the progress bar forever
 * \[fixed] Individual tooltip not showing the closest channel to the mouse cursor
 * Update Pipes to 0.24.5
-  * &#x20;Fix premature aggregation in UnionPipe and JoinPipe (partially fixed by 0.13.6)
+  * Fix premature aggregation in UnionPipe and JoinPipe (partially fixed by 0.13.6)
   * Fixed string representation for empty Filters
   * Fixed round anomalies with big numbers
   * Added new copy constructor and merge operation on FilterRuntime
@@ -1223,7 +1217,7 @@ This version has been deprecated due to a technical problem on the release proce
 
 ### **Fixes and improvements**
 
-* Cumulative fixes from [3.2.0](../#3-2-0-july-2-2021)  and [3.1.2](../#3-1-2-july-16-2021) stable version
+* Cumulative fixes from [3.2.0](../#3-2-0-july-2-2021) and [3.1.2](../#3-1-2-july-16-2021) stable version
 * Add query span to `__queries` start events
 * \[fixed] In some extreme cases, query statistics metrics can be discarded
 * \[fixed] Dashboard yAxis properties can't be used if there's a @meta
@@ -1246,7 +1240,7 @@ This version has been deprecated due to a technical problem on the release proce
 ### New features
 
 * Settings' cache metrics ([more](../../developers/backend-api/settings.md#cache-metrics))
-* Heavy queries monitoring&#x20;
+* Heavy queries monitoring
 * New CometD settings support in [live.properties](../../administration/configuration/live.properties.md) and in admin page
 * WidgetQueryHandler Query Interceptors
 
@@ -1254,9 +1248,9 @@ This version has been deprecated due to a technical problem on the release proce
 
 * Cumulative fixes from [3.1.1](../#3-1-1-july-2-2021) stable version
 * Multiple improvements for Non-Datasource queries
-* UI/UX improvements on the Non-Time-Based Widgets Tooltip&#x20;
+* UI/UX improvements on the Non-Time-Based Widgets Tooltip
 * Fix inconsistencies in the way timespan boundaries are handled
-* \[API] TableForm render now has access to the  `rowIndex`
+* \[API] TableForm render now has access to the `rowIndex`
 
 ## 3.1.1 (July 2, 2021)
 
@@ -1269,7 +1263,7 @@ This version has been deprecated due to a technical problem on the release proce
 
 ### Fixes and improvements
 
-* Cumulative fixes from [3.0.2](../#3-0-2-may-7-2021) and  [2.29.10](../#2-29-10-july-2-2021) stable version
+* Cumulative fixes from [3.0.2](../#3-0-2-may-7-2021) and [2.29.10](../#2-29-10-july-2-2021) stable version
 * Remove unnecessary alert when Opening/Closing Dashboard Filter dropdown
 * Grouped Axes (chart header labels) do not update in widget resize
 * Value widget font is too small
@@ -1280,11 +1274,11 @@ This version has been deprecated due to a technical problem on the release proce
 
 ### New features
 
-* Extremely heavy pipes queries will generate a warning for further analysis&#x20;
+* Extremely heavy pipes queries will generate a warning for further analysis
 * Console area now has a reducer option
 * New dashboard action: Performance Summary under the Options menu
 * Non-Datasource queries are now independent
-* All query warnings/errors are logged into  `__queries` events
+* All query warnings/errors are logged into `__queries` events
 * Custom Favicon configuration under Admin > Web Settings
 
 ### Fixes and improvements
@@ -1293,7 +1287,7 @@ This version has been deprecated due to a technical problem on the release proce
 * \[API] Update react-spring to 9.1.1
 * Prevents the merge of pipes queries when .limit storage hint is used
 * Each plugin now has a list of dependencies in the Plugin area
-* Better Systemd support&#x20;
+* Better Systemd support
 
 ## 3.0.2 (May 7, 2021)
 
@@ -1320,7 +1314,7 @@ This version has been deprecated due to a technical problem on the release proce
   * \[API] Unified encryption service to secure sensitive data (passwords, connection secrets, etc)
 * New chart analysis experience
   * Chart crosshair now follows smoothly the x-axis values instead of snapping to point values
-  * Removed "**Find near points**" option&#x20;
+  * Removed "**Find near points**" option
 * Option to display gaps on the Cartesian widget with [pipes modifiers](../../data-visualization/pipes-modifiers-on-standard-charts.md)
 * [\[API\] ](../../developers/web-application/services/point-service.md)[Point Service new observable properties](../../developers/web-application/services/point-service.md)
 * [\[API\] Support to partial index creation](3.0.0.md#api-support-to-partial-index-creation)
@@ -1339,12 +1333,12 @@ This version has been deprecated due to a technical problem on the release proce
 
 ### Breaking changes and migration paths
 
-* [PointService](../../developers/web-application/services/point-service.md) does not emit the Chart object on legacy API anymore&#x20;
+* [PointService](../../developers/web-application/services/point-service.md) does not emit the Chart object on legacy API anymore
   * Use the [new API](../../developers/web-application/services/point-service.md) instead
 * Highcharts update from **7.0.3** to **9.0.1**
   * Check if your chart still works, use the Highchart's [Release notes](https://www.highcharts.com/blog/changelog/) as a reference if something breaks.
 * \[API] Settings' API for transactions was removed
-* \[API] Settings log is disabled by default&#x20;
-* API changes in the Settings, related to the aforementioned Settings' Observers&#x20;
-* Plugins that have invalid web services will be preemptively stopped by Live&#x20;
+* \[API] Settings log is disabled by default
+* API changes in the Settings, related to the aforementioned Settings' Observers
+* Plugins that have invalid web services will be preemptively stopped by Live
 * Live will block the creation of queries inside queries due to a deadlock possibility
