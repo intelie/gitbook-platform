@@ -14,6 +14,14 @@ Currently in Beta:
 * 3.35.x
 {% endhint %}
 
+## 3.32.6 (September 15, 2023)
+
+### Bugfixes
+
+* IndexService is vulnerable to semi-deadlocks when caller waits for task (executor queue full)
+* IndexService ProviderListener overloads indexExecutor queue
+* Empty event type causes index creation on all collections
+
 ## [3.35.0](3.35.0.md) (September 1, 2023)
 
 ### New features
