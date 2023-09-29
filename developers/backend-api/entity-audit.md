@@ -1,6 +1,6 @@
 # Entity Audit
 
-An **Entity Audit** represents a write operation on a **Live** entity, that was listened by a Hibernate Listener, and transformed into a new entity called `EntityAudit`. This new entity stores details of the operation and the new state of the entity in the system.
+An **Entity Audit** represents a write operation on a **Live** entity, that was captured by a Hibernate Listener, and transformed into a new entity called `EntityAudit`. This new entity stores details of the operation and the new state of the entity in the system.
 
 Live supports storing an `EntityAudit` in two forms: a _database record_ and/or an _event_ depending on the configuration set in the general system settings.
 
@@ -20,7 +20,19 @@ There are some rules to an entity to be available for auditing. The `EntityAudit
 
 ## Plugin auditable entities
 
-Starting in version 3.36, **Live** provides new API entry that permits plugins to register their own __Hibernate Session Factory__ into Live to expand the auditing features to the plugin's entities. Live will use the plugin's __Hibernate Session Factory__ to register a `EntityAuditDBListener` with all necessary `TypeAdapters` and used it to search for `EntityAudits` entities in the auditing endpoint (/rest/entity-audit). It is also possible to extend the listener in order to customize the common rules and add more skip conditions to avoid auditing a write operation. With that in hand the plugin can register the listener by itself in its _Hibernate Session Factory_ as this snippet bellow:
+Starting in version 3.36.0, **Live** provides new API entry that permits plugins to register their own __Hibernate Session Factory__ into Live to expand the auditing features to the plugin's entities. Live will use the plugin's __Hibernate Session Factory__ to register a `EntityAuditDBListener` with all necessary `TypeAdapters` and used it to search for `EntityAudits` entities in the auditing endpoint (/rest/entity-audit). 
+
+```java
+/* This TypeAdapter is including an instance of EntityContext to provide a way to recovery the user by its ID */
+EntityContext entityContext = live.data().getContext();
+AssetTypeAdapter assetTypeAdapter = new AssetTypeAdapter(entityContext);
+TypeAdapterDescriptor<AssetDTO, Asset> typeAdapterDescriptor = new TypeAdapterDescriptor<>("asset", Asset.class, assetTypeAdapter, AssetDTO::new);
+
+EntityAuditOptions options = new EntityAuditOptions(Collections.singletonList(typeAdapterDescriptor));
+live.data().auditHibernateSessions(sessionFactory, options);
+```
+
+It is also possible to extend the listener in order to customize the common rules and add more skip conditions to avoid auditing a write operation. With that in hand the plugin can register the listener by itself in its _Hibernate Session Factory_ as this snippet bellow:
 
 ```java
 EntityAuditDBListener myListener = ...
@@ -112,4 +124,4 @@ If needed, the user can use the result of this method to roll back parts or all 
 
 {% hint style="warning" %} Getting an EntityAudit that represents a delete operation will return a BAD_REQUEST. As explained before, EntityAudits of delete operations do not hold an entity content {% endhint %}
 
-{% hint style="info" %} A change was made in the EntityAudits returned by the listing endpoints (List by type and List by type and id). That change replaces the `author` field from a structure like `{"id":1, "name":"someone"}` to a simple integer representing the id. This was necessary to keep the model of EntityAudit from Live and the plugins the same as the plugins do not store users information to fill in the value.
+{% hint style="info" %} A change in version 3.36.0 was made in the list of EntityAudit returned by the listing endpoints (List by type and List by type and id). That change replaces the `author` field from a structure like `{"id":1, "name":"someone"}` to a simple integer representing the id. This was necessary to keep the model of EntityAudit from Live and the plugins the same as the plugins do not store users information to fill in the value.
