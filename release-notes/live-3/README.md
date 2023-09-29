@@ -14,6 +14,19 @@ Currently in Beta:
 * 3.35.x
 {% endhint %}
 
+## [3.36.0](3.36.0.md) (September 29, 2023)
+
+### New features
+
+* Add New Lookuptable getmanysafe Pipes Function
+* Add Support to UOM on Replay Plugin
+* Add span  sync button in dashboard
+* Time Span Picker Sync
+* Span Sync Service Frontend
+* Remove dashboard change span type from more options
+* Span Pickers Modal Configuration
+* Sync crosshair between widget different span type
+
 ## 3.35.1 (September 15, 2023)
 
 ### Other Changes
