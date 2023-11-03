@@ -10,21 +10,22 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 
 {% hint style="info" %}
 Currently in Beta:
-
-* 3.35.x
 {% endhint %}
 
 ## 3.36.1 (November 3, 2023)
 
 ### Other Changes
 
-* Cumulated changes from patch 3.34.4
-
-## 3.34.4 (November 3, 2023)
+* Cumulated changes from patch 3.35.2
 
 ## 3.35.2 (November 3, 2023)
 
 ### Other Changes
+
+* Add `MAX_AUTHENTICATION_AGE` as configuration for SAMLv2 instances
+* Cumulated changes from patch 3.34.4
+
+## 3.34.4 (November 3, 2023)
 
 * Cumulated changes from patch 3.33.5
 
@@ -41,7 +42,7 @@ Currently in Beta:
 
 * Add New Lookuptable getmanysafe Pipes Function
 * Add Support to UOM on Replay Plugin
-* Add span  sync button in dashboard
+* Add span sync button in dashboard
 * Time Span Picker Sync
 * Span Sync Service Frontend
 * Remove dashboard change span type from more options
