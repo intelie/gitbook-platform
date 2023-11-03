@@ -14,6 +14,8 @@ Currently in Beta:
 * 3.35.x
 {% endhint %}
 
+## 3.34.4 (November 3, 2023)
+
 ## 3.35.2 (November 3, 2023)
 
 ### Other Changes
