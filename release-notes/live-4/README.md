@@ -1,4 +1,18 @@
 # Live 4
+## 4.0.4 (November 3, 2023)
+
+### New features
+
+* Override vulnerability of xmlsec dependency on plugin-samlv2
+* Vulnerability / Cross-Frame Scripting
+* Follow-up from "Expose deadlock checker endpoint and add built-in watchdog"
+* Put dashboard change span type option in more options config
+* Fix plugin vulnerabilities
+
+### Bugfixes
+
+* Fix error when opening a Pipes Modules
+
 ## 4.0.3 (October 20, 2023)
 
 ### New features
