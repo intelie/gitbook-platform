@@ -14,6 +14,13 @@ Currently in Beta:
 * 3.35.x
 {% endhint %}
 
+## 3.33.5 (November 3, 2023)
+
+### Bugfixes
+
+* Fix tick amount config not cleared
+* SameSite:Strict in session cookie breaks SAML authentication with some providers
+
 ## [3.36.0](3.36.0.md) (September 29, 2023)
 
 ### New features
