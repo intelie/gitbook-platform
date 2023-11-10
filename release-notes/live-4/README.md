@@ -1,4 +1,20 @@
 # Live 4
+## 4.0.5 (November 10, 2023)
+
+### New features
+
+* Fix dashboard span type config
+* [LIVE4] Temporal and Cartesian charts does't work when render first time outside dashboard context
+
+### Improvements
+
+* Provide all runtime live-ui dependencies as "externals / library modules"
+
+### Bugfixes
+
+* [LIVE4] BASIC WIDGET JSX DOESN'T WORK
+* Avoid calling the span multiple times
+
 ## 4.0.4 (November 3, 2023)
 
 ### New features
