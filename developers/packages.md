@@ -4,8 +4,8 @@ A package is a plugin that defines a list of features (such as dashboards, datas
 
 * live-plugins/plugin-my-package
   * pom.xml
-    * src/main/resource
-        * manifest.yaml
+  * src/main/resource
+    * manifest.yaml
 
 All packages require the [plugin-package-manager](https://marketplace.intelie.com/artifact/plugin-package-manager). Without it, Live will not recognize a package plugin as a package and will not allow the admin user to install the features.
 
