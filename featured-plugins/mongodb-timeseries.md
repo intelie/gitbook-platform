@@ -86,4 +86,3 @@ Since each integration is configured using only one `timeSeriesTimestamp`, multi
 
 - an event contains more than one time field, each field configured at a different integration. There's no way to predict which integration will store the event and the performance will be affected depending on the query. 
 - an integration is configured with `timestamp` as `timeSeriesTimestamp`. Like the situation above, since all events contain `timestamp` as a mandatory field. In this case, the integration filter should exclude all other fields configured as `timeSeriesTimestamp` in any integration.
-- 
