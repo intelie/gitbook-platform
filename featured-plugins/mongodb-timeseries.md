@@ -70,7 +70,7 @@ When developing this new plugin, we faced many risks because of time series coll
 
 ## INTELIE Live Integration
 
-![INTELIE MongoDB Timeseries plugin configuration](https://github.com/intelie/gitbook-platform/assets/527577/103615e8-7a2d-4317-a8d8-06190a493f75)
+![INTELIE MongoDB Timeseries plugin configuration](../.gitbook/assets/mongodb-timeseries-ui-configuration.png)
 
 Three new configurations were added when compared to the plugin MongoDB: 
 - `timeSeriesTimestamp`: temporal field to be used as `timeField` when creating the time series collection. The value must be the field used as timestamp hint when querying for better performance, examples: `timestamp`, `adjusted_index_timestamp`. 
