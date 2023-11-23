@@ -3,7 +3,7 @@ description: Based on Plugin MongoDB, this plugin uses time series collections i
 ---
 
 # MongoDB
-Form more information about base configuration and features, access [Plugin Mongodb](./mongodb.md) docs.  
+Form more information about base configuration and features, access [Plugin MongoDB](./mongodb.md) docs.  
 
 # MongoDB Timeseries
 
