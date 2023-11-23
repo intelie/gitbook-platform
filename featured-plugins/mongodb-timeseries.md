@@ -1,21 +1,22 @@
 ---
-description: Based on Plugin MongoDB, this plugin uses time series collections instead of normal collections, since most of the data in Live is time-based, whether it's based on the usual timestamp, or other fields, like adjusted_index_timestamp, which will be used to create the time series collection. 
+description: Supports MongoDB time series data instead of ordinary collections. It takes advantage of the nature of time-based data ingested into INTELIE Live, whether ordered by `timestamp` or other fields, like `adjusted_index_timestamp`.
 ---
 
 # MongoDB
-Form more information about base configuration and features, access [Plugin MongoDB](./mongodb.md) docs.  
+
+For more information about classic INTELIE MongoDB plugin configuration and features, access [Plugin MongoDB](./mongodb.md) docs.  
 
 # MongoDB Timeseries
 
-Time series is a collection of data that changes over time. That way, the time when the data was recorded plays a significant role when querying and analyzing this data. MongoDB introduced in version 5.0 a new type of collection that stores time series data in an efficient way, called time series collections. From the user's perspective, they behave the same as normal collections, just stored efficiently. This plugin uses time series collections instead of normal collections, since most of the data in Live is time-based, whether it's based on the usual timestamp, or other fields, like adjusted_index_timestamp, which will be used to create the time series collection. 
+Time series is a collection of data that changes over time. That way, the time when the data was recorded plays a significant role when querying and analyzing this data. MongoDB introduced in version 5.0 a new type of collection that stores time series data in an efficient way, called time series collections. 
 
+From the user's perspective, time series behaves the same as normal collections, just stored efficiently. This plugin uses time series collections instead of normal collections, since most of the data in Live is time-based, whether it's based on the usual timestamp, or other fields, like adjusted_index_timestamp, which will be used to create the time series collection. 
   
-Other configurations are available when creating a time series collection besides the time field: 
-- metaField: The name of the field which contains metadata in each time series document, identifying a unique series of documents. 
-- granularity: Value that most closely matches the time between consecutive incoming timestamps, possible values are seconds (default), minutes, and hours. 
+In order to create a MongoDB time series collection, it's necessary to specify a `timeField` configuration indicating the document field to be used as the temporal mark. However, other immutable configurations are also crucial to be prepared before the time series creation: 
+- `metaField`: The name of the field which contains metadata in each time series document, identifying a unique series of documents. 
+- `granularity`: Value that most closely matches the time between consecutive incoming timestamps, possible values are seconds (default), minutes, and hours. 
 
 Know more about time series configurations at https://www.mongodb.com/docs/manual/core/timeseries/timeseries-procedures/#time-series-field-reference. 
-  
 
 # Benefits 
 
@@ -65,9 +66,11 @@ When developing this new plugin, we faced many risks because of time series coll
 - Live 3.30+. 
 - MongoDB server version 7+. 
 
-# Config 
+# Configuration
 
-## Integration config 
+## INTELIE Live Integration
+
+![INTELIE MongoDB Timeseries plugin configuration](https://github.com/intelie/gitbook-platform/assets/527577/103615e8-7a2d-4317-a8d8-06190a493f75)
 
 Three new configurations were added when compared to the plugin MongoDB: 
 - `timeSeriesTimestamp`: temporal field to be used as `timeField` when creating the time series collection. The value must be the field used as timestamp hint when querying for better performance, examples: `timestamp`, `adjusted_index_timestamp`. 
