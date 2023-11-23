@@ -6,7 +6,7 @@ description: TimescaleDB expands PostgreSQL for time series and analytics.
 
 Timescale is a PostgreSQL extension that handles relentless streams of time-series data with the performance, scalability, and usability that the application needs. See more at [https://www.timescale.com](https://www.timescale.com).
 
-## TimescaleDB Plugin
+## Storage Provider
 
 TimescaleDB plugin delivers a [Storage Provider](../developers/backend-api/storage-providers.md) leverages the built-in capabilities of TimescaleDB for storing and querying INTELIE Live events. It is available for download on [INTELIE Live Marketplace](https://marketplace.intelie.com/artifact/plugin-timescaledb-simple).
 
