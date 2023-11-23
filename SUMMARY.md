@@ -65,6 +65,7 @@
 * [Messenger](featured-plugins/messenger.md)
 * [Microsoft Teams](featured-plugins/microsoft-teams.md)
 * [MongoDB](featured-plugins/mongodb.md)
+* [MongoDB Timeseries](featured-plugins/mongodb-timeseries.md)
 * [Purge plugin](featured-plugins/purge-plugin.md)
 * [SQL](featured-plugins/sql.md)
 * [TCP Input](featured-plugins/tcp-input-1.md)
