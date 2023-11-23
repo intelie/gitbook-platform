@@ -84,7 +84,7 @@ The **Subscription** object delivers the following API:
 A very simple web application code to identify only data events (as described at [Live Event Types](https://platform.intelie.com/developers/web-application/dashboard-and-widgets/live-event-types)) looks like the following:
 
 ```typescript
-import Subscriber from 'live/services/Subscription'
+import Subscriber from 'live/services/subscription'
 
 const subscription = new Subscriber({
     url: `services/plugin-tutorial/events/metrics`
@@ -94,7 +94,6 @@ export type EventMetrics = {
     stimestamp: number
     gtimestamp: number
     timestamp: number
-    gperiod: number
     gperiod: number
     metric: string
     value: Record<string, string | {}>
