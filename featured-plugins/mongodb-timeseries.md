@@ -1,5 +1,5 @@
 ---
-description: Supports MongoDB time series data instead of ordinary collections. It takes advantage of the nature of time-based data ingested into INTELIE Live, whether ordered by `timestamp` or other fields, like `adjusted_index_timestamp`.
+description: Supports MongoDB time series data instead of ordinary collections. It takes advantage of the nature of time-based data ingested into INTELIE Live, whether ordered by timestamp or other fields, like adjusted_index_timestamp.
 ---
 
 # MongoDB
