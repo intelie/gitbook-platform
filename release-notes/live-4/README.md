@@ -1,4 +1,17 @@
 # Live 4
+## 4.0.6 (November 24, 2023)
+
+### New features
+
+* Remove call of renderGroupedYAxis in Widgets
+* Fixes a bug that allows creating widgets without a name
+* Update the react-select library in live 4
+
+### Bugfixes
+
+* Live does not expose d3 submodules
+* Export widget exception error
+
 ## 4.0.5 (November 10, 2023)
 
 ### New features
