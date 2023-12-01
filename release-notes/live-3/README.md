@@ -12,6 +12,21 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.35.3 (December 1, 2023)
+
+### Improvements
+
+* Add `MAX_AUTHENTICATION_AGE` as configuration for SAMLv2 instances
+
+### Bugfixes
+
+* The width of the depth selector label is not wide enough to see the depth in edit mode
+* Improvements to the modal span type on the widget edit mode.
+
+### Other Changes
+
+* Cumulated changes from patch 3.34.5
+
 ## 3.34.5 (December 1, 2023)
 
 ### Bugfixes
