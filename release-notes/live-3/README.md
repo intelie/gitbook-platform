@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.37.0](3.37.0.md) (December 1, 2023)
+
+### New features
+
+* Span type as an optional parameter to the setTimespan dashboard action
+
 ## 3.36.2 (December 1, 2023)
 
 ### Bugfixes
