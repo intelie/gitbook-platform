@@ -12,6 +12,15 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.34.5 (December 1, 2023)
+
+### Bugfixes
+
+* Fix darkmode on the login screen
+* rc-slider not applying reverse
+* Fixes a bug that partially hiddes the dashboard filter list
+* Plugins drop zone only works when the plugin dragged through a certain area of the page
+
 ## 3.36.1 (November 3, 2023)
 
 ### Other Changes
