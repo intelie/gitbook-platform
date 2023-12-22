@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.35.4 (December 22, 2023)
+
+### Bugfixes
+
+* Dashboard with depth span selector in place of the time span selector
+
+### Other Changes
+
+* Cumulated changes from patch 3.34.6
+
 ## 3.34.6 (December 22, 2023)
 
 ### New features
