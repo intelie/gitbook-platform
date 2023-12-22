@@ -12,6 +12,18 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.34.6 (December 22, 2023)
+
+### New features
+
+* Upgrade dependency check maven to 9.0.x
+* Improve dashboard filter responsiveness
+
+### Bugfixes
+
+* Leaked Error during span compilation breaks query start
+* LiveSelect replaces falsy values with an empty string
+
 ## [3.37.0](3.37.0.md) (December 1, 2023)
 
 ### New features
