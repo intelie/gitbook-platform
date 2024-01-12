@@ -12,6 +12,14 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.38.0](3.38.0.md) (January 12, 2024)
+
+### New features
+
+* Add author username column to entity audit table
+* Provide module to get the dashboard id by name
+* Expose a New API to Audit Plugin Endpoints
+
 ## 3.37.3 (January 12, 2024)
 
 ### Other Changes
