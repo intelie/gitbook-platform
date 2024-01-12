@@ -12,6 +12,21 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.36.5 (January 12, 2024)
+
+### New features
+
+* Re-enable span navigation arrows
+
+### Bugfixes
+
+* Detect span type when there is only one span selector on the dashboard
+* The span picker configuration is not saved on the dashboard configuration
+
+### Other Changes
+
+* Cumulated changes from patch 3.35.6
+
 ## 3.35.6 (January 12, 2024)
 
 ## 3.37.2 (December 29, 2023)
