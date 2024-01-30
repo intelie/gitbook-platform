@@ -12,20 +12,6 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
-## 3.35.7 (January 26, 2024)
-
-### Improvements
-
-* Dark mode visualization tuning
-
-### Bugfixes
-
-* Protect against potential task leaks in runtime executor
-* Encrypt password feature not working
-* Can't install plugins that use maven pinned version sintax for dependencies
-* Configured extension instances disappear after using the search function
-* Fix translation in dry-run modal
-
 ## 3.38.1 (January 26, 2024)
 
 ### Other Changes
