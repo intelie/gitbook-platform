@@ -12,6 +12,13 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.35.8 (February 2, 2024)
+
+### Bugfixes
+
+* Entity audit produces multiple registers for the same operation
+* Fix a bug that prevents users from disabling yAxis grid for highchart charts
+
 ## 3.38.1 (January 26, 2024)
 
 ### Other Changes
