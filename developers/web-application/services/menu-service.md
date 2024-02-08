@@ -9,6 +9,21 @@ description: >-
 Since Live @ 2
 {% endhint %}
 
+## Menu Item
+
+The properties of the menu item are explained in more detail in the table below:
+
+| Property | Description |
+| --------- | ----------- |
+| `alias` | textual representation of the menu, used to apply the "selected" status to the option at the navbar |
+| `order` | numeric representation of the order that the menu will appear |
+| `selectedAliases` | array with all textual names the menu will have. if your route/url is different of the alias, you must put both in this array to apply the "selected" status when your menu option is selected |
+| `Component` | the component that will be rendered when the menu is selected |
+| `name` | textual name of the menu that will be displayed in the navbar |
+| `url` | route to access the component of the menu |
+| `replaces` | textual representation of an alias of another menu item you want to replace with the one you're creating |
+| `config.showOnMobile` | if set to false, it will not show the menu option when Live is in mobile mode |
+
 ## Methods
 
 > register(menu: MenuItem, type: MenuType): void
@@ -43,12 +58,12 @@ type MenuType = 'right' | 'regular' | 'preferences' | 'apps' | 'console'
 interface MenuItem {
     alias: string
     order: number
-    selectedAliases: string[]
+    selectedAliases?: string[]
     Component: React.Component
     name: string
     url: string
-    replaces: string
-    config: { showOnMobile: boolean }
+    replaces?: string
+    config?: { showOnMobile: boolean }
 }
 
 interface MenuItems {
