@@ -11,7 +11,7 @@ Since Live @ 2
 
 # Menu service
 
-The menuService is available in `live/services/menu`. It is javascript module that allows registering custom menu items to Live navigation bar or an item that already exists at the navigation bar. Every menu item must have a unique name and alias to represent itself.
+The menuService is available in `live/services/menu`. It's a javascript module that allows registering custom menu items to Live navigation bar or an item that already exists at the navigation bar. Every menu item must have a unique name and alias to represent itself.
 
 ## Methods
 
@@ -84,7 +84,7 @@ The apps menu url must start with `/#/app/${path}` and the type must be 'regular
 
 ## Examples
 
-> Regular menu code:
+> Regular menu example:
 
 ```typescript
 const Test = (): JSX.Element => <h1 style={{ padding: '50px 0 0 20px' }}>Test</h1>
