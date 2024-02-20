@@ -73,6 +73,15 @@ The console menu has the same `component`, `name`, `url`, `onClick`, `icon` and 
 | `config.iconCls` | No | Same behavior of the `icon` property. It's the class of the icon you want to appear. |
 | `config.iconPath` | No | If you want to show a pre-defined image to act as your icon, you should use it as the path to find the it. |
 
+## Menu Apps Item
+
+The apps menu url must start with `/#/app/${path}` and the type must be 'regular' in the register method. It also have the particular properties:
+
+| Property | Required | Description |
+| -------- | -------- | ----------- |
+| `config.icon` | No | Represents the path to an image you want to use as an icon at the apps menu. |
+| `config.description` | No | This text will appear right after the menu name in the apps dropdown menu, like the "Import Excel spreadsheets" of plugin-spreadsheets. |
+
 ## Examples
 
 > Regular menu code:
@@ -162,3 +171,27 @@ MenuService.register(
 > Console menu output:
 
 ![Console menu output](../../../.gitbook/assets/menu-service-example4.gif)
+
+> Apps menu example:
+
+``` typescript
+const Test = (): JSX.Element => <h1 style={{ padding: '50px 20px'}}>Test</h1>
+
+Router.route('app/test', Test, 'test')
+
+MenuService.register(
+    {
+        alias: 'test',
+        name: 'Test Menu',
+        url: '/#/app/test',
+        config: {
+            description: 'Test description for apps'
+        }
+    },
+    'regular'
+)
+```
+
+> Apps menu output:
+
+![Apps menu output](../../../.gitbook/assets/menu-service-example5.gif)
