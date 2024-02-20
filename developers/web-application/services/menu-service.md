@@ -11,9 +11,15 @@ Since Live @ 2
 
 # Menu service
 
-The menuService is available in `live/services/menu`. It's a javascript module that allows registering custom menu items to Live navigation bar or an item that already exists at the navigation bar. Every menu item must have a unique name and alias to represent itself.
+The menuService is a javascript module that allows registering custom menu items to Live navigation bar or an item that already exists at the navigation bar. Every menu item must have a unique name and alias to represent itself.
 
-## Methods
+# How to import
+
+``` typescript
+import MenuService from 'live/services/menu'
+```
+
+# Methods
 
 > register(menu: MenuItem, type: MenuType): void
 
@@ -82,7 +88,7 @@ The apps menu url must start with `/#/app/${path}` and the type must be 'regular
 | `config.icon` | No | Represents the path to an image you want to use as an icon at the apps menu. |
 | `config.description` | No | This text will appear right after the menu name in the apps dropdown menu, like the "Import Excel spreadsheets" of plugin-spreadsheets. |
 
-## Examples
+# Examples
 
 > Regular menu example:
 
