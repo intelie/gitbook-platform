@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.36.8 (February 23, 2024)
+
+### New features
+
+* Fix admin menu darkmode
+
+### Bugfixes
+
+* Fix live tooltip location
+
 ## 3.38.2 (February 5, 2024)
 
 ### Other Changes
