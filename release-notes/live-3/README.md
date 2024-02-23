@@ -12,6 +12,17 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.37.6 (February 23, 2024)
+
+### Bugfixes
+
+* Logarithmic Y-axis min and max should be always power of 10
+* Interval ticks configuration must be positive
+
+### Other Changes
+
+* Cumulated changes from patch 3.36.8
+
 ## 3.36.8 (February 23, 2024)
 
 ### New features
