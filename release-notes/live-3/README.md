@@ -12,6 +12,17 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.39.0](3.39.0.md) (February 23, 2024)
+
+### New features
+
+* Move major ticks fix to Live Axis Service
+* Ignoring remaining events in aggregation Pipes when query stopped by user action
+
+### Improvements
+
+* Increase the size of "more" widget types
+
 ## 3.38.3 (February 23, 2024)
 
 ### Other Changes
