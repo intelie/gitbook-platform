@@ -73,6 +73,7 @@
 * [SQL](featured-plugins/sql.md)
 * [TCP Input](featured-plugins/tcp-input-1.md)
 * [TimescaleDB](featured-plugins/timescaledb.md)
+* [Persistence Framework](featured-plugins/persistence-framework.md)
 
 ## Data visualization
 
