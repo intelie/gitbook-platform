@@ -90,7 +90,7 @@ The apps menu url must start with `/#/app/${path}` and the type must be 'regular
 
 # Examples
 
-> Regular menu example:
+## Regular menu example:
 
 ```typescript
 const Test = (): JSX.Element => <h1 style={{ padding: '50px 0 0 20px' }}>Test</h1>
@@ -107,11 +107,29 @@ MenuService.register(
 )
 ```
 
-> Regular menu output:
+![Regular menu output](<../../../.gitbook/assets/menu-service-example1.png>)
 
-![Regular Menu Entry](<../../../.gitbook/assets/menu-service-example1.png>)
+## Regular menu with selectedAliases:
 
-> Right menu example:
+```typescript
+const Test = (): JSX.Element => <h1 style={{ padding: '50px 0 0 20px' }}>Test</h1>
+
+Router.route('test', Test, 'test')
+
+MenuService.register(
+    {
+        alias: 'test',
+        name: 'Test Menu',
+        url: '/#/test-url/',
+        selectedAliases: ['test', 'test-url']
+    },
+    'regular'
+)
+```
+
+![Regular menu with selectedAliases](<../../../.gitbook/assets/menu-service-example6.png>)
+
+## Right menu example:
 
 ``` typescript
 const Test = (): JSX.Element => <h1 style={{ padding: '50px 20px'}}>Test</h1>
@@ -129,11 +147,9 @@ MenuService.register(
 )
 ```
 
-> Right menu output:
+![Right menu output](<../../../.gitbook/assets/menu-service-example2.png>)
 
-![Regular Menu Entry](<../../../.gitbook/assets/menu-service-example2.png>)
-
-> Preferences menu example:
+## Preferences menu example:
 
 ``` typescript
 const Test = (): JSX.Element => <h1 style={{ padding: '50px 20px'}}>Test</h1>
@@ -152,11 +168,9 @@ MenuService.register(
 )
 ```
 
-> Preferences menu output:
-
 ![Preferences menu output](../../../.gitbook/assets/menu-service-example3.gif)
 
-> Console menu example:
+## Console menu example:
 
 ``` typescript
 const Test = (): JSX.Element => <h1 style={{ padding: '50px 20px'}}>Test</h1>
@@ -174,11 +188,9 @@ MenuService.register(
 )
 ```
 
-> Console menu output:
-
 ![Console menu output](../../../.gitbook/assets/menu-service-example4.gif)
 
-> Apps menu example:
+## Apps menu example:
 
 ``` typescript
 const Test = (): JSX.Element => <h1 style={{ padding: '50px 20px'}}>Test</h1>
@@ -197,7 +209,5 @@ MenuService.register(
     'regular'
 )
 ```
-
-> Apps menu output:
 
 ![Apps menu output](../../../.gitbook/assets/menu-service-example5.gif)
