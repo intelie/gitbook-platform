@@ -114,7 +114,7 @@ MenuService.register(
 ```typescript
 const Test = (): JSX.Element => <h1 style={{ padding: '50px 0 0 20px' }}>Test</h1>
 
-Router.route('test', Test, 'test')
+Router.route('test-url', Test, 'test')
 
 MenuService.register(
     {
