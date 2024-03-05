@@ -121,13 +121,35 @@ MenuService.register(
         alias: 'test',
         name: 'Test Menu',
         url: '/#/test-url/',
-        selectedAliases: ['test', 'test-url']
+        selectedAliases: ['test', 'test-url'],
     },
     'regular'
 )
 ```
 
 ![Regular menu with selectedAliases](<../../../.gitbook/assets/menu-service-example6.png>)
+
+## Regular menu with replaces:
+
+> :warning: This prop must not be used to replace the `Home` button, instead, you can use the [custom home page API](https://platform.intelie.com/developers/web-application/home-page).
+
+```typescript
+const Test = (): JSX.Element => <h1 style={{ padding: '50px 20px'}}>Test</h1>
+
+Router.route('test', Test, 'test')
+
+MenuService.register(
+    {
+        alias: 'test',
+        name: 'Test Menu',
+        url: '/#/test',
+        replaces: 'dashboards'
+    },
+    'regular'
+)
+```
+
+![Regular menu with replaces](<../../../.gitbook/assets/menu-service-example7.png>)
 
 ## Right menu example:
 
