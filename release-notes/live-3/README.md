@@ -12,6 +12,23 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.40.0](3.40.0.md) (March 22, 2024)
+
+### New features
+
+* Create new Pipes Module with expected matchspan behavior
+* Improve live.matchspan help text
+* Plugin Isolation - Worker Startup
+* Rename the "Deadlock Warning Thread" to something less scary
+* Improve custom Bayeux SessionListener message caused by full queue
+* Plugin Isolation - Plugin Configuration
+* Plugin Isolation - Worker integration
+* Plugin Isolation - Event Lobby
+* Plugin Isolation - File Transfer
+* Calculate the time range in real-time or historical time based on a scale
+* Choose the time span based on a scale
+* Draw a line that crosses the main axis of the widgets.
+
 ## 3.39.1 (March 22, 2024)
 
 ### Other Changes
