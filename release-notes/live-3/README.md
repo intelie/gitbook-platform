@@ -12,6 +12,17 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.37.7 (March 22, 2024)
+
+### New features
+
+* Sort the items in the Configurations drop down menu alphabetically or by topic
+
+### Bugfixes
+
+* Fix plugin list checkbox left alignment
+* Fix span type modal
+
 ## [3.39.0](3.39.0.md) (February 23, 2024)
 
 ### New features
