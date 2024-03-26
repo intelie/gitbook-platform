@@ -122,6 +122,7 @@
 * [Web application](developers/web-application/README.md)
   * [Services](developers/web-application/services/README.md)
     * [Point service](developers/web-application/services/point-service.md)
+    * [Menu service](developers/web-application/services/menu-service.md)
   * [Browser Compatibility](developers/web-application/browser-compatibility.md)
   * [Runtime modules](developers/web-application/runtime-modules/README.md)
     * [Core Javascript modules](developers/web-application/runtime-modules/exposed-javascript-modules.md)
