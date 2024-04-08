@@ -47,7 +47,7 @@ The base properties that are commom between all types of menu are explained in m
 | `alias` | Yes | Textual representation of the menu, used to apply the "selected" status to the option at the navbar. It must be the same alias of the registered route. |
 | `url` | Yes | Route to access the menu component (it must be the same path registered previously by `live/services/router` or other compatible route API you want). Must respect the format `/#/${path}/`. |
 | `Component` | No | Instead of a url route, you can use this property to render a component (like Configurations dropdown), but will need to style the menu item manually inside it. * It will not use the url if you don't use the `props.href` inside it. |
-| `selectedAliases` | No | Array with all textual names the menu will have. If your registered route path and alias are different, you must put both in this array to apply the "selected" status when your menu option is selected. |
+| `selectedAliases` | No | Array with all textual names the menu will have. If your registered menu alias and route alias are different, you should add the route alias to the `selectedAliases` array so the "selected" status is applied correctly. |
 | `order` | No | Numeric representation of the order that the menu will appear (if not set, it will appear just before the `Configurations` menu). |
 | `replaces` | No | Textual representation of an alias of another menu item you want to replace with the one you're creating. |
 | `config.showOnMobile` | No | If set to false, it will not show the menu option when Live is in mobile mode. |
@@ -105,14 +105,14 @@ MenuService.register(
 ```typescript
 const Test = (): JSX.Element => <h1 style={{ padding: '50px 0 0 20px' }}>Test</h1>
 
-Router.route('test-url', Test, 'test')
+Router.route('test-url', Test, 'test-route-alias')
 
 MenuService.register(
     {
         alias: 'test',
         name: 'Test Menu',
         url: '/#/test-url/',
-        selectedAliases: ['test', 'test-url'],
+        selectedAliases: ['test-route-alias'],
     },
     'regular'
 )
