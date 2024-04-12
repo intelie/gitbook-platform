@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.41.0](3.41.0.md) (April 12, 2024)
+
+### New features
+
+* Logarithmic scale ticks configuration in cartesian chart type
+
 ## 3.40.1 (April 12, 2024)
 
 ### New features
