@@ -12,6 +12,18 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.38.5 (April 12, 2024)
+
+### Improvements
+
+* Refactor and create JSDoc for navbar menu option creation
+
+### Bugfixes
+
+* Apply dashboard picker config in edit mode
+* Load default configuration of pipes chart when creating a new one
+* Cartesian graph becomes empty when usign data gaps feature
+
 ## [3.40.0](3.40.0.md) (March 22, 2024)
 
 ### New features
