@@ -12,6 +12,20 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.40.1 (April 12, 2024)
+
+### New features
+
+* Add event flow callback in Live dashboard store
+
+### Bugfixes
+
+* Erratic selection on dashboard picker config
+
+### Other Changes
+
+* Cumulated changes from patch 3.39.2
+
 ## 3.39.2 (April 12, 2024)
 
 ### Other Changes
