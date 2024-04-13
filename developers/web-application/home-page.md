@@ -122,7 +122,7 @@ LiveApi.HomePages.register({
 ```javascript
 import React from 'react'
 
-const NewHomePage = () => {
+const NewHomePage = () => (
     <main style={{ backgroundColor: 'yellow' }}>
         <h1>New Home Page</h1>
 
@@ -132,7 +132,7 @@ const NewHomePage = () => {
             Aliquam nonummy auctor massa.
         </p>
     </main>
-}
+)
 
 export default NewHomePage
 ```
