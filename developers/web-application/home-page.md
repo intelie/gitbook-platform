@@ -122,7 +122,7 @@ LiveApi.HomePages.register({
 ```javascript
 import React from 'react'
 
-const NewHomePage = () => (
+const NewHomePage = (): JSX.Element => (
     <main style={{ backgroundColor: 'yellow' }}>
         <h1>New Home Page</h1>
 
