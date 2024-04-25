@@ -6,13 +6,13 @@ Since Live 3.32.0
 
 Live's home page can be redefined in the admin "System and Display Settings" screen, under the "UI Configurations" section. To see more details about the configuration, see [Home Page Customization](../../administration/configuration/home-page.md)
 
-Home Page options can be registered by other plugins using the `LiveApi.HomePages` registry in the frontend. A home page option can basically be one of three kinds:
+Home Page options can be registered by other plugins using the `LiveApi.HomePages` registry in the front end. A home page option can basically be one of three kinds:
 
 - a redirect to a page that already exists on Live's menu, in which case the URL to that page must be provided when registering the home page option
 - a page that renders a custom component, which must be provided when registering the home page option
 - a redirect to a page of an instance of an entity (such as a specific dashboard or lookup table), in which case some endpoints and mapping functions related to the entity must be provided when registering the home page option
 
-The `HomePage` type of a home page option is thus an union of the three types representing these kinds, defined below:
+The `HomePage` type of a home page option is thus a union of the three types representing these kinds, defined below:
 
 ```typescript
 // base interface with some common properties
@@ -35,7 +35,7 @@ interface ExistingPage extends HomePageBase {
     url: string
 }
 
-// redirects to existing page of specific instance of an entity
+// redirects to the existing page of a specific instance of an entity
 interface EntityPage extends HomePageBase {
     existsOnMenu: true
     entityData: {
@@ -118,7 +118,7 @@ LiveApi.HomePages.register({
 })
 ```
 {% endtab %}
-{% tab title="NewHomePage.jsx" %}
+{% tab title="NewHomePage.tsx" %}
 ```javascript
 import React from 'react'
 
