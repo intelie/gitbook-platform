@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.41.1 (May 3, 2024)
+
+### Bugfixes
+
+* Ensure that Y-axis values are shown according to the cartesian widget configuration
+
+### Other Changes
+
+* Cumulated changes from patch 3.40.2
+
 ## 3.40.2 (May 3, 2024)
 
 ### Other Changes
