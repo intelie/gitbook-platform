@@ -16,7 +16,7 @@ Currently in Beta:
 
 ### New features
 
-* Include source on __queries events
+* Include source on \_\_queries events
 * Enhance CacheWriteIterator warning messages
 
 ### Improvements
@@ -44,6 +44,8 @@ Currently in Beta:
 ### Bugfixes
 
 * Plugin-messenger allows unwanted register duplication in search
+* Leak of RunQueries actions when started repeatedly without closing the Action
+* Security Fixes
 
 ## 3.41.1 (May 3, 2024)
 
@@ -121,7 +123,7 @@ Currently in Beta:
 
 * Create new Pipes Module with expected matchspan behavior
 * Improve live.matchspan help text
-* Rename the "Deadlock Warning Thread"&#x20;
+* Rename the "Deadlock Warning Thread"
 * Improve custom Bayeux SessionListener message caused by full queue
 * Calculate the time range in real-time or historical time based on a scale
 * Choose the time span based on a scale
