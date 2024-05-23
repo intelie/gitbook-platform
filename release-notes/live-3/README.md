@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.43.0](3.43.0.md) (May 23, 2024)
+
+### New features
+
+* Chart Axis Extremes Service
+
 ## [3.42.0](3.42.0.md) (May 17, 2024)
 
 ### New features
