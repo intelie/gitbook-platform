@@ -12,6 +12,17 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.40.4 (May 31, 2024)
+
+### Improvements
+
+* Improve config editor dark mode for Live integrations and customization
+
+### Bugfixes
+
+* Incorrect symbol on legend
+* Column width changes when usign other layers
+
 ## [3.43.0](3.43.0.md) (May 23, 2024)
 
 ### New features
