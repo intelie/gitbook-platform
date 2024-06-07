@@ -134,6 +134,24 @@ Range version requirements in Manifest files should be double quoted:
 <requirePlugins>plugin-healthcheck, plugin-annotations@"(,1.0],[1.2,)"</requirePlugins>
 ```              
 
+However, if defining dependencies in a YAML manifest, such as in [packages](../packages.md#required-plugins), then quotes **should not** be used.
+
+```yaml
+requirePlugins:
+  - plugin-healthcheck
+  - plugin-annotations@(,1.0],[1.2,)
+```
+
+Range version requirements can also be defined as variables:
+
+```markup
+$ cat .mvn/maven.config
+-Dlive-api-version=2.25.5
+-Dplugin-annotations-version=[1.2,2.3)
+-DbuildID=${CI_PIPELINE_ID}
+```
+
+The same quoting rules described previously should be used to decide whether or not to quote the variable interpolation (e.g.: `${plugin-annotations-version}`).
 
 ### Exporting components
 
