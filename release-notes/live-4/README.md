@@ -1,4 +1,41 @@
 # Live 4
+## 4.0.7 (June 7, 2024)
+
+### Breaking changes
+
+* Remove FileUpload
+
+### New features
+
+* Add the span sync button on the span type modal from the dashboard in the edit mode
+* Add the span sync button on the dashboard in the edit mode
+* "Modify widgets menus so they are 'light' in light mode, and 'dark' in dark mode" - Implementation
+* Adjust the dashboard's span type modal to allow choosing more than one span
+* Remove the change dashboard span type action from the more options menu dropdown in the dashboard's edit mode
+* Span type button to open the modal
+* Typing "nn" at dashboard layout modal triggers a shortcut
+* Fix LiveSelect darkmode
+* Fix several darkmode issues in Live
+* Add darkmode to widgets thumbnails
+* Upgrade react-grid-layout library
+* Upgrade react-dropzone
+* Allow users to visualize the provider of a widget type
+* Add new languages to Live
+
+### Improvements
+
+* Update LiveSelect to accept all react-select props
+* Modify widgets menus so they are 'light' in light mode, and 'dark' in dark mode
+
+### Bugfixes
+
+* Gauge widget not show value in the view mode
+* Allow to upload multiple plugins to Live 4
+* Fix dashboard context filter values
+* 'Check all' option of plugins list doesn't work
+* Fix typescript definitions for the Live 4
+* Do not style plugin-annotations CSS classes
+
 ## 4.0.6 (November 24, 2023)
 
 ### New features
