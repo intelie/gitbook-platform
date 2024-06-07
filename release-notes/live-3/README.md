@@ -12,6 +12,13 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.43.2 (June 7, 2024)
+
+### Bugfixes
+
+* Adjust tooltip position based on threshold values
+* Tooltip is always transparent
+
 ## 3.43.1 (May 31, 2024)
 
 ### New features
