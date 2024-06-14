@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.44.0](3.44.0.md) (June 14, 2024)
+
+### New features
+
+* Add scrolling and zooming functionality to the cartesian chart
+
 ## 3.43.2 (June 7, 2024)
 
 ### Bugfixes
