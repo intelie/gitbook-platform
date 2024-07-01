@@ -49,6 +49,7 @@ Currently in Beta:
 * Fix dashboard filter issues on mobile
 * Protect executor shutdown against thread interruption
 * Dashboard search bug
+* Fix NPE error in some pipes queries
 
 ## [3.44.0](3.44.0.md) (June 14, 2024)
 
