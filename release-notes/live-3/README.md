@@ -12,6 +12,21 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.41.4 (July 1, 2024)
+
+### New features
+
+* Live may use mixed languages when language settings aren't synced across devices
+* Fix the scroll bar style so it doesn't overlap the dashboard
+
+### Bugfixes
+
+* Unrotate symbols on cartesian vertical charts
+* Fix a bug that prevent users from clicking at the dashboard filter scroll bar
+* Fix dashboard filter issues on mobile
+* Protect executor shutdown against thread interruption
+* Dashboard search bug
+
 ## [3.44.0](3.44.0.md) (June 14, 2024)
 
 ### New features
