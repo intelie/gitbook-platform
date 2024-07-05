@@ -12,6 +12,13 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.41.5 (July 5, 2024)
+
+### Bugfixes
+
+* Navigation - Extra components are not being displayed on dashboard header
+* Message list occasionally reappears when selecting a search result on the Messages sidebar
+
 ## 3.44.2 (July 5, 2024)
 
 ### Other Changes
