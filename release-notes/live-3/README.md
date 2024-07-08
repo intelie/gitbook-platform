@@ -39,12 +39,9 @@ Currently in Beta:
 
 ## 3.41.5 (July 5, 2024)
 
-### New features
-
-* Message list occasionally reappears when selecting a search result on the Messages sidebar
-
 ### Bugfixes
 
+* Message list occasionally reappears when selecting a search result on the Messages sidebar
 * Navigation - Extra components are not being displayed on dashboard header
 
 ## 3.44.1 (July 1, 2024)
