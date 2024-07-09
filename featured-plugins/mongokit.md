@@ -1,6 +1,8 @@
 # MongoKit
 
-MongoKit is a tool that enables users to configure a MongoDB instance alongside many MongoDB timeseries instances for temporal collections. With MongoKit, users define the temporal fields and the respective MongoDB timeseries databases that will store events matching each temporal field and filter defined in "Databases for timeseries collections". Events that do not match any of the timeseries configurations of an integration will be directed to the database defined for non-timeseries collections in "Database for non-timeseries collections".
+MongoKit is a tool that enables users to configure MongoDB timeseries instances alongside a MongoDB instance for temporal collections. With MongoKit, users define the temporal fields and the respective MongoDB timeseries databases that will store events matching each temporal field and filter defined by in "Databases for timeseries collections". Events that do not match any of the timeseries configurations of an integration will be directed to the database defined for non-timeseries collections (or that do not match any timeseries) in "Database for non-timeseries collections".
+
+![](../.gitbook/assets/MongokitOverview.png)
 
 ## Overview
 
@@ -16,6 +18,8 @@ MongoKit is a tool that enables users to configure a MongoDB instance alongside 
 
 The General Write Filter defines the entry flow for the MongoKit integration. Events that match this filter can be routed to one of the defined MongoDB timeseries databases according to their temporal fields and specific filters. If an event does not match any timeseries configuration, it will be directed to the non-timeseries instance defined in the integration.
 
+![Filter Flow](../.gitbook/assets/MongokitFilterFlow.jpg)
+
 ### Databases for Timeseries Collections
 
 For each MongoDB timeseries database, specify:
@@ -27,6 +31,7 @@ The** filnal filter** for each mongoDB timeseries database is a combination of
 `[General Filter content] && [the timeserie timefied]:* && [specific filter content if defined] `.
 The event that match with the final filter will be routed to that timeseries instance.
 
+![Filter Example](../.gitbook/assets/MongokitFilter.png)
 
 ### Database for Non-Timeseries Collections
 
@@ -41,6 +46,21 @@ Note that General write filter is considered also for non-timeserie database. So
 
 All databases within a MongoKit integration utilize the same configuration and authentication settings. This simplifies management and ensures consistency across all instances created by the integration.
 
+### Connection URI
+
+When using the Connection URI option as a connection method, a URI will be generated to connect to the database for non-timeseries mongo and a URI for each database listed in the timeseries table. 
+The generated URI follows the same pattern for all databases, changing only the <DATABASE> field, which will be filled in using the name of each database entered.
+
+![Filter Example](../.gitbook/assets/MongokitURIExample.png)
+
+## Collections and Queries
+
+Due to the configuration of more than one database in mongo-kit, a selector was added to the Collections and Queries tabs to choose which database you want to check the data.
+
+![Collections](../.gitbook/assets/MongokitCollections.png)
+
+![Queries](../.gitbook/assets/MongokitQueries.png)
+
 ## Usage Example
 
 ### Step-by-Step Guide
@@ -49,6 +69,8 @@ All databases within a MongoKit integration utilize the same configuration and a
 2. **Configure Timeseries Databases**: Specify the temporal fields and filters for each timeseries database.
 3. **Set Up Non-Timeseries Database**: Define the database for non-temporal events.
 4. **Setup common fields for your application**: Ensure all databases use the same configuration and authentication set in the plugin.
+
+![Fields](../.gitbook/assets/MongokitFields.png)
 
 ## Best Practices
 
