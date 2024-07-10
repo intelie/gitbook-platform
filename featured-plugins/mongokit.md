@@ -1,6 +1,6 @@
 # MongoKit
 
-MongoKit is a tool that enables users to configure MongoDB timeseries instances alongside a MongoDB instance for temporal collections. With MongoKit, users define the temporal fields and the respective MongoDB timeseries databases that will store events matching each temporal field and filter defined by in "Databases for timeseries collections". Events that do not match any of the timeseries configurations of an integration will be directed to the database defined for non-timeseries collections (or that do not match any timeseries) in "Database for non-timeseries collections".
+MongoKit is a tool that enables users to configure a MongoDB instance alongside MongoDB Timeseries instances for temporal collections. With MongoKit, users define the temporal fields and the respective MongoDB timeseries databases that will store events matching each temporal field and filter defined by in "Databases for timeseries collections". Events that do not match any of the timeseries configurations of an integration will be directed to the database defined for non-timeseries collections (or that do not match any timeseries) in "Database for non-timeseries collections".
 
 ![](../.gitbook/assets/MongokitOverview.png)
 
