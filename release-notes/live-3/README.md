@@ -22,6 +22,12 @@ Currently in Beta:
 
 ### Other Changes
 
+* Cumulated changes from patch 3.42.4
+
+## 3.42.4 (July 12, 2024)
+
+### Other Changes
+
 * Cumulated changes from patch 3.41.6
 
 ## 3.41.6 (July 12, 2024)
@@ -36,18 +42,7 @@ Currently in Beta:
 * Fix duplicated border when usign intelie-ui input
 * Fix broken API for cartesian charts
 
-## 3.42.4 (July 12, 2024)
 
-### Other Changes
-
-* Cumulated changes from patch 3.41.5
-
-## 3.41.5 (July 5, 2024)
-
-### Bugfixes
-
-* Navigation - Extra components are not being displayed on dashboard header
-* Message list occasionally reappears when selecting a search result on the Messages sidebar
 
 ## 3.44.2 (July 5, 2024)
 
