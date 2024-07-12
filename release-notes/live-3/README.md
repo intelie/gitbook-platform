@@ -12,6 +12,18 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.41.6 (July 12, 2024)
+
+### Improvements
+
+* Add classname and style props to color-picker
+
+### Bugfixes
+
+* Zooming in on the Cartesian can fail in some situations when the chart is vertical
+* Fix duplicated border when usign intelie-ui input
+* Fix broken API for cartesian charts
+
 ## 3.42.4 (July 12, 2024)
 
 ### Other Changes
