@@ -12,6 +12,13 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.42.5 (July 26, 2024)
+
+### Bugfixes
+
+* Fix dashboard grid layout
+* Make Live modal's overflow-y property more difficult to override
+
 ## 3.44.3 (July 12, 2024)
 
 ### Other Changes
