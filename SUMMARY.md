@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Release Notes](release-notes/README.md)
   * [Live 3](release-notes/live-3/README.md)
+    * [3.45.0](release-notes/live-3/3.45.0.md)
     * [3.44.0](release-notes/live-3/3.44.0.md)
     * [3.43.0](release-notes/live-3/3.43.0.md)
     * [3.42.0](release-notes/live-3/3.42.0.md)
