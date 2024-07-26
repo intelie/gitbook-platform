@@ -12,6 +12,19 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.44.4 (July 26, 2024)
+
+### Bugfixes
+
+* Speak your mind ctrl ctrl activation misbehavior: changed to ctrl + K
+* Cartesian pipes widget render gray lines over the entire chart when it has a time span picker and X-axis interval ticks configured and temporal pipes is present in the dashboard
+* There is no way to disable new zoom and scroll feature
+* Brush zoom doesn't change the temporal chart's main axis extremes
+
+### Other Changes
+
+* Cumulated changes from patch 3.43.6
+
 ## 3.43.6 (July 26, 2024)
 
 ### Other Changes
