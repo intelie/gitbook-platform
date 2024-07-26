@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.45.0](3.45.0.md) (July 26, 2024)
+
+### New features
+
+* Expose an API to list registered indexes
+
 ## 3.44.4 (July 26, 2024)
 
 ### Bugfixes
