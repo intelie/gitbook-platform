@@ -34,7 +34,6 @@ Currently in Beta:
 
 ### Bugfixes
 
-* Removal of datasources causes events runtime rejects any events of same event type from plugins
 * Read from cache loses __oldTimestamp field (was: Problems with "__oldTimestamp" field after use of .timestamp: hint)
 
 ## [3.45.0](3.45.0.md) (July 26, 2024)
