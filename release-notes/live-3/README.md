@@ -12,6 +12,13 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.42.6 (August 9, 2024)
+
+### Bugfixes
+
+* Removal of datasources causes events runtime rejects any events of same event type from plugins
+* Read from cache loses __oldTimestamp field (was: Problems with "__oldTimestamp" field after use of .timestamp: hint)
+
 ## [3.45.0](3.45.0.md) (July 26, 2024)
 
 ### New features
