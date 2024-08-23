@@ -12,6 +12,19 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.43.8 (August 23, 2024)
+
+### New features
+
+* Upgrade LBT to 4.1.3
+
+### Bugfixes
+
+* Removal of datasources causes the events runtime to reject any events of same event type from plugins
+* Extra picker showing message "no chart is following the dashboard"
+* Fix a bug that makes plugins get unchecked when on filter or when a plugin modification is done
+* Fix a bug that prevent plugins from being downloaded using the batch option
+
 ## 3.45.1 (August 9, 2024)
 
 ### Other Changes
