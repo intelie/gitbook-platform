@@ -12,6 +12,17 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.46.0](3.46.0.md) (August 23, 2024)
+
+### New features
+
+* Add Plugin Install Date and Build id
+
+### Improvements
+
+* Improve tooltip visualization when usign "display source mnemonics"
+* Update Health Check to Improve Analytics Accuracy
+
 ## 3.45.2 (August 23, 2024)
 
 ### Other Changes
