@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.44.6 (August 23, 2024)
+
+### Bugfixes
+
+* Speak your mind shortcut conflicts: changed to alt + u
+
+### Other Changes
+
+* Cumulated changes from patch 3.43.8
+
 ## 3.43.8 (August 23, 2024)
 
 ### New features
