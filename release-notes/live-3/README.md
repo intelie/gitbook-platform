@@ -12,6 +12,32 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.47.0](3.47.0.md) (September 7, 2024)
+
+### New features
+
+* Multiple Persistent Queues
+* Feature Flag to BLOCK automatic Index Creation from specific dashboards
+* Create a new endpoint to list plugins that have `SessionFactory` registered
+* Add Tag/Comment Feature to Entity Versioning API
+* Allow plugin entities to be edited by the system admin through UI
+* Index registration may verify if the index is already created before to proceed to create them
+* Allow users to create thinner charts (half the current width)
+* Move plugin-math to separate project
+* Write a Javadoc for Live API's - (Index)
+* Allow registering Plugin repositories
+* Add the Graph to the Storage Stats Overview
+* New feature for message reactions using emojis
+
+### Improvements
+
+* Add the possibility of making widgets hidden by default in dashboard edit mode
+* Allow interpolation of nonexistent points on line charts
+
+### Bugfixes
+
+* QA | Storage Stats layout issues
+
 ## [3.46.0](3.46.0.md) (August 23, 2024)
 
 ### New features
