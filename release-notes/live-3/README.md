@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.44.7 (September 23, 2024)
+
+### Bugfixes
+
+* Can't register home pages on async events
+
 ## [3.47.0](3.47.0.md) (September 7, 2024)
 
 ### New features
