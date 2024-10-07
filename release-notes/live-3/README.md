@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.45.4 (October 7, 2024)
+
+### New features
+
+* Fix low contrast issue for globalNotification.info in darkmode
+
+### Bugfixes
+
+* As widget query is run, "Widget {ID} doesn't exist" error message is thrown
+
 ## 3.47.1 (September 23, 2024)
 
 ### Other Changes
