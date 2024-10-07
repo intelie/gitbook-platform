@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.47.2 (October 7, 2024)
+
+### Bugfixes
+
+* Fix dashboard layout alert after moving the layout button out of the options dropdown
+
+### Other Changes
+
+* Cumulated changes from patch 3.46.2
+
 ## 3.46.2 (October 7, 2024)
 
 ### Other Changes
