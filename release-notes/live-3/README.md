@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.48.0](3.48.0.md) (October 7, 2024)
+
+### New features
+
+* Enhanced Cartesian pipes chart type
+
+### Improvements
+
+* Add dashboard interpolation indicator
+
 ## 3.47.2 (October 7, 2024)
 
 ### Bugfixes
