@@ -40,13 +40,10 @@ Currently in Beta:
 
 ## 3.45.4 (October 7, 2024)
 
-### New features
-
-* Fix low contrast issue for globalNotification.info in darkmode
-
 ### Bugfixes
 
 * As widget query is run, "Widget {ID} doesn't exist" error message is thrown
+* Fix low contrast issue for globalNotification.info in darkmode
 
 ## 3.47.1 (September 23, 2024)
 
