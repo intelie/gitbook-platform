@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.49.0](3.49.0.md) (October 22, 2024)
+
+### New features
+
+* Multiple Persistent Queues
+
 ## [3.48.0](3.48.0.md) (October 7, 2024)
 
 ### New features
