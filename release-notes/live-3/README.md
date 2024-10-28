@@ -12,6 +12,13 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.50.0](3.50.0.md) (October 28, 2024)
+
+### New features
+
+* Expose WidgetQueryService.makeQueries in WidgetQueryResource
+* Cartesian pipe query metas
+
 ## 3.49.1 (October 28, 2024)
 
 ### New features
