@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.49.1 (October 28, 2024)
+
+### New features
+
+* Change order of checks in FailSafeStorageProvider
+
 ## [3.49.0](3.49.0.md) (October 22, 2024)
 
 ### New features
