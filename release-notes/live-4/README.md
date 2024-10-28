@@ -1,4 +1,18 @@
 # Live 4
+## 4.0.8 (October 28, 2024)
+
+### New features
+
+* Port Multiple Span Picker to Live 4
+
+### Improvements
+
+* Use blue (blue-500) for globalNotification.info
+
+### Bugfixes
+
+* Fix low contrast issue for globalNotification in darkmode
+
 ## 4.0.7 (June 7, 2024)
 
 ### Breaking changes
