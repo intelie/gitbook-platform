@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.51.0](3.51.0.md) (November 11, 2024)
+
+### New features
+
+* Add an option to DISABLE installation of Development-only build AND SNAPSHOT plugins
+
 ## 3.50.1 (November 11, 2024)
 
 ### Other Changes
