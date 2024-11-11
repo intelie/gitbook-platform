@@ -12,6 +12,24 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.48.1 (November 11, 2024)
+
+### New features
+
+* Force to Allow Older Versions on Deploy RTO and Live Dev Jobs
+
+### Improvements
+
+* Apps button on Live does not follow dark mode on click
+* Fix: Lookup table textbox with white background in darkmode when editing a value
+
+### Bugfixes
+
+* Save Dashboard Lock View Mode information
+* Selector and background inside of Widgets from Liverig-vis does not follow dark mode colors
+* Fix unreadable label on monitoring chart when using dark mode
+* Make a JSX widget's style look the same on view and edit modes
+
 ## [3.50.0](3.50.0.md) (October 28, 2024)
 
 ### New features
