@@ -26,15 +26,15 @@ The first time accessing this page, no rules will be configured and the followin
 
 A rule has three configurations:
 
-* **Event type**: the type which will be purged;
-* **Time range**: the span or time interval to be purged, e.g., from ts 0, until last month, 2022-11-21 00:00 to 2022-11-30 23:59;
+* **Event type**: the type that will be purged; if you don't find it in the dropdown, you still can type and an "create" option will display;
+* **Time range**: the span or time interval to be purged, e.g., until 1 month ago, 2022-11-21 00:00 to 2022-11-30 23:59;
 * **Recurrence**: a rule can be executed only manually on this page (one-time), or it can be scheduled (recurrent) to execute both manually and automatically based on the configured cron, which we will cover later in this document.
 
 ![New purge rule configuration](https://user-images.githubusercontent.com/71188443/207718483-7b3e5d9f-2735-4e2c-be4d-79a62f432dac.png)
 
 After saving a rule, a list of rules will appear. In this list, a rule can be edited or deleted.
 
-![Purge rules listing](https://user-images.githubusercontent.com/71188443/207718563-3db482a8-1c4e-4777-83de-8012e142d319.png)
+![Purge rules listing](<../.gitbook/assets/plugin-purge-list-of-purge-rules (1).png>)
 
 Once at least one rule is configured, two new buttons will be available:
 
@@ -45,11 +45,11 @@ Once at least one rule is configured, two new buttons will be available:
 
 When a **Simulation** or **Purge** is running, a cancel button replaces the **Simulate** and **Run purge** buttons and can be used to cancel the current task. The status of the current execution and a progress bar will be displayed. The progress bar shows the progress regarding the number of purge rules executed.
 
-![Progress of the purge execution](https://user-images.githubusercontent.com/71188443/207718657-7f3d2ad5-42c6-4caa-a359-05d2cf643536.png)
+![Progress of the purge execution](../.gitbook/assets/plugin-purge-executing.png)
 
 There is also a “show more” button, which will show more details about the current task execution.
 
-![Purge details dialog](https://user-images.githubusercontent.com/71188443/207718818-637658e8-6c01-4e38-bb4f-3f8be1c42a12.png)
+![Purge details dialog](../.gitbook/assets/plugin-purge-show-more.png)
 
 ### Checking previous executions
 
@@ -61,13 +61,66 @@ A list of executions and their information are displayed, along with the “show
 
 ### Purge status
 
-The status of a purge execution is displayed on the Purge History page, but it can also be checked using the `__plugin_purge` event type. A purge execution can have five status:
+The status of a purge execution is displayed on the Purge History page, but it can also be checked using the `__plugin_purge` event type. A purge execution can have five statuses:
 
-* **Waiting**: only four simulations can run in parallel, or one “real” purge at a time. Other executions will be waiting when these limits are reached.
+* **Waiting**: only four simulations can run in parallel, or one “real” purge at a time. Other executions will be waiting until these limits are reached.
 * **Running**: the purge execution is running.
 * **Completed**: the purge execution finished successfully.
 * **Canceled**: the purge execution was canceled, by the user or by the auto-cancelation feature.
 * **Failed**: some error caused the purge execution to fail.
+
+### Periods configured as time range
+
+It's crucial to configure the correct period expression to purge. Small differences in the Pipes period semantics would lead to critical errors by purging wrong data. It's mandatory to be aware and conscious of the semantics of the period configured.
+
+A person with administrative access can use the Pipes console to debug the period expression. See the complete documentation at [https://pipes.intelie.com/docs/0.25.9/#scalar-span](https://pipes.intelie.com/docs/0.25.9/#scalar-span) .&#x20;
+
+Check an example below:
+
+```
+=> every 1 minute
+=> @set span('last 2 months')|>:dateformat as last_two_month
+=> @set span('until 2 months ago')|>:dateformat as until_two_month_ago
+```
+
+Results:
+
+* **last 2 months** will drop only events from 2024-09-21 until now (2024-11-21)
+
+```
+last_two_month:
+{
+  "timestamp": "2024-11-21T11:21:00",
+  "start": "2024-09-21T11:21:00",
+  "end": "2024-11-21T11:21:00"
+}
+```
+
+* **until 2 months ago** will drop only events from the beginning until 2 months from now (2024-09-21)
+
+```
+until_two_month_ago:
+{
+  "timestamp": "2024-11-21T11:21:00",
+  "start": "1969-12-31T21:00:00",
+  "end": "2024-09-21T11:21:00"
+}
+```
+
+#### What to avoid?
+
+An example of a risky expression "until last 2 months ago" will drop to **everything** (it's equivalent to "from ts 0"); typically, that is **not** the original intention but the person can misunderstand the combination of **until** and **last** keywords.
+
+```
+until_last_two_month:
+{
+  "timestamp": "2024-11-21T11:21:00",
+  "start": "1969-12-31T21:00:00",
+  "end": "2024-11-21T11:21:00"
+}
+```
+
+So validating your period expression upfront using the `span()` function in Pipes console is strongly recommended.
 
 ## Purge system settings
 
@@ -107,18 +160,18 @@ The same collection with 11.000.000 events was used to run a real purge, deletin
 
 | Feature                                                    | Classic Live purge | New purge plugin |
 | ---------------------------------------------------------- | :----------------: | :--------------: |
-| Schedule purge execution                                   |          -         |         ✅ (1.0+)      |
-| Reduce the memory footprint and cpu usage on Live          |          -         |         ✅ (1.0+)      |
-| Specify a maximum duration                                 |          -         |         ✅ (1.1+)      |
-| Specify wildcards on the event type name                   |          ✅        |         ✅ (1.2+)      |
-| Specify any pipes filter on rule expression                |          ✅        |         -        |
-| Specify event type (or datasource) exceptions from purging |          ✅        |         ✅ (1.2+)      |
-| Cancel the purge/simulation execution                      |          ✅        |         ✅ (1.2+)      |
-| Free space estimation                                      |          ✅        |         ✅ (1.3+)      |
-
+| Schedule purge execution                                   |          -         |     ✅ (1.0+)     |
+| Reduce the memory footprint and cpu usage on Live          |          -         |     ✅ (1.0+)     |
+| Specify a maximum duration                                 |          -         |     ✅ (1.1+)     |
+| Specify wildcards on the event type name                   |          ✅         |     ✅ (1.2+)     |
+| Specify any pipes filter on rule expression                |          ✅         |         -        |
+| Specify event type (or datasource) exceptions from purging |          ✅         |     ✅ (1.2+)     |
+| Cancel the purge/simulation execution                      |          ✅         |     ✅ (1.2+)     |
+| Free space estimation                                      |          ✅         |     ✅ (1.3+)     |
 
 ## Limitations
 
 * It is not possible to estimate how much time a purge execution will take to finish based on its rules.
 * The `__plugin_purge` events are emitted after each rule is executed, so the user will not notice any changes on the interface until a rule is finished. If a rule takes too long, the progress will also take this time to be updated.
 * The purge task can’t be canceled if a rule is already started its execution. The user is forced to wait until the current rule execution is finished and then the overall process will be canceled. If a rule takes too long, the cancel will not be noticed immediately.
+
