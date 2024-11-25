@@ -12,6 +12,18 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.49.3 (November 25, 2024)
+
+### New features
+
+* Fix zoom imports
+
+### Bugfixes
+
+* Review docker script steps and Dockerfiles on tools
+* Remove parenthesis around the value at widget tooltips
+* Fix "removeChild" error on dashboard related to global notification and GlobalAlert usage
+
 ## [3.51.0](3.51.0.md) (November 11, 2024)
 
 ### New features
