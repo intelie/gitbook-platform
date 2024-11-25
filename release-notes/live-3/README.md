@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.52.0](3.52.0.md) (November 25, 2024)
+
+### New features
+
+* Changes on dashboard widget to support showing datagaps as both a timeline widget and an "alert" in the bottom of the chart.
+
 ## 3.51.1 (November 25, 2024)
 
 ### Other Changes
