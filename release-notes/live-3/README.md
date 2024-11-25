@@ -12,6 +12,17 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.50.2 (November 25, 2024)
+
+### Bugfixes
+
+* Clear meta should remove all points except the one just arrived in Cartesian Enhanced pipes widget
+* Respect layer order precedence for xAxisMin, xAxisMax and yAxisTitle metas in Cartesian Enhanced pipes widget
+
+### Other Changes
+
+* Cumulated changes from patch 3.49.3
+
 ## 3.49.3 (November 25, 2024)
 
 ### New features
