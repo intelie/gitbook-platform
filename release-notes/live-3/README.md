@@ -12,6 +12,15 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.49.4 (December 9, 2024)
+
+### Bugfixes
+
+* Enhanced Cartesian doesn't show values when pipes query uses group by
+* Dark mode bugs inside widget edit mode
+* Prevent printContent to be passed as undefined to the registers of performanceReportExportRegistry
+* Review .Select-placeholder style
+
 ## [3.52.0](3.52.0.md) (November 25, 2024)
 
 ### New features
