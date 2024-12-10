@@ -35,9 +35,9 @@ Currently in Beta:
 ### Bugfixes
 
 * Enhanced Cartesian doesn't show values when pipes query uses group by
-* Dark mode bugs inside widget edit mode
-* Prevent printContent to be passed as undefined to the registers of performanceReportExportRegistry
-* Review .Select-placeholder style
+* Fixes to darkmode in Cartesian Chart
+* Fixes a bug that may happens when exporting Live performance report
+* Fixes the background color of the Live select component
 
 ## [3.52.0](3.52.0.md) (November 25, 2024)
 
