@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.49.5 (December 19, 2024)
+
+### Bugfixes
+
+* Fix index for next queue when using Multiple Persistent Queues
+
 ## 3.52.1 (December 9, 2024)
 
 ### Other Changes
