@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.52.3 (January 21, 2025)
+
+### Other Changes
+
+* Cumulated changes from patch 3.51.4
+
 ## 3.51.4 (January 21, 2025)
 
 ### Other Changes
