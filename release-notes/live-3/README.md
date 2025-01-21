@@ -12,6 +12,20 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.50.5 (January 21, 2025)
+
+### New features
+
+* Refactory in Live.Data.installEntities
+* Save interpolation per dashboard, not per widget
+
+### Bugfixes
+
+* Wrong X axis after mouse zoom + brush zoom
+* Wrong X axis after mouse zoom + brush zoom
+* Fix the darkmode of the dashboard shortcut modal
+* Charts created after the interpolation is activated don't show interpolated value
+
 ## 3.52.2 (December 19, 2024)
 
 ### Other Changes
