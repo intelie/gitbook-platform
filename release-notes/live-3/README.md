@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.53.0](3.53.0.md) (January 22, 2025)
+
+### New features
+
+* Rerun the query when changing gap settings
+
+### Improvements
+
+* Create new button for dashboard header menu
+
 ## 3.52.3 (January 21, 2025)
 
 ### Other Changes
