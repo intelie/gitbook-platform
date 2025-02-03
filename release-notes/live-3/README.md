@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.54.0](3.54.0.md) (February 3, 2025)
+
+### New features
+
+* Cartesian chart x-axis property synchronization rule
+
 ## 3.53.1 (February 3, 2025)
 
 ### Other Changes
