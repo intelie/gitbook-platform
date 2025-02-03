@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.51.5 (February 3, 2025)
+
+### Improvements
+
+* Fix room notifications darkmode for plugin-messenger
+
+### Bugfixes
+
+* Fixes the chart visualization on the Live console screen
+
 ## [3.53.0](3.53.0.md) (January 22, 2025)
 
 ### New features
