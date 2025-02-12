@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.55.0](3.55.0.md) (February 12, 2025)
+
+### New features
+
+* Enhanced Cartesian flag and column chart types
+
+### Bugfixes
+
+* Filter pageViews metric by valid userId in healthcheck plugin
+
 ## [3.54.0](3.54.0.md) (February 3, 2025)
 
 ### New features
