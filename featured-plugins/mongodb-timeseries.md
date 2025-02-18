@@ -34,14 +34,14 @@ MongoDB uses a columnar storage format for time series collections, providing th
 
 Know more about its benefits at https://www.mongodb.com/docs/manual/core/timeseries-collections/#benefits.
 
-This plugin takes advantages from these benefits, for example:
+This plugin takes advantage from these benefits, for example:
 
 * Queries that use a timestamp hint have been improved.
 * Total collection storage size, including indexes, decreased by 90%.
 
 ## Risks and limitations
 
-When developing this new plugin, we faced many risks because of time series collections limitations, but most of them were solved at MongoDB version 7.0. But we still have some risks or limitations:
+When developing this new plugin, we faced many risks because of time series collection limitations, but most of them were solved at MongoDB version 7.0. But we still have some risks or limitations:
 
 * Legacy collections (collections created using the plugin MongoDB) are not supported, since they are not time series collections and cannot be converted.
 * Managing multiple integrations requires some additional attention, as explained at Multiple integrations subsection.
@@ -64,7 +64,7 @@ When developing this new plugin, we faced many risks because of time series coll
 * Because of the `intelie_time_field` extra field, indexes requests containing the configured `timeField` are mapped to the extra field.
 * Upserts are not supported yet in time series collections. To keep our support to `__overwrite`, we perform a delete followed by an insert.
 * The `_id` field was not being generated when inserting an event, so the plugin generates one before inserting it.
-* Java and MongoDB have different maximum values when using the `Long` type, causing overflow when querying by Java `Long.MAX_VALUE` for example. Because of that, the plugin defines a maximum and minimum values, respectively `8640000000000000L` and `-8640000000000000L`.
+* Java and MongoDB have different maximum values when using the `Long` type, causing overflow when querying by Java `Long.MAX_VALUE` for example. Because of that, the plugin defines maximum and minimum values, respectively `8640000000000000L` and `-8640000000000000L`.
 
 ## Requirements
 
@@ -91,7 +91,22 @@ Multiple timestamp hints are not supported and the usage of storage timestamp hi
 
 ### Multiple integrations
 
-Since each integration is configured using only one `timeSeriesTimestamp`, multiple integrations must be created if the user wants to manage multiple time-based fields. Also, each integration **must** have its own dedicated database, otherwise events will show up twice on the queries. Each integration will filter events based on the presence of the time field. This can lead to some problematic situations:
+Since each integration is configured using only one `timeSeriesTimestamp`, multiple integrations must be created if the user wants to manage various time-based fields. Also, each integration **must** have its dedicated database, otherwise, events will show up twice on the queries. Each integration will filter events based on the presence of the time field.&#x20;
 
-* an event contains more than one time field, each field configured at a different integration. There's no way to predict which integration will store the event and the performance will be affected depending on the query.
-* an integration is configured with `timestamp` as `timeSeriesTimestamp`. Like the situation above, since all events contain `timestamp` as a mandatory field. In this case, the integration filter should exclude all other fields configured as `timeSeriesTimestamp` in any integration.
+There are some situations you must be aware that can lead to configuration errors:
+
+1. **Multiple time fields in INTELIE events:**
+   * An event may contain more than one date time field, with each field configured for a different integration.
+   * Since there is no way to predict which integration will store the event, query performance may be negatively impacted depending on the date time field used in the query.
+2. **Ordinary `timestamp` field configured as `timeSeriesTimestamp`:**
+   * If an integration is configured to use the `timestamp` field as the `timeSeriesTimestamp`, conflicts may arise because, in INTELIE Live, all events inherently contain the `timestamp` field as a mandatory field.
+   * This configuration prevents the use of other fields as `timeSeriesTimestamp` in other integrations, limiting flexibility.
+   * To avoid this issue, the integration filter must explicitly exclude all other fields configured as `timeSeriesTimestamp` in any integration. For example:
+     * Let's assume you want to store, in a MongoDB timeseries database, only events that don't contain `adjusted_index_timestamp` because that is already configured in another exclusive database for normalized data (as given by Plugin LiveRig).
+     * So, you will need to configure the write filter of the new integration as `-adjusted_index_timestamp:*` (negating any event which has an adjusted\_index\_timestamp field) since the effective write filter compiled by the plugin in this case will be `-adjusted_index_timestamp:* && timestamp:*` (see the [Pipes automata for this filter](https://pipes-tutorial.intelie.com/explain/#-adjusted_index_timestamp%3A*%20%26%26%20timestamp%3A*/true/true)).
+     * Extending this example to a third integration exclusive for events containing `liverig__index__timestamp` as temporal criteria, you will need the following write filters:
+       * adjusted\_index\_timestamp integration: `* && adjusted_index_timestamp:*`&#x20;
+       * liverig\_\_index\_\_timestamp integration: `-adjusted_index_timestamp:* && liverig__index__timestamp:*`&#x20;
+       * timestamp integration (like a fallback for the complementary data): `-adjusted_index_timestamp:* && -liverig__index__timestamp:* && timestamp:*`
+
+If you also need assistance configuring both MongoDB Timeseries integrations and MongoDB classic integrations (as documents), you can use [MongoDB Kit plugin](mongokit.md). This plugin allows you to manage both document-based and timeseries-based databases within a single configuration form.
