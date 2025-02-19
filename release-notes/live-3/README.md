@@ -12,6 +12,21 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.53.2 (February 19, 2025)
+
+### New features
+
+* Fix the style of the dashboard's "filter options" and "export data" modals when plugin-beam-resources is installed
+
+### Improvements
+
+* Interpolation indicator doesn't need to fetch /rest/ui/dashboard/<id>
+
+### Bugfixes
+
+* Saving changes to widgetsRequests is not possible.
+* Interpolation indicator is not displayed when the dashboard is loaded
+
 ## [3.55.0](3.55.0.md) (February 12, 2025)
 
 ### New features
