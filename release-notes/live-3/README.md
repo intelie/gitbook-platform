@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.56.0](3.56.0.md) (February 20, 2025)
+
+### New features
+
+* Reapply refactoring in Live.Data.installEntities
+
 ## 3.55.1 (February 20, 2025)
 
 ### Other Changes
