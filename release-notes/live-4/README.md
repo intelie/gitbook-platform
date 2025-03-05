@@ -1,4 +1,18 @@
 # Live 4
+## 4.0.9 (March 5, 2025)
+
+### New features
+
+* Upgrade dependency-check-maven to 12.1.0
+* Update dependency-check-maven to 12.0.0 and review spring and jetty remaining cves
+* Fix dashboard layout preview
+* Fix dashboard filter
+* Improve Live color picker component
+
+### Bugfixes
+
+* Zooming in or out does not change the x-axis extremes of widgets
+
 ## 4.0.8 (October 28, 2024)
 
 ### New features
