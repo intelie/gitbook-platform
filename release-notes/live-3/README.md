@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.57.0](3.57.0.md) (March 10, 2025)
+
+### New features
+
+* New behavior for Zoom and Scroll by Property when disabled in Cartesian Enhanced
+
 ## 3.56.1 (March 10, 2025)
 
 ### Other Changes
