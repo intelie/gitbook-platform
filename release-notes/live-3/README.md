@@ -12,6 +12,19 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.54.2 (March 10, 2025)
+
+### Improvements
+
+* Add queryId info on SilentListener.send logger messages
+
+### Bugfixes
+
+* Periodic provider hides compilation query errors
+* Interpolation doesn't work when plugin-annotations is not installed and more than one chart is used
+* Fix dashboard filter "restore default" when using "value" widgets
+* When interpolation in on, the chart may use the wrong icon to draw the point on the chart
+
 ## [3.56.0](3.56.0.md) (February 20, 2025)
 
 ### New features
