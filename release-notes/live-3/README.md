@@ -12,6 +12,16 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.55.2 (March 10, 2025)
+
+### Bugfixes
+
+* The Column does not change color according to the event variable __color in the Enhanced Cartesian Widget
+
+### Other Changes
+
+* Cumulated changes from patch 3.54.2
+
 ## 3.54.2 (March 10, 2025)
 
 ### Improvements
