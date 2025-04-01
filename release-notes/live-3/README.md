@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.55.3 (April 1, 2025)
+
+### New features
+
+* Log when query queue is accumulating events above safe limits
+
 ## [3.57.0](3.57.0.md) (March 10, 2025)
 
 ### New features
