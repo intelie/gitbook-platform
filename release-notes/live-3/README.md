@@ -12,6 +12,17 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.58.0](3.58.0.md) (April 1, 2025)
+
+### New features
+
+* Add hideVerticalEnabled policy for pipes chart editor
+* Use Live default font family in X-axis labels
+
+### Bugfixes
+
+* Y-axis extremes config precedence rule over meta in temporal chart pipes
+
 ## 3.57.1 (April 1, 2025)
 
 ### Other Changes
