@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.55.4 (April 9, 2025)
+
+### Bugfixes
+
+* Fix pdf export crop
+
 ## [3.58.0](3.58.0.md) (April 1, 2025)
 
 ### New features
