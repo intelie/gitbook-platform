@@ -12,6 +12,23 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.56.4 (April 22, 2025)
+
+### New features
+
+* Chart line will be removed if the user changes the span and hover the chart
+
+### Improvements
+
+* Adjust the LIVE to follow new INTELIE brand guidelines
+* Show interpolated value for individual tooltips
+
+### Bugfixes
+
+* Fixes interpolation feature for cartesian chart
+* Prevent the interpolated chart marker from appearing at the wrong position
+* Chart marker remains on the chart after using "legend" to hide a serie (when interpolation is on)
+
 ## 3.58.1 (April 9, 2025)
 
 ### Other Changes
