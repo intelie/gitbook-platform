@@ -12,6 +12,13 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.59.0](3.59.0.md) (April 22, 2025)
+
+### New features
+
+* Enhanced Cartesian y-axis meta
+* Add hide X-axis configuration pipes widget policy
+
 ## 3.58.2 (April 22, 2025)
 
 ### Other Changes
