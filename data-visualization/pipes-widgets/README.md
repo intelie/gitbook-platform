@@ -13,3 +13,14 @@ Some widgets support more than one layer, that is, more than one pipes query run
 The reducer is an optimization. It is needed to limit the amount of data delivered to the chart, since it is often impossible to plot all the desired data. For more details, see [this section](../../pipes-queries/reducer/).
 
 In case that the widget supports more than one layer, each one must have its own reducer.
+
+## Query Provider
+
+The expression for a query-based widget can declare on its first line:
+
+&#x20;`-- @provider  <name of query provider>`&#x20;
+
+to define a different query provider than the default Pipes for the underlying Live Query.
+
+
+
