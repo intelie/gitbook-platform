@@ -12,6 +12,14 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.56.5 (April 28, 2025)
+
+### Bugfixes
+
+* edited the lookup, but the date of the last change has not changed
+* Propagate pipes module function dependencies
+* Fixes the value shown at tooltip header when using individual tooltips
+
 ## [3.59.0](3.59.0.md) (April 22, 2025)
 
 ### New features
