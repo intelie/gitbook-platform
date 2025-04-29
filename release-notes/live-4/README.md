@@ -1,4 +1,17 @@
 # Live 4
+## 4.0.10 (April 29, 2025)
+
+### New features
+
+* Stop query re-execution when moving widgets
+* Eliminate PIPES query requirement for JSX widgets
+* Prevent error display for hidden widgets in edit mode
+
+### Bugfixes
+
+* Fix the dashboad default span selection for Live 4
+* Fix span selection for dashboards
+
 ## 4.0.9 (March 5, 2025)
 
 ### New features
