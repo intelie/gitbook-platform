@@ -8,6 +8,13 @@ The SQL plugin is available for download on [INTELIE Live Marketplace](https://m
 
 ![Roles provided by Live SQL Plugin](<../.gitbook/assets/image (79).png>)
 
+Main capabilities supported in INTELIE Live SQL plugin:
+- Storage Provider:
+  - Retrieving data from SQL tables and expose them as Live events with filtering support from an INTELIE Pipes translation (see [storage hints](../pipes-queries/storage-hints.md))
+  - Facilities to translate INTELIE Live queries into SQL SELECT (DQL) commands to expose temporal data as INTELIE Live events
+- Query Provider:
+  - Expose native SQL query support to read data from SQL tables without mapping as INTELIE Live events (see [datasources using query providers](../features/datasources))
+
 ## Storage Provider
 
 Once the Storage role is selected, a new section named **SQL Events configuration** will be available at configuration screen.
