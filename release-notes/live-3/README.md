@@ -12,6 +12,15 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.56.6 (May 12, 2025)
+
+### Bugfixes
+
+* Fixes chart zoom when interpolation feature is active
+* Fix mouse click interaction for charts that use grouped tooltips
+* Fix the dashboad default span selection
+* Fix the cancel button of the dashboard span type modal
+
 ## 3.59.1 (April 28, 2025)
 
 ### Other Changes
