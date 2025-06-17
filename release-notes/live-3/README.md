@@ -12,6 +12,13 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## [3.60.0](3.60.0.md) (June 17, 2025)
+
+### New features
+
+* Linear interpolation of data points in tooltip of Enhanced Cartesian
+* Upgrade @intelie/ui to 0.19.0
+
 ## 3.59.3 (May 20, 2025)
 
 ### Other Changes
