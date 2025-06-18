@@ -12,6 +12,12 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.60.1 (June 18, 2025)
+
+### New features
+
+* Linear interpolation of data points in tooltip of Enhanced Cartesian
+
 ## [3.60.0](3.60.0.md) (June 17, 2025)
 
 ### New features
