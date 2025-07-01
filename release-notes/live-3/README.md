@@ -12,6 +12,17 @@ Live uses the [Semantic Versioning 2.0.0](https://semver.org/).
 Currently in Beta:
 {% endhint %}
 
+## 3.57.7 (July 1, 2025)
+
+### New features
+
+* Fix handleOwnMissingData for the widget edit mode
+
+### Bugfixes
+
+* Y-axis meta with grouped axis crashes the Multichannel Temporal Widget
+* Fixes missing interpolation markers if dashboard URLs don't contain the '#'
+
 ## 3.60.1 (June 18, 2025)
 
 ### New features
