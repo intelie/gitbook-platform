@@ -4,6 +4,18 @@ description: Enables the data crawling from MongoDB document stores as events
 
 # MongoDB
 
+Main capabilities supported in INTELIE Live MongoDB plugin:
+- Storage Provider:
+  - Storing Live events inside MongoDB collections as BSON documents and managed by INTELIE Live
+  - Retrieving historical Live events from MongoDB instances with filtering support from an INTELIE Pipes translation (see [storage hints](../pipes-queries/storage-hints.md))
+  - Automatic index management for MongoDB collections based on INTELIE Live index query requirements
+  - Built-in sharding support to improve read and write performance
+- Query Provider:
+  - Expose some MongoDB database commands to enhance INTELIE Live querying support (see [datasources using query providers](../features/datasources))
+- REST API and additional features:
+  - Facilities to manage collections and indexes (sparse and partial are supported)
+  - Facilities to study MongoDB query plans
+
 ## Storage Provider
 
 INTELIE Live delivers the capability of storing events as documents in MongoDB servers. The MongoDB Storage Provider is the most deployed plugin in our customer environments.
